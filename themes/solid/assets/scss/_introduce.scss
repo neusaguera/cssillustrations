@@ -1,0 +1,27 @@
+.intro {
+    text-align: center;
+    padding: 0 12px;
+    margin-bottom: 72px;
+}
+.intro-title{
+    font-weight: 500;
+    color: $c_rustyred;
+    .short{
+        font-size: 34px;
+        font-weight: 900;
+        display: block;
+        color: $c_deepblue;
+    }
+}
+.intro-text{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .intro{
+        flex: 1;
+        align-self: center;
+        margin-bottom: 0;
+    }
+}

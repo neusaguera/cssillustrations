@@ -13,3 +13,6 @@ theme = "solid"
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
+
+[params]
+  defaultImage = "gopher.jpg"
