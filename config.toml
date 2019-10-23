@@ -16,3 +16,4 @@ theme = "solid"
 
 [params]
   defaultImage = "gopher.jpg"
+  disqusShortname = "neusageravalls"

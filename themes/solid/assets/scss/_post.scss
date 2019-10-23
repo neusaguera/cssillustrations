@@ -26,10 +26,10 @@
         margin: 12px 12px 42px 12px;
         padding: 12px;
         border-left: 2px solid $c_rustyred;
-        font-style: italic;
         h4, h3, h2, h1{
             font-style: normal;
             color: $c_rustyred;
+            margin-bottom: 12px;
         }
     }
     pre {
@@ -81,9 +81,18 @@
                     text-decoration: underline;
                 }
             }
+            img {
+                max-width: 100%;
+            }
         }
         .highlight{
             margin-bottom: 48px;
+        }
+        blockquote {
+            p{
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
     .post-title {

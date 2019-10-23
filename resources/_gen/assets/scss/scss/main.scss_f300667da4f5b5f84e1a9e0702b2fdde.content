@@ -668,11 +668,11 @@ h3 {
   .post blockquote {
     margin: 12px 12px 42px 12px;
     padding: 12px;
-    border-left: 2px solid #D52941;
-    font-style: italic; }
+    border-left: 2px solid #D52941; }
     .post blockquote h4, .post blockquote h3, .post blockquote h2, .post blockquote h1 {
       font-style: normal;
-      color: #D52941; }
+      color: #D52941;
+      margin-bottom: 12px; }
   .post pre {
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -712,8 +712,13 @@ h3 {
         font-size: inherit; }
         .post p a:hover, .post li a:hover {
           text-decoration: underline; }
+      .post p img, .post li img {
+        max-width: 100%; }
     .post .highlight {
       margin-bottom: 48px; }
+    .post blockquote p {
+      font-size: 16px;
+      line-height: 20px; }
   .post-title {
     font-size: 32px;
     line-height: 36px;
