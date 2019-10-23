@@ -1,0 +1,112 @@
+/* Standard Colors */
+/* Theme Colors */
+/*Transparent Colors */
+/* screens */
+/* fonts */
+.header {
+  height: 50px;
+  top: 0;
+  right: 0;
+  width: 100%; }
+
+.logo {
+  margin: 0 auto;
+  padding-left: 12px;
+  flex: 1 75%; }
+
+.logo-text {
+  line-height: 50px;
+  font-size: 18px;
+  color: #D52941;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -1px; }
+
+.desktop-menu {
+  display: none; }
+
+.mobile-menu.close {
+  height: 0; }
+
+.mobile-menu .fas {
+  line-height: 50px;
+  font-size: 18px;
+  color: #D52941; }
+
+.mobile-menu-wrap {
+  display: flex; }
+  .mobile-menu-wrap .title {
+    margin: 0;
+    line-height: 75px;
+    flex: 1 80%; }
+  .mobile-menu-wrap .menu-link {
+    flex: 1;
+    border: 0; }
+
+.menu-list {
+  display: inline-flex;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  z-index: 100;
+  right: 0%;
+  height: 100vh;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  top: 0; }
+  .menu-list .menu-item {
+    list-style: none;
+    margin-bottom: 12px; }
+  .menu-list .menu-link {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Oswald", sans-serif; }
+  .menu-list button {
+    height: 75px;
+    padding: 0 24px; }
+  .menu-list ul {
+    margin: 75px 0 0 0;
+    padding: 0; }
+  .menu-list.close {
+    right: -1000px;
+    width: 0; }
+
+@media only screen and (min-width: 1024px) {
+  .logo {
+    padding-left: 0;
+    flex: 1 20%;
+    height: 50px; }
+  .logo-text {
+    font-size: 26px; }
+  .menu_link {
+    display: none; }
+  .desktop-menu {
+    display: flex; }
+  .mobile-menu {
+    display: none; }
+  .menu-close {
+    display: none; }
+  .menu-list {
+    position: relative;
+    background: none;
+    height: auto;
+    transition: none;
+    flex: 75%;
+    height: 50px; }
+    .menu-list.close {
+      right: inherit;
+      width: inherit; }
+    .menu-list ul {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: flex-end; }
+    .menu-list .menu-item {
+      list-style: none;
+      margin: 0 0 0 12px; }
+    .menu-list .menu-link {
+      font-size: 20px;
+      line-height: 50px;
+      font-weight: 300; } }

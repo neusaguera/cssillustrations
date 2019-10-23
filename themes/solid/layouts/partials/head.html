@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<meta name="author"
+    content="{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ range .Site.Author }}{{ . }} {{ end }}{{ end }}">
+<meta name="keywords" content="{{ .Site.Params.keywords }}" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<title> CSS ILLUSTRATIONS </title>
+
+<!-- CSS -->
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+{{ $sass := resources.Get "scss/main.scss" }}
+
+
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <script src="https://kit.fontawesome.com/7711e0d342.js" crossorigin="anonymous"></script>
+
+
