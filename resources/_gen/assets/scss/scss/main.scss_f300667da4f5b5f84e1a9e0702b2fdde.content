@@ -3,6 +3,86 @@
 /*Transparent Colors */
 /* screens */
 /* fonts */
+* {
+  color: #44647A;
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
+
+button {
+  border: 0;
+  background: none; }
+
+body {
+  overflow-x: hidden; }
+
+figure {
+  margin: 0; }
+
+p {
+  font-family: "Roboto Slab", serif; }
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.show {
+  display: none; }
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation; }
+
+.visible-md {
+  display: none; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 32px;
+  line-height: 36px; }
+
+h2 {
+  font-size: 20px;
+  line-height: 28px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400; }
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 900px; }
+  .subtitle {
+    font-size: 40px;
+    line-height: 54px;
+    align-self: center;
+    width: 50%;
+    text-align: left; }
+    .subtitle .color {
+      text-align: left;
+      font-size: 120px;
+      line-height: 80px;
+      margin-left: -7px; }
+  .row {
+    flex-direction: row;
+    margin-bottom: 12px;
+    justify-content: space-around; }
+  .visible-md {
+    display: block; } }
+
 .header {
   height: 50px;
   top: 0;
@@ -110,3 +190,40 @@
       font-size: 20px;
       line-height: 50px;
       font-weight: 300; } }
+
+.footer {
+  background: #44647A;
+  color: #fff; }
+  .footer .logo {
+    text-align: center; }
+  .footer .logo-text {
+    font-size: 34px;
+    color: #EBF2FF; }
+
+.footer-content {
+  padding: 24px; }
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0; }
+
+.footer-link {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 8px; }
+
+.footer-social {
+  text-align: center;
+  margin-bottom: 24px; }
+
+.footer-social-item {
+  width: 15%;
+  display: inline-block; }
+  .footer-social-item i {
+    font-size: 22px;
+    line-height: 26px;
+    color: #EBF2FF; }
