@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <div class="container">
+        {{- partial "avatar.html" . -}}
+        <div class="about-header">
+            <h1>Hola soy Neus</h1>
+            <h2 class="about-subtitle">UX y Front-end developer</h2>
+        </div>
+        <div class="about-content">
+            <p>Empecé en el mundo web maquetando cuando se utilizaba dreamweaver, si, y los dinosaurios no se habían extingido.</p>
+            <p>Uno de mis entretenimientos es crear illustraciones sólo con HTML y Css. En este blog intento explicar como creo las ilustaciones paso a paso y les añado animaciones, todo sin utilizar imagenes, svg o javascript.</p>
+        </div>
+        {{- partial "apocalypse.html" . -}}
+        <div class="about-content">
+            <p>Se aceptan sugerencias sobre como mejorar el blog, como mejorar yo misma y si os gustaria que creará alguna illustración en concreto.</p>
+        </div>
+    Saludos
+</div>
+{{ end }}

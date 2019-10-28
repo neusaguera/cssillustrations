@@ -1,0 +1,211 @@
+.dino {
+    position: relative;
+    width: 190px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.dino-head {
+    width: 72px;
+    height: 65PX;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    background: green;
+    @include transform(translateX(-50%) rotate(46deg));
+    @include border-radius(80% 150% 25% 250%);
+    box-shadow: 1px 1px 3px black;
+    z-index: 10;
+}
+
+.dino-eye {
+    background: green;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 15%;
+    left: -30%;
+    position: absolute;
+    transform: rotate(-46deg);
+    &:before {
+        content: '';
+        display: block;
+        background: green;
+        width: 34px;
+        height: 27px;
+        border-radius: 50%;
+        border-top: 2px solid #aada47;
+        position: absolute;
+        top: 88%;
+        left: 36%;
+        z-index: 10;
+    }
+    &.right{
+        left:14%;
+        top: -38%;
+        &:before{
+            left: 4%;
+        }
+    }
+}
+
+.dino-iris {
+    width: 30px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+    top: 38%;
+    &:before {
+        content: '';
+        display: block;
+        background: black;
+        width: 14px;
+        height: 18px;
+        border-radius: 50%;
+        left: 52%;
+        position: absolute;
+    }
+    &:after{
+        content: '';
+        display: block;
+        background: white;
+        width: 5px;
+        height: 7px;
+        border-radius: 50%;
+        left: 52%;
+        position: absolute;
+    }
+    .right &{
+        left: 16%;
+    }
+}
+.dino-nostril {
+    width: 5px;
+    height: 15px;
+    background: black;
+    border-radius: 50% 150% 50%;
+    position: absolute;
+    bottom: 9%;
+    left: 62%;
+    z-index: 10;
+    transform: rotate(105deg);
+    -webkit-transform: rotate(105deg);
+    -moz-transform: rotate(105deg);
+    -ms-transform: rotate(105deg);
+    -o-transform: rotate(105deg);
+    &.right{
+        left: 75%;
+        bottom: 24%;
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+}
+}
+.dino-body {
+    background: green;
+    width: 140px;
+    height: 156px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    &:after {
+        content: '';
+        display: block;
+        background: rgba(255,255,255,0.2);
+        width: 84px;
+        height: 105%;
+        left: 20%;
+        position: absolute;
+        border-radius: 50%;
+    }
+}
+.dino-hand {
+    width: 35px;
+    height: 36px;
+    position: absolute;
+    background: green;
+    border-radius: 20% 50% 50% 20%;
+    left: 16%;
+    bottom: 40%;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 0px 1px 1px #315320;
+    .dino-hoff {
+        background: white;
+        border-radius: 50%;
+        width: 15px;
+        height: 8px;
+        position: absolute;
+        right: 0px;
+        top: 20%;
+        box-shadow: -1px -1px 1px #315320;
+        &.center{
+            top: 40%;
+        }
+        &.bottom{
+            top: 60%;
+        }
+        .right &{
+            right: inherit;
+            left: -1%;
+        }
+    }
+    &.right{
+        border-radius: 50% 20% 20% 50%;
+        -webkit-border-radius: 50% 20% 20% 50%;
+        -moz-border-radius: 50% 20% 20% 50%;
+        -ms-border-radius: 50% 20% 20% 50%;
+        -o-border-radius: 50% 20% 20% 50%;
+        left: 59%;
+        .dino-hoff{
+            right: inherit;
+            left: -1%;
+        }
+    }
+}
+
+
+.dino-foot {
+    width: 45px;
+    height: 46px;
+    position: absolute;
+    background: green;
+    border-radius: 50% 50% 20% 20%;
+    left: 16%;
+    bottom: 0;
+    z-index: 10;
+    box-shadow: -1px -1px 1px #315320;
+    -webkit-border-radius: 50% 50% 20% 20%;
+    -moz-border-radius: 50% 50% 20% 20%;
+    -ms-border-radius: 50% 50% 20% 20%;
+    -o-border-radius: 50% 50% 20% 20%;
+    &.right{
+        left: 59%;
+        box-shadow: 1px -1px 1px #315320;
+        & .dino-hoff{
+            right: inherit;
+            left: -1%;
+        }
+    }
+    .dino-hoff {
+        background: white;
+        border-radius: 50%;
+        width: 11px;
+        height: 20px;
+        position: absolute;
+        left: 11%;
+        bottom: -11%;
+        box-shadow: -1px 1px 1px #315320;
+        &.center{
+            left: 34%;
+        }
+        &.last{
+            left: 60%;
+        }
+    }
+}

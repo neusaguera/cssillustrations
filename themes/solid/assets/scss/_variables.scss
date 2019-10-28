@@ -14,6 +14,35 @@ $c_rustyred: #D52941;
 $c_t_white: rgba(255,255,255,0.5);
 $c_t_black: rgba(0,0,0,0.5);
 
+
+/* RGB */
+$yellow-base: rgba(255, 214, 112, 1);
+$blue-base: rgba(171, 216, 200, 1);
+$green-base: rgba(217, 221, 146, 1);
+$purple-base: rgba(218, 182, 196, 1);
+$orange-base: rgba(255, 151, 112, 1);
+
+$purple-dark: rgba(159, 133, 143, 1);
+$green-dark: rgba(158, 161, 107, 1);
+$orange-dark: rgba(153, 91, 67, 1);
+$yellow-dark: rgba(186, 156, 82, 1);
+$blue-dark: rgba(125, 158, 146, 1);
+
+$purple-light: rgba(241, 228, 233, 1);
+$green-light: rgba(241, 242, 215, 1);
+$orange-light: rgba(238, 207, 195, 1);
+$yellow-light: rgba(255, 240, 203, 1);
+$blue-light: rgba(224, 240, 235, 1);
+
+/*** avatar colors */
+$c_skincolor: rgba(247, 218, 202,1);
+$c_hairdark: rgba(169,107,49,1);
+$c_hairlight: rgba(237,171,3,1);
+$iris-color: rgba(128,78,31,1);
+$lips-color: rgba(241,172,195,1);
+$nose-color: rgba(197,164,145,1);
+$heart-color: rgb(240, 52, 27);
+
 /* screens */
 $container_xs: 375px;
 $container_l: 800px;
@@ -21,3 +50,10 @@ $container_l: 800px;
 /* fonts */
 $oswald: 'Oswald', sans-serif;
 $slab: 'Roboto Slab', serif;
+
+/* z-index*/
+$z1:        1;
+$z10:       10;
+$z100:      100;
+$z1000:     1000;
+$z10000:    10000;
