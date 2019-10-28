@@ -17,3 +17,8 @@ theme = "solid"
 [params]
   defaultImage = "gopher.jpg"
   disqusShortname = "neusageravalls"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"

@@ -8,15 +8,6 @@
 .home-post-link{
     display: block;
     overflow: hidden;
-    transition: all .2s ease-in-out;
-    &:hover{
-        box-shadow: 1px 1px 11px $c_deepblue;
-        transform: scale(0.95);
-        -webkit-transform: scale(0.95);
-        -moz-transform: scale(0.95);
-        -ms-transform: scale(0.95);
-        -o-transform: scale(0.95);
-}
 }
 .home-post-item{
     list-style: none;
@@ -75,5 +66,16 @@
     }
     .home-title-section {
         padding-left: 0;
+    }
+    .home-post-link{
+        transition: all .2s ease-in-out;
+        &:hover{
+            box-shadow: 1px 1px 11px $c_deepblue;
+            transform: scale(0.95);
+            -webkit-transform: scale(0.95);
+            -moz-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+            -o-transform: scale(0.95);
+        }
     }
 }

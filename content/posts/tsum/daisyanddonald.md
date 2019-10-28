@@ -1,7 +1,8 @@
 ---
-categories: ["Tsum"]
+layout: post
+tags: ["tsum", "illustration", "css"]
 title: "Nivel 2. Daisy & Donald"
-date: 2019-09-05T13:06:12+08:00
+date: "2019-09-02"
 ---
 
 ![Pasos de Minnie](/stepsMinnie.png)

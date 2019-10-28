@@ -3,7 +3,7 @@ layout: post
 title: HelloWorld
 img: imageHtml.png
 tags: ["tag_a", "tag_b"]
-date: 2016-03-09
+date: "2016-03-08"
 ---
 
 ¿Quieres aprender las primeras nociones de HTML & CSS? Sigue leyendo e intentaré ayudarte.

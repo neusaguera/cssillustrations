@@ -588,15 +588,7 @@ h3 {
 
 .home-post-link {
   display: block;
-  overflow: hidden;
-  transition: all .2s ease-in-out; }
-  .home-post-link:hover {
-    box-shadow: 1px 1px 11px #44647A;
-    transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    -moz-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    -o-transform: scale(0.95); }
+  overflow: hidden; }
 
 .home-post-item {
   list-style: none;
@@ -643,7 +635,16 @@ h3 {
     flex-direction: row;
     margin-bottom: 24px; }
   .home-title-section {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .home-post-link {
+    transition: all .2s ease-in-out; }
+    .home-post-link:hover {
+      box-shadow: 1px 1px 11px #44647A;
+      transform: scale(0.95);
+      -webkit-transform: scale(0.95);
+      -moz-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      -o-transform: scale(0.95); } }
 
 .post {
   max-width: 375px;
@@ -723,3 +724,59 @@ h3 {
     font-size: 32px;
     line-height: 36px;
     margin: 0 0 24px; } }
+
+.list-title {
+  padding-left: 12px;
+  margin-bottom: 12px; }
+
+.list-subtitle {
+  padding-left: 12px;
+  color: #D52941; }
+
+.list-post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 24px; }
+
+.list-post-item {
+  width: 100%;
+  list-style: none;
+  float: 1; }
+
+.list-post-link {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  flex-wrap: wrap; }
+
+.list-post-image {
+  float: 1 30%;
+  width: 30%;
+  align-self: start; }
+
+.list-post-body {
+  flex: 1;
+  padding-left: 12px; }
+
+.list-post-resume {
+  font-size: 14px;
+  line-height: 16px; }
+
+@media only screen and (min-width: 1024px) {
+  .list-post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .list-post-item {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    transition: all .2s ease-in-out; }
+    .list-post-item:hover {
+      box-shadow: 1px 1px 11px #44647A;
+      transform: scale(0.95);
+      -webkit-transform: scale(0.95);
+      -moz-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      -o-transform: scale(0.95); } }

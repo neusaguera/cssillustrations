@@ -1,0 +1,34 @@
+
+{{ define "main" }}
+<div id="content" class="container">
+    <h1 class="list-title"> Todos los posts</h1>
+
+    <div class="page-tags" id="tags">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+
+        <h2 class="list-subtitle" id="{{ $name | urlize }}">{{ $name }}</h2>
+        <ul class="list-post">
+        {{ range $taxonomy }}
+            <li class="list-post-item">
+                <a class="list-post-link" href="{{.Permalink}}">
+                    {{ if .Params.img }}
+                      <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
+                    {{ else }}
+                      <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+                    {{ end }}
+
+                    <div class="list-post-body">
+                        <h3 class="list-post-title">{{ .Title | truncate 25 }}</h3>
+                        <p class="list-post-resume">
+                            {{ .Summary | plainify | truncate 100 }}</p>
+                        </div>
+                </a>
+              </li>
+        {{ end }}
+              </ul>
+        {{ end }}
+    </div>
+
+
+    </div>
+{{ end }}
