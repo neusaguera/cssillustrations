@@ -1,17 +1,15 @@
 
 {{ define "main" }}
-
 <div id="content" class="container">
-        <h1 class="list-title"></h1>
+        {{ $lastUrlElement := index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0 }}
+        <h1 class="list-title"> {{ $lastUrlElement}}</h1>
 
 
 
     <div class="page-tags" id="tags">
 
-            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                <h2 class="list-subtitle" id="{{ $name | urlize }}">{{ $name }}</h2>
                 <ul class="list-post">
-                    {{ range $taxonomy }}
+                    {{ range .Data.Pages }}
                         <li class="list-post-item">
                             <a class="list-post-link" href="{{.Permalink}}">
                                 {{ if .Params.img }}
@@ -29,10 +27,7 @@
                         </li>
                     {{ end }}
                 </ul>
-            {{ end }}
-
     </div>
 </div>
 
 {{ end }}
-
