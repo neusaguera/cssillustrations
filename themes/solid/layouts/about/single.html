@@ -1,18 +1,33 @@
 {{ define "main" }}
-    <div class="container">
-        {{- partial "avatar.html" . -}}
-        <div class="about-header">
-            <h1>Hola soy Neus</h1>
-            <h2 class="about-subtitle">UX y Front-end developer</h2>
+    <div class="container about">
+        <div class="about-wrap">
+            <div class="about-avatar">
+                {{- partial "avatar.html" . -}}
+            </div>
+            <div class="about-header">
+                <h1>Hola soy Neus</h1>
+                <h2 class="about-subtitle">UX y Front-end developer</h2>
+            </div>
+            <div class="about-content">
+                <p>Empecé en este mundillo maquetando cuando se utilizaba Dreamweaver, sí, los dinosaurios no se habían extinguido.</p>
+                <p>Uno de mis entretenimientos es crear ilustraciones con HTML y CSS. En este blog intentaré mediante un curso ayudar a los que están empezando e iré añadiendo publicaciones con las animaciones que he ido creando durante estos años, como por ejemplo, las criaturas de mundo animal, los cabezones de Tsum Disney o alguna animación sobre chistes para maquetadores.</p>
+                <p>Si echas en falta alguna animación, illustración o quieres que te ayude a crear algo no dudes en ponerte en contacto conmigo.</p>
+                <p>Saludos</p>
+            </div>
+            <h3 class="about-contact-title">Datos de contacto:</h3>
+            <ul class="about-social-list">
+                <li class="about-social-item">Neus Agüera Valls</li>
+                <li class="about-social-item"><i class="fas fa-envelope"></i>naguera@cssillustrations.com</li>
+                <li class="about-social-item">
+                    <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="about-social-link"><i class="fab fa-linkedin" aria-hidden="true"></i> /in/nagueravalls</a>
+                </li>
+                <li class="about-social-item">
+                    <a href="https://twitter.com/cssillustratio2" class="about-social-link"><i class="fab fa-twitter" aria-hidden="true"></i>@cssillustratio2</a>
+                </li>
+            </ul>
+            <div class="about-animation">
+                {{- partial "apocalypse.html" . -}}
+            </div>
         </div>
-        <div class="about-content">
-            <p>Empecé en el mundo web maquetando cuando se utilizaba dreamweaver, si, y los dinosaurios no se habían extingido.</p>
-            <p>Uno de mis entretenimientos es crear illustraciones sólo con HTML y Css. En este blog intento explicar como creo las ilustaciones paso a paso y les añado animaciones, todo sin utilizar imagenes, svg o javascript.</p>
-        </div>
-        {{- partial "apocalypse.html" . -}}
-        <div class="about-content">
-            <p>Se aceptan sugerencias sobre como mejorar el blog, como mejorar yo misma y si os gustaria que creará alguna illustración en concreto.</p>
-        </div>
-    Saludos
-</div>
+    </div>
 {{ end }}

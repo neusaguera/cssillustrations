@@ -9,13 +9,14 @@
         </a>
       </h2>
       <ul class="home-post">
-        {{range first 4 .Site.RegularPages.ByDate}}
+        {{range first 3 (where .Site.RegularPages.ByDate "Params.layout" "post")}}
+
         <li class="home-post-item">
           <a class="home-post-link" href="{{.Permalink}}">
           {{ if .Params.img }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
+            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
           {{ else }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
           {{ end }}
 
             <div class="home-post-body">
@@ -30,19 +31,19 @@
       <h2  class="home-title-section">
           <a href="/tags/tsum">
             <span class="pad">#</span>
-            Tsum
+            Curso Tsum
             <span class="smaller">(ver más)</span>
           </a>
       </h2>
 
       <ul class="home-post">
-        {{ range first 3  (sort .Site.Taxonomies.tags.tsum "Date") }}
+        {{ range first 3 (sort .Site.Taxonomies.tags.tsum "Date") }}
         <li class="home-post-item">
           <a class="home-post-link" href="{{.Permalink}}">
           {{ if .Params.img }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
+            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
           {{ else }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
           {{ end }}
 
             <div class="home-post-body">
@@ -63,13 +64,13 @@
     </h2>
     <ul class="home-post">
 
-      {{range first 3 .Site.RegularPages}}
+        {{ range first 3  .Site.Taxonomies.tags.animaciones }}
       <li class="home-post-item">
         <a class="home-post-link" href="{{.Permalink}}">
             {{ if .Params.img }}
-              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
             {{ else }}
-              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
             {{ end }}
 
             <div class="home-post-body">
@@ -90,13 +91,13 @@
     </h2>
     <ul class="home-post">
 
-      {{range first 3 .Site.RegularPages}}
+        {{ range first 3  .Site.Taxonomies.tags.ilustraciones }}
       <li class="home-post-item">
         <a class="home-post-link" href="{{.Permalink}}">
             {{ if .Params.img }}
-              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
             {{ else }}
-              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
             {{ end }}
 
             <div class="home-post-body">
@@ -111,19 +112,19 @@
     <h2  class="home-title-section">
         <a>
             <span class="pad">#</span>
-            Animaciones
+            Primeros pasos
             <span class="smaller">(ver más)</span>
         </a>
     </h2>
     <ul class="home-post">
 
-      {{range first 3 .Site.RegularPages}}
+      {{ range first 3  .Site.Taxonomies.tags.basic }}
       <li class="home-post-item">
         <a class="home-post-link" href="{{.Permalink}}">
             {{ if .Params.img }}
-              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
             {{ else }}
-              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
             {{ end }}
 
             <div class="home-post-body">
@@ -141,12 +142,18 @@
               tags
           </a>
       </h2>
-      <ul id="all-tags">
+      <ul class="home-tag-list">
+
           {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
               {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-                  <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
+                {{ $numRandom := index (seq 0 1 | shuffle ) 1  }}
+                {{ $typeList := slice "small" "big" }}
+                   <li class="home-tag-item {{ index $typeList $numRandom }}">
+                    <a class="home-tag-link" href="{{ .Permalink }}">{{ $name }} ({{$taxonomy.Count}})</a>
+                  </li>
               {{ end }}
           {{ end }}
       </ul>
     </div>
 {{ end }}
+

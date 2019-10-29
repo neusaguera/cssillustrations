@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Nivel 1. Mickey & Minnie en Css
-img: imageHtml.png
-tags: ["tsum", "illustration", "css"]
+img: /mickey_minnie/mickeybody.png
+tags: ["Tsum", "Ilustraciones", "CSS"]
 date: "2019-08-28"
 ---
 ![Pasos de Minnie](/mickey_minnie/stepsMinnie.png)

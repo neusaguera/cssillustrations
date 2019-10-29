@@ -12,6 +12,7 @@
 .home-post-item{
     list-style: none;
     margin-bottom: 36px;
+    flex: 1;
 }
 .home-post-image{
     width: 100%;
@@ -59,10 +60,36 @@
     }
 }
 
+.home-tag-list {
+    list-style: none;
+    padding: 0 12px 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.home-tag-item{
+    text-transform: uppercase;
+    line-height: 28px;
+    margin: 6px 12px 6px 0;
+    text-align: center;
+    padding: 0 6px;
+    background: $c_snowblue;
+    font-size: 14px;
+    font-weight: 900;
+    &.big {
+        background: $c_deepblue;
+        a{
+            color: $c_snowblue;
+        }
+    }
+}
+
 @media only screen and (min-width: 1024px) {
     .home-post {
         flex-direction: row;
         margin-bottom: 24px;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .home-title-section {
         padding-left: 0;
@@ -76,6 +103,18 @@
             -moz-transform: scale(0.95);
             -ms-transform: scale(0.95);
             -o-transform: scale(0.95);
+        }
+    }
+    .home-post-item{
+        max-width: 30%;
+    }
+    .home-tag-item{
+        &:hover{
+           transform: scale(0.9);
+           -webkit-transform: scale(0.9);
+           -moz-transform: scale(0.9);
+           -ms-transform: scale(0.9);
+           -o-transform: scale(0.9);
         }
     }
 }

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: HelloWorld
-img: imageHtml.png
-tags: ["tag_a", "tag_b"]
+img: helloworld.png
+tags: ["HTML", "CSS", "Basic", "Animaciones"]
 date: "2016-03-08"
 ---
 

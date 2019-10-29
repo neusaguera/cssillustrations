@@ -8,4 +8,46 @@
 .about-content{
     padding: 12px;
     font-size: 18px;
+    p{
+        margin-bottom: 12px
+    }
+}
+.about-animation {
+    margin-bottom: 24px;
+}
+.about-contact-title {
+    color: $c_rustyred;
+}
+
+.about-social-item {
+    list-style: none;
+    font-size: 18px;
+    line-height: 28px;
+    i{
+        padding-right: 6px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .about-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 50%
+    }
+    .about-header {
+        align-self: center;
+    }
+    .about-content {
+        padding: 12px 0;
+        font-size: 20px;
+        width: 100%;
+    }
+    .about-animation {
+        margin: 24px;
+    }
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }

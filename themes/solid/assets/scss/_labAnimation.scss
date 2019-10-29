@@ -336,10 +336,10 @@
         &.animation{
             background: $c_snowblue;
             margin-bottom: 48px;
-            padding: 24px;
         }
     }
     .lab-animation {
+        margin: 12px;
         transform: scale(0.7);
         -moz-transform: scale(0.7);
         -ms-transform: scale(0.7);
