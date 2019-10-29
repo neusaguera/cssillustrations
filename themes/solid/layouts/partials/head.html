@@ -6,6 +6,9 @@
     content="{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ range .Site.Author }}{{ . }} {{ end }}{{ end }}">
 <meta name="keywords" content="{{ .Site.Params.keywords }}" />
 <meta name="robots" content="noodp" />
+<link rel="icon"
+      type="image/png"
+      href="{{ .Site.BaseURL }}/icoCI.png">
 <link rel="canonical" href="{{ .Permalink }}" />
 
 <title> CSS ILLUSTRATIONS </title>
