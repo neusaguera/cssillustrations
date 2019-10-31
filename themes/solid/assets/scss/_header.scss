@@ -31,6 +31,7 @@
     .bars-menu {
         padding-right: 12px;
         border: 0;
+        cursor: pointer;
     }
 }
 
@@ -58,7 +59,9 @@
     text-transform: uppercase;
     font-family: $oswald;
 }
-
+.menu-close{
+    cursor: pointer;
+}
 
 
 .menu{

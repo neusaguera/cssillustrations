@@ -20,7 +20,7 @@
 
                         <div class="list-post-body">
                             <h3 class="list-post-title">{{ .Title | truncate 25 }}</h3>
-                            <p class="list-post-resume">{{ .Summary | plainify | truncate 100 }}</p>
+                            <p class="list-post-resume">{{ .Summary | plainify | truncate 150 }}</p>
                             {{- with .Params.tags }}
                             <div class="list-post-tags">
                                 <i class="fas fa-tags"></i>
