@@ -12,7 +12,7 @@ theme = "solid"
     weight      = -110
   [[menu.main]]
     identifier = "about"
-    name       = "About"
+    name       = "Sobre mi"
     url        = "/about"
     weight    = -100
 [[menu.main]]

@@ -10,21 +10,28 @@
 
                 <ul class="list-post">
                     {{ range .Data.Pages }}
-                        <li class="list-post-item">
-                            <a class="list-post-link" href="{{.Permalink}}">
-                                {{ if .Params.img }}
-                                <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
-                                {{ else }}
-                                <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
-                                {{ end }}
+                    <li class="list-post-item">
+                        <a class="list-post-link" href="{{.Permalink}}">
+                            {{ if .Params.img }}
+                            <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}{{ .Params.img }}" alt="{{ .Title }}">
+                            {{ else }}
+                            <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+                            {{ end }}
 
-                                <div class="list-post-body">
-                                    <h3 class="list-post-title">{{ .Title | truncate 25 }}</h3>
-                                    <p class="list-post-resume">
-                                        {{ .Summary | plainify | truncate 100 }}</p>
-                                    </div>
-                            </a>
-                        </li>
+                            <div class="list-post-body">
+                                <h3 class="list-post-title">{{ .Title | truncate 25 }}</h3>
+                                <p class="list-post-resume">{{ .Summary | plainify | truncate 150 }}</p>
+                                {{- with .Params.tags }}
+                                <div class="list-post-tags">
+                                    <i class="fas fa-tags"></i>
+                                    {{- range . -}}
+                                        <span class="tag">{{.}}</span>
+                                    {{- end }}
+                                </div>
+                                {{- end }}
+                            </div>
+                        </a>
+                    </li>
                     {{ end }}
                 </ul>
     </div>

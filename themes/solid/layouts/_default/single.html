@@ -11,12 +11,54 @@
         </div>
 
         <article>
+            <div class="post-header">
+                <div class="container">
 
-            {{ with .Params.Cover }}
-                <img src="{{ . }}" class="post-cover" />
-            {{ end }}
+                    <h1 class="post-title">{{ .Title | markdownify }}</h1>
 
-            <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
+                    <div class="post-dates">
+                        {{ with .Params.Author }}
+                            <div class="post-dates-title author">
+                                <i class="fas fa-user"></i>
+                                <span class="post-date-text"> {{ . }}</span>
+
+                            </div>
+                        {{ end }}
+                        {{ with .Params.Date }}
+                            <div class="post-dates-title">
+                                    <i class="fas fa-pen-nib"></i>
+                                <span class="post-date-text"> {{ .Format "02-01-2006" }}</span>
+
+                            </div>
+                        {{ end }}
+                        {{ with .Params.Lastmod }}
+                            <div class="post-dates-title">
+                                <i class="fas fa-highlighter"></i>
+                                <span class="post-date-text"> {{ .Format "02-01-2006" }}</span>
+
+                            </div>
+                        {{ end }}
+                    </div>
+                    {{- with .Params.tags }}
+
+                      <ul class="post-tag-list">
+                            <i class="fas fa-tags"></i>
+                            {{- range . -}}
+                          <li class="post-tag-item">
+                              <a class="post-tag-link" href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{.}}</a></a>
+                          </li>
+                            {{- end }}
+                        </ul>
+
+                      {{- end }}
+                </div>
+            </div>
+
+            <div class="post-content">
+                <div class="container">
+                    {{ .Content }}
+                </div>
+            </div>
 
             {{- if .Params.toc }}
                 <hr />
@@ -26,23 +68,29 @@
                 </aside>
                 <hr />
             {{- end }}
-
-            <div class="post-content">
-                {{ .Content }}
-            </div>
         </article>
 
-        <hr />
+        <div class="container">
+            <nav class="nav-insection">
+
+                {{with .PrevInSection}}
+                    <a class="nav-insection-link prev" href="{{.Permalink}}">
+                            <i class="fas fa-long-arrow-alt-left"></i> Ver:  {{ .Name}}
+                    </a>
+                {{end}}
+
+                {{with .NextInSection}}
+                    <a class="nav-insection-link prev" href="{{.Permalink}}">
+                            {{ .Name}} Ver: <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                    {{end}}
+            </nav>
+        </div>
+
+
 
         <div class="post-info">
-  				{{- with .Params.tags }}
-  				<p>
-  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
-  					{{- range . -}}
-  					     <span class="tag"><a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{.}}</a></span>
-  					{{- end }}
-  				</p>
-  				{{- end }}
+
 
                 {{- if .GitInfo }}
   				    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a> @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}</p>

@@ -3,11 +3,14 @@
 }
 .about-subtitle{
     color: $c_rustyred;
-    padding: 0 12px 36px 12px;
+    padding-bottom: 36px;
+}
+.about-wrap{
+    padding: 0 24px;
 }
 .about-content{
-    padding: 12px;
     font-size: 18px;
+    margin-bottom: 24px;
     p{
         margin-bottom: 12px
     }
@@ -18,7 +21,9 @@
 .about-contact-title {
     color: $c_rustyred;
 }
-
+.about-social-list{
+    margin-bottom: 36px;
+}
 .about-social-item {
     list-style: none;
     font-size: 18px;
