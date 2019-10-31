@@ -1,36 +1,39 @@
 
 {{ define "main" }}
 
+
+
 <div id="content" class="container">
-        <h1 class="list-title"></h1>
+    <h1 class="list-title"> Todas las publicaciones</h1>
 
+    <div class="list-post-content" id="listPostContent">
 
+        <ul class="list-post">
+            {{range (where .Site.RegularPages.ByDate "Params.layout" "post")}}
+                <li class="list-post-item">
+                    <a class="list-post-link" href="{{.Permalink}}">
+                        {{ if .Params.img }}
+                        <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}{{ .Params.img }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+                        {{ end }}
 
-    <div class="page-tags" id="tags">
-
-            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                <h2 class="list-subtitle" id="{{ $name | urlize }}">{{ $name }}</h2>
-                <ul class="list-post">
-                    {{ range $taxonomy }}
-                        <li class="list-post-item">
-                            <a class="list-post-link" href="{{.Permalink}}">
-                                {{ if .Params.img }}
-                                <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
-                                {{ else }}
-                                <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
-                                {{ end }}
-
-                                <div class="list-post-body">
-                                    <h3 class="list-post-title">{{ .Title | truncate 25 }}</h3>
-                                    <p class="list-post-resume">
-                                        {{ .Summary | plainify | truncate 100 }}</p>
-                                    </div>
-                            </a>
-                        </li>
-                    {{ end }}
-                </ul>
+                        <div class="list-post-body">
+                            <h3 class="list-post-title">{{ .Title | truncate 25 }}</h3>
+                            <p class="list-post-resume">{{ .Summary | plainify | truncate 100 }}</p>
+                            {{- with .Params.tags }}
+                            <div class="list-post-tags">
+                                <i class="fas fa-tags"></i>
+                                {{- range . -}}
+                                    <span class="tag">{{.}}</span>
+                                {{- end }}
+                            </div>
+                            {{- end }}
+                        </div>
+                    </a>
+                </li>
             {{ end }}
-
+        </ul>
     </div>
 </div>
 

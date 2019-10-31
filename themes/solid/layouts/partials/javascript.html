@@ -1,5 +1,8 @@
 {{ $menu := resources.Get "js/menu.js" }}
-{{ $secureJS := slice $menu | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+{{ $allPosts := resources.Get "js/allposts.js" }}
+
+{{ $js := slice $menu $allPosts | resources.Concat "js/bundle.js" | resources.Minify }}
+
+<script type="text/javascript" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
 <script id="dsq-count-scr" src="//cssillustrations.disqus.com/count.js" async></script>

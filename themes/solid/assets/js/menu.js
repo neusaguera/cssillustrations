@@ -1,9 +1,9 @@
 function toggleMenu() {
     var openMenu = document.getElementById("menu");
     if (hasClass(openMenu, 'close')) {
-        openMenu.classList = "menu-list"
+        openMenu.classList = "menu"
     } else {
-        openMenu.classList = "menu-list close"
+        openMenu.classList = "menu close"
     }
 }
 

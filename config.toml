@@ -6,13 +6,20 @@ theme = "solid"
 
 [menu]
   [[menu.main]]
+    identifier = "posts"
+    name       = "Publicaciones"
+    url        = "posts/"
+    weight      = -110
+  [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "/about"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+    weight    = -100
+[[menu.main]]
+    identifier = "tsum"
+    name       = "Curso Tsum"
+    url        = "/tags/tsum"
+    weight    = -120
 
 [params]
   defaultImage = "dino.png"

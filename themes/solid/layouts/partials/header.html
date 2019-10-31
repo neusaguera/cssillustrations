@@ -1,23 +1,14 @@
 <header class="header">
     <div class="container">
-        <div class="mobile-menu">
-            <div class="mobile-menu-wrap">
-                <div class="logo">
-                    <a class="logo-text" href="#">
-                        CSS ILLUSTRATIONS
-                    </a>
-                </div>
-                <button class="menu-link" onclick="toggleMenu()"> <i class="fas fa-bars"></i></button>
+        <div class="header-content">
+            <div class="logo">
+                <a class="logo-text" href="#">
+                    CSS ILLUSTRATIONS
+                </a>
             </div>
-               {{ partial "menu.html" . }}
-        </div>
-        <div class="desktop-menu">
-                <div class="logo">
-                        <a class="logo-text" href="/">
-                            CSS ILLUSTRATIONS
-                        </a>
-                    </div>
-                    {{ partial "menu.html" . }}
+            <button class="bars-menu" onclick="toggleMenu()"> <i class="fas fa-bars"></i></button>
+
+            {{ partial "menu.html" . }}
         </div>
     </div>
 </header>

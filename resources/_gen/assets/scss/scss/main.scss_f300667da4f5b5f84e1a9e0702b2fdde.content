@@ -10,7 +10,8 @@
   color: #44647A;
   text-decoration: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: none; }
 
 .content {
   margin-top: 60px; }
@@ -113,29 +114,39 @@ h3 {
   font-family: "Oswald", sans-serif;
   letter-spacing: -1px; }
 
-.desktop-menu {
-  display: none; }
-
-.mobile-menu.close {
-  height: 0; }
-
-.mobile-menu .fas {
-  line-height: 50px;
-  font-size: 18px;
-  color: #D52941; }
-
-.mobile-menu-wrap {
+.header-content {
   display: flex; }
-  .mobile-menu-wrap .title {
-    margin: 0;
-    line-height: 75px;
-    flex: 1 80%; }
-  .mobile-menu-wrap .menu-link {
-    flex: 1;
+  .header-content .fas {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+  .header-content .bars-menu {
+    padding-right: 12px;
     border: 0; }
 
-.menu-list {
-  display: inline-flex;
+.menu-content {
+  padding: 24px; }
+
+.menu-title {
+  font-size: 22px;
+  color: #D52941; }
+  .menu-title .menu-title-icon {
+    color: #D52941; }
+
+.menu-tags {
+  padding-left: 24px;
+  list-style: none;
+  margin-bottom: 36px; }
+
+.menu-tags-item {
+  margin-bottom: 6px; }
+
+.menu-tags-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+.menu {
   position: absolute;
   background: #fff;
   width: 100%;
@@ -146,20 +157,18 @@ h3 {
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   top: 0; }
-  .menu-list .menu-item {
+  .menu .menu-item {
     list-style: none;
     margin-bottom: 12px; }
-  .menu-list .menu-link {
-    font-size: 24px;
+  .menu .menu-link {
+    font-size: 20px;
     line-height: 32px;
+    color: #D52941;
     font-family: "Oswald", sans-serif; }
-  .menu-list button {
+  .menu button {
     height: 50px;
     padding: 0 24px; }
-  .menu-list ul {
-    margin: 75px 0 0 0;
-    padding: 0; }
-  .menu-list.close {
+  .menu.close {
     right: -1000px;
     width: 0; }
 
@@ -170,38 +179,19 @@ h3 {
     height: 50px; }
   .logo-text {
     font-size: 26px; }
-  .menu_link {
-    display: none; }
-  .desktop-menu {
-    display: flex; }
-  .mobile-menu {
-    display: none; }
-  .menu-close {
-    display: none; }
-  .menu-list {
-    position: relative;
-    background: none;
-    height: auto;
-    transition: none;
-    flex: 75%;
-    height: 50px; }
-    .menu-list.close {
-      right: inherit;
-      width: inherit; }
-    .menu-list ul {
-      margin: 0;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: flex-end; }
-    .menu-list .menu-item {
-      list-style: none;
-      margin: 0 0 0 12px; }
-    .menu-list .menu-link {
-      font-size: 20px;
-      line-height: 50px;
-      font-weight: 300; } }
+  .header-content .bars-menu {
+    padding-right: 0; }
+  .menu {
+    width: 40%;
+    background: #44647A; }
+    .menu .fas {
+      color: #fff; }
+    .menu .menu-title, .menu .menu-tags-link, .menu .menu-link {
+      color: #fff; }
+    .menu .menu-title {
+      color: #EBF2FF; }
+      .menu .menu-title .menu-title-icon {
+        color: #EBF2FF; } }
 
 .footer {
   background: #44647A;
@@ -656,10 +646,6 @@ h3 {
   background: #EBF2FF;
   font-size: 14px;
   font-weight: 900; }
-  .home-tag-item.big {
-    background: #44647A; }
-    .home-tag-item.big a {
-      color: #EBF2FF; }
 
 @media only screen and (min-width: 1024px) {
   .home-post {
@@ -786,12 +772,14 @@ h3 {
 .list-post-item {
   width: 100%;
   list-style: none;
-  float: 1; }
+  float: 1;
+  border-bottom: 0.5px solid #44647A;
+  margin-bottom: 12px; }
 
 .list-post-link {
   display: flex;
   flex-direction: row;
-  padding: 12px;
+  padding: 12px 12px 12px 0;
   flex-wrap: wrap; }
 
 .list-post-image {
@@ -806,24 +794,6 @@ h3 {
 .list-post-resume {
   font-size: 14px;
   line-height: 16px; }
-
-@media only screen and (min-width: 1024px) {
-  .list-post {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-  .list-post-item {
-    flex: 1;
-    min-width: 50%;
-    max-width: 50%;
-    transition: all .2s ease-in-out; }
-    .list-post-item:hover {
-      box-shadow: 1px 1px 11px #44647A;
-      transform: scale(0.95);
-      -webkit-transform: scale(0.95);
-      -moz-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-      -o-transform: scale(0.95); } }
 
 .avatar {
   width: 180px;

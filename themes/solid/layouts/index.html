@@ -146,9 +146,7 @@
 
           {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
               {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-                {{ $numRandom := index (seq 0 1 | shuffle ) 1  }}
-                {{ $typeList := slice "small" "big" }}
-                   <li class="home-tag-item {{ index $typeList $numRandom }}">
+                   <li class="home-tag-item">
                     <a class="home-tag-link" href="{{ .Permalink }}">{{ $name }} ({{$taxonomy.Count}})</a>
                   </li>
               {{ end }}

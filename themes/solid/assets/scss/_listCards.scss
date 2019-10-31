@@ -16,11 +16,13 @@
     width: 100%;
     list-style: none;
     float: 1;
+    border-bottom: 0.5px solid $c_deepblue;
+    margin-bottom: 12px;
 }
 .list-post-link {
     display: flex;
     flex-direction: row;
-    padding: 12px;
+    padding: 12px 12px 12px 0;
     flex-wrap: wrap;
 }
 .list-post-image {
@@ -35,26 +37,4 @@
 .list-post-resume{
     font-size: 14px;
     line-height: 16px;
-}
-
-@media only screen and (min-width: 1024px) {
-    .list-post{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .list-post-item {
-        flex: 1;
-        min-width: 50%;
-        max-width: 50%;
-        transition: all .2s ease-in-out;
-        &:hover{
-            box-shadow: 1px 1px 11px $c_deepblue;
-            transform: scale(0.95);
-            -webkit-transform: scale(0.95);
-            -moz-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-            -o-transform: scale(0.95);
-        }
-    }
 }
