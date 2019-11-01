@@ -72,19 +72,22 @@
 
         <div class="container">
             <nav class="nav-insection">
+                {{ $pages := where site.Pages "Params.categories" "intersect" .Params.categories }}
 
-                {{with .PrevInSection}}
+                {{ with $pages.Prev . }}
                     <a class="nav-insection-link prev" href="{{.Permalink}}">
-                            <i class="fas fa-long-arrow-alt-left"></i> Ver:  {{ .Name}}
+                            <i class="fas fa-long-arrow-alt-left"></i> {{ .Name}} Ver:
                     </a>
-                {{end}}
+                {{ end }}
 
-                {{with .NextInSection}}
-                    <a class="nav-insection-link prev" href="{{.Permalink}}">
-                            {{ .Name}} Ver: <i class="fas fa-long-arrow-alt-right"></i>
+                {{ with $pages.Next . }}
+                    <a class="nav-insection-link next" href="{{.Permalink}}">
+                         Ver:  {{ .Name}} <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
-                    {{end}}
+                {{ end }}
+
             </nav>
+
         </div>
 
 

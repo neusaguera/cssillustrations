@@ -5,6 +5,7 @@ img: daisy_donald/facedaisy.png
 title: "Nivel 2. Daisy & Donald"
 date: "2019-09-02"
 weight: 100
+categories: ["Tsum"]
 ---
 
 ![Pasos de Minnie](/stepsMinnie.png)

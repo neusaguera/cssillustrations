@@ -5,6 +5,7 @@ img: helloworld.png
 tags: ["HTML", "CSS", "Basic", "Animaciones"]
 date: "2016-03-08"
 weight: 200
+categories: ["Basic"]
 ---
 
 ¿Quieres aprender las primeras nociones de HTML & CSS? Sigue leyendo e intentaré ayudarte.

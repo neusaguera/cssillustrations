@@ -7,7 +7,9 @@ date: "2019-08-28"
 lastmod: "2019-10-31"
 author: "Neus Agüera"
 weight: 100
+categories: ["Tsum"]
 ---
+
 ![Pasos de Minnie](/mickey_minnie/stepsMinnie.png)
 
 En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillos pasos. No importa tu nivel de CSS, si estás empezando encontrarás explicaciones de las propiedades durante todo el curso, ¿Qué veremos con Mickey y Minnie?
