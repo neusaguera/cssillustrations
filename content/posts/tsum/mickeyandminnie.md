@@ -2,7 +2,7 @@
 layout: post
 title: Nivel 1. Mickey & Minnie en Css
 img: /mickey_minnie/mickeybody.png
-tags: ["Tsum", "Ilustraciones", "CSS"]
+tags: ["Tsum", "Ilustraciones"]
 date: "2019-08-28"
 lastmod: "2019-10-31"
 author: "Neus Agüera"

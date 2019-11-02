@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic on CSS ILLUSTRATIONS</title>
+    <link>https://www.cssillustrations.com/categories/basic/</link>
+    <description>Recent content in Basic on CSS ILLUSTRATIONS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.cssillustrations.com/categories/basic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HelloWorld</title>
+      <link>https://www.cssillustrations.com/posts/helloworld/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cssillustrations.com/posts/helloworld/</guid>
+      <description>¿Quieres aprender las primeras nociones de HTML &amp;amp; CSS? Sigue leyendo e intentaré ayudarte. Primero empezaremos con una breve descripción de ambos conceptos.
+Definición de HTML según wikipedia  HTML, siglas en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web.
+Leer más en wikipedia
+ Definición de CSS según wikipedia  CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</description>
+    </item>
+    
+  </channel>
+</rss>

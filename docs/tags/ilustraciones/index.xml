@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ilustraciones on CSS ILLUSTRATIONS</title>
+    <link>https://www.cssillustrations.com/tags/ilustraciones/</link>
+    <description>Recent content in Ilustraciones on CSS ILLUSTRATIONS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.cssillustrations.com/tags/ilustraciones/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nivel 1. Mickey &amp; Minnie en Css</title>
+      <link>https://www.cssillustrations.com/posts/tsum/mickeyandminnie/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cssillustrations.com/posts/tsum/mickeyandminnie/</guid>
+      <description>En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillos pasos. No importa tu nivel de CSS, si estás empezando encontrarás explicaciones de las propiedades durante todo el curso, ¿Qué veremos con Mickey y Minnie?
+ Centrar elementos en posición absoluta. Comportamiento de dos clases en un mismo elemento ¿Qué clase prevalece? Clases heredadas Rotación de elementos sobre su eje Z-orden (z-index)  Aunque parezcan muchas cosas no te preocupes y vamos a ponernos con el código.</description>
+    </item>
+    
+  </channel>
+</rss>

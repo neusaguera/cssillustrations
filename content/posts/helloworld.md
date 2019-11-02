@@ -2,10 +2,11 @@
 layout: post
 title: HelloWorld
 img: helloworld.png
-tags: ["HTML", "CSS", "Basic", "Animaciones"]
+tags: ["Basic"]
 date: "2016-03-08"
 weight: 200
 categories: ["Basic"]
+draft: true
 ---
 
 ¿Quieres aprender las primeras nociones de HTML & CSS? Sigue leyendo e intentaré ayudarte.

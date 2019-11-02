@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on CSS ILLUSTRATIONS</title>
+    <link>https://www.cssillustrations.com/posts/</link>
+    <description>Recent content in Posts on CSS ILLUSTRATIONS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.cssillustrations.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nivel 2. Daisy &amp; Donald</title>
+      <link>https://www.cssillustrations.com/posts/tsum/daisyanddonald/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cssillustrations.com/posts/tsum/daisyanddonald/</guid>
+      <description>¿Qué te pareció el primer nivel con Mickey y Minnie? Fácil, ¿verdad?. En este segundo nivel crearemos los Tsums de Daisy y Donald.
+Paso 1: Las formas básicas. Esta vez empezaremos con Daisy, como en el primer nivel antes de empezar a crear nuestro HTML, nos fijaremos en el tsum de Daisy y dibujaremos su forma básica, ya sea en papel, photoshop o en tu mente, ¿Lo tienes?
+Ahora que tenemos el dibujo creamos dos ficheros daisy-html.</description>
+    </item>
+    
+    <item>
+      <title>Nivel 1. Mickey &amp; Minnie en Css</title>
+      <link>https://www.cssillustrations.com/posts/tsum/mickeyandminnie/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cssillustrations.com/posts/tsum/mickeyandminnie/</guid>
+      <description>En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillos pasos. No importa tu nivel de CSS, si estás empezando encontrarás explicaciones de las propiedades durante todo el curso, ¿Qué veremos con Mickey y Minnie?
+ Centrar elementos en posición absoluta. Comportamiento de dos clases en un mismo elemento ¿Qué clase prevalece? Clases heredadas Rotación de elementos sobre su eje Z-orden (z-index)  Aunque parezcan muchas cosas no te preocupes y vamos a ponernos con el código.</description>
+    </item>
+    
+    <item>
+      <title>Tsums en Css. Introducción</title>
+      <link>https://www.cssillustrations.com/posts/tsum/introductiontsums/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cssillustrations.com/posts/tsum/introductiontsums/</guid>
+      <description>Dibujar personajes, vistas y crear animaciones con HTML &amp;amp; CSS es uno de mis hobbies. Me gusta crear estos dibujos desde sus formas geométricas, sin utilizar imágenes, svg o JavaScript. Con paciencia y la magia del CSS podemos hacer cosas maravillosas. Si eres un amante del CSS o quieres aprender más sobre este lenguaje ¡Quédate!
+Para este primer curso voy a utilizar los personajes del juego TsumTsum de Disney, es decir, los cabezones.</description>
+    </item>
+    
+    <item>
+      <title>HelloWorld</title>
+      <link>https://www.cssillustrations.com/posts/helloworld/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cssillustrations.com/posts/helloworld/</guid>
+      <description>¿Quieres aprender las primeras nociones de HTML &amp;amp; CSS? Sigue leyendo e intentaré ayudarte. Primero empezaremos con una breve descripción de ambos conceptos.
+Definición de HTML según wikipedia  HTML, siglas en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web.
+Leer más en wikipedia
+ Definición de CSS según wikipedia  CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</description>
+    </item>
+    
+  </channel>
+</rss>

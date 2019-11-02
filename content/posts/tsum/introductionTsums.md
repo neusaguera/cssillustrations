@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tsums en Css. Introducción
-tags: ["Tsum", "Illustraciones", "CSS"]
+tags: ["Tsum", "Ilustraciones"]
 img: /introductionTsums.png
 date: "2019-08-27"
 weight: 100
