@@ -1,6 +1,8 @@
-baseURL = "http://www.cssillustrations.com/"
+baseURL = "https://www.cssillustrations.com/"
 languageCode = "en-us"
 title = "CSS ILLUSTRATIONS"
+defaultContentLanguage = "es"
+languageName = "es"
 
 theme = "solid"
 
