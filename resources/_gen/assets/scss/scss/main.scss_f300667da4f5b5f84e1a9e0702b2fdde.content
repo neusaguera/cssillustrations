@@ -550,13 +550,13 @@ h3 {
     background: #EBF2FF;
     margin-bottom: 48px; }
   .lab-animation {
-    margin: 12px;
-    transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    flex: 1; }
+    transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform-origin: top;
+    margin: 24px auto calc( (-500px * (1 - 0.5)) + 24px); }
   .lab-flask-body {
     background: #fff; }
   .lab-flask-neck {
