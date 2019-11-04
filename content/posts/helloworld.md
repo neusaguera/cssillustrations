@@ -6,7 +6,6 @@ tags: ["Basic"]
 date: "2016-03-08"
 weight: 200
 categories: ["Basic"]
-draft: true
 ---
 
 ¿Quieres aprender las primeras nociones de HTML & CSS? Sigue leyendo e intentaré ayudarte.
@@ -34,7 +33,7 @@ Si vamos a lo más rudimentario podemos decir que solo necesitas un bloc de nota
 
 Crea un archivo nuevo y guardalo como helloworld.html. Copia el siguiente código, guarda y abre el fichero desde tu navegador y WoW ya tenemos nuestro primer Hello World!
 
-```
+{{< highlight HTML>}}
 <!DOCTYPE html>
 <html>
     <head>
@@ -44,7 +43,7 @@ Crea un archivo nuevo y guardalo como helloworld.html. Copia el siguiente códig
         Hello world!
     </body>
 </html>
-```
+{{< /highlight >}}
 
 >#### Notas
 > 1. <strong>&lt;!Doctype html&gt;</strong> Estará siempre en la primera linea, sirve para que el navegador conozca que tipo de documento está recibiendo.
@@ -66,7 +65,7 @@ El css inline es aquel que se añade en el atributo style del elemento HTML. Est
 1. Mezclas HTML con CSS y eso complica el seguimiento del código.
 2. No es aprovechable, esos estilos solo se aplican al elemento, así que si queremos varios elementos con el mismo estilo deberíamos añadir el atributo style en cada tag.
 
-```
+{{< highlight HTML >}}
 <!DOCTYPE html>
 <html>
     <head>
@@ -76,13 +75,14 @@ El css inline es aquel que se añade en el atributo style del elemento HTML. Est
         Hello world!
     </body>
 </html>
-```
+{{< /highlight >}}
+
 >En el tag body he añadido la palabra style y entre comillas le he cambiado el color de fondo a negro y el color de la fuente a blanco.
 
 #### CSS Internal
 El CSS internal es aquel que añadimos en el Head dentro del tag Style. ¿Recomendable? No! Como en el caso anterior estamos mezclando el codigo HTML & CSS que siempre dificulta la lectura del código. Ten en cuenta que el CSS tiende a a crecer mucho y nos quedaría un archivo infinito.
 
-```
+{{< highlight HTML >}}
 <!DOCTYPE html>
 <html>
     <head>
@@ -98,13 +98,13 @@ El CSS internal es aquel que añadimos en el Head dentro del tag Style. ¿Recome
         Hello world!
     </body>
 </html>
-```
+{{< /highlight >}}
 
 #### CSS External
 
 Es la opción más recomendable, fácil de ordenar, clara y sin mezclar ambos mundos. Consiste en tener uno o varios ficheros .css donde tendremos todo el código, el qual referenciaremos en el head.
 
-```
+{{< highlight HTML >}}
 //Fichero helloworld.html
 <!DOCTYPE html>
 <html>
@@ -116,11 +116,11 @@ Es la opción más recomendable, fácil de ordenar, clara y sin mezclar ambos mu
         Hello world!
     </body>
 </html>
-```
-```
+{{< /highlight >}}
+{{< highlight CSS >}}
 //Fichero style.css
 body{
     background: black;
     color: white;
 }
-```
+{{< /highlight >}}

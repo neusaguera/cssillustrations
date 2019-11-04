@@ -83,7 +83,7 @@
         flex-direction: row;
         margin-bottom: 24px;
         flex-wrap: wrap;
-        justify-content: space-between;
+
     }
     .home-title-section {
         padding-left: 0;
@@ -101,6 +101,7 @@
     }
     .home-post-item{
         max-width: 30%;
+        margin-right: 32px;
     }
     .home-tag-item{
         &:hover{

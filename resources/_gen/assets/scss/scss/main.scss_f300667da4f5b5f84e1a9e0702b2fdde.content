@@ -11,7 +11,8 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
-  outline: none; }
+  outline: none;
+  background: none; }
 
 .content {
   margin-top: 60px;
@@ -362,7 +363,7 @@ h3 {
 
 .lab-bubble {
   position: absolute;
-  left: 70px;
+  left: 80px;
   bottom: 160px;
   height: 40px;
   width: 40px;
@@ -380,19 +381,19 @@ h3 {
   .lab-bubble.medium {
     height: 30px;
     width: 30px;
-    left: 75px;
+    left: 85px;
     bottom: 140px;
     animation-delay: 7s; }
   .lab-bubble.small {
     height: 20px;
     width: 20px;
-    left: 85px;
+    left: 95px;
     bottom: 140px;
     animation-delay: 5s; }
   .lab-bubble.smaller {
     height: 15px;
     width: 15px;
-    left: 70px;
+    left: 80px;
     bottom: 150px;
     animation-delay: 6s; }
   .lab-bubble:before {
@@ -664,8 +665,7 @@ h3 {
   .home-post {
     flex-direction: row;
     margin-bottom: 24px;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    flex-wrap: wrap; }
   .home-title-section {
     padding-left: 0; }
   .home-post-link {
@@ -678,7 +678,8 @@ h3 {
       -ms-transform: scale(0.95);
       -o-transform: scale(0.95); }
   .home-post-item {
-    max-width: 30%; }
+    max-width: 30%;
+    margin-right: 32px; }
   .home-tag-item:hover {
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
@@ -741,7 +742,7 @@ h3 {
     .post .post-tag-list i, .post .post-tag-list a {
       color: #fff;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 14px;
       padding-right: 6px; }
   .post .post-tag-item {
     background: none; }
@@ -783,6 +784,26 @@ h3 {
 
 .post-content {
   padding: 0 12px; }
+
+.nav-insection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 36px; }
+  .nav-insection i {
+    color: #D52941; }
+  .nav-insection .nav-insection-link {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", sans-serif;
+    transition: all .2s ease-in-out; }
+    .nav-insection .nav-insection-link:hover {
+      text-decoration: none;
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -o-transform: scale(0.9); }
 
 @media only screen and (min-width: 1024px) {
   .post {
@@ -848,16 +869,8 @@ h3 {
       .post-dates .post-dates-title .post-date-text {
         color: #fff;
         font-family: "Oswald", sans-serif; }
-  .nav-insection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 36px; }
-    .nav-insection .nav-insection-link {
-      color: #44647A;
-      font-size: 18px;
-      line-height: 24px;
-      font-family: "Oswald", sans-serif; } }
+  .nav-insection .nav-insection-link {
+    font-size: 22px; } }
 
 .list-title {
   padding-left: 12px;

@@ -31,9 +31,9 @@ Antes de empezar con el HTML, estudio la imagen que quiero crear y la desgloso e
 
 ![formas básicas Mickey](/mickey_minnie/basicmickey.png)
 
-Una vez tenemos el dibujo, crearemos dos ficheros  mickey.html   y  mickey.css
+Una vez tenemos el dibujo, crearemos dos ficheros <b> mickey.html </b>  y <b> mickey.css </b>
 
-Nos han salido 5 círculos (orejas, manos y cabeza). En el fichero  mickey.html    cada círculo lo convertiremos en un  div   y le añadiremos una clase con un nombre fácil de identificar. Hemos de pensar en nuestro yo del futuro o en el posible compañero que luego tenga que modificar el código. Por experiencia, mirar tu código y que no lo entiendas, da mucha rabia.
+Nos han salido 5 círculos (orejas, manos y cabeza). En el fichero   <b> mickey.html </b>    cada círculo lo convertiremos en un  div   y le añadiremos una clase con un nombre fácil de identificar. Hemos de pensar en nuestro yo del futuro o en el posible compañero que luego tenga que modificar el código. Por experiencia, mirar tu código y que no lo entiendas, da mucha rabia.
 
 Imagina que para este código utilizáramos las siguientes clases:
 
@@ -45,7 +45,7 @@ Imagina que para este código utilizáramos las siguientes clases:
 <div class="rdn-cinco"></div>
 {{< /highlight >}}
 
-Posiblemente hoy te acuerdes de cada  rdn   a que pertenece, pero guarda el código y ábrelo dentro de un mes, imposible acordarse a que parte del Tsum pertenecía cada  div  , ¿verdad?.
+Posiblemente hoy te acuerdes de cada <b> rdn  </b> a que pertenece, pero guarda el código y ábrelo dentro de un mes, imposible acordarse a que parte del Tsum pertenecía cada <b> div </b>, ¿verdad?.
 
 Con las pautas que te he dado te toca crear el HTML, abajo te dejo una posible solución.
 
@@ -61,7 +61,7 @@ Con las pautas que te he dado te toca crear el HTML, abajo te dejo una posible s
 {{< /highlight >}}
 
 >#### Notas
-> Como puedes ver he englobado los 5  divs   que comenté anteriormente dentro de otro llamado  character  . Esta clase la utilizaremos para todos los Tsums que crearemos en este curso.
+> Como puedes ver he englobado los 5  <b>divs</b> que comenté anteriormente dentro de otro llamado  <b>character</b>. Esta clase la utilizaremos para todos los Tsums que crearemos en este curso.
 
 Ahora vamos a por el CSS. La solución del CSS la he dividido en dos partes, en la primera nos centraremos en posicionar los elementos y en la segunda le daremos forma y color. Intenta hacer algo parecido a esto:
 
@@ -135,7 +135,7 @@ Como hemos comentado en esta primera parte solo vamos a centranos en el posicion
 }
 {{< /highlight  >}}
 >
-> Con la siguiente imagen voy a intentar explicarte el comportamiento de  transform:translateX()   .
+> Con la siguiente imagen voy a intentar explicarte el comportamiento de <b> transform:translateX() </b>.
 >
 ![transform translate behavior](/transformtranslate.png)
 >
@@ -152,7 +152,7 @@ Como hemos comentado en esta primera parte solo vamos a centranos en el posicion
 }
 {{< /highlight >}}
 >
-> Al atributo  left   le decimos que calcule el 50% menos la mitad del ancho del elemento. Esta solución es valida pero tenemos que tener en cuenta que si en un futuro hemos de cambiar el ancho también tendremos que acordarnos que cambiar el  left  . Son cosas que intento evitar siempre que puedo.
+> Al atributo <b> left</b> le decimos que calcule el 50% menos la mitad del ancho del elemento. Esta solución es valida pero tenemos que tener en cuenta que si en un futuro hemos de cambiar el ancho también tendremos que acordarnos que cambiar el <b> left</b>. Son cosas que intento evitar siempre que puedo.
 >
 
 Ya tenemos los cuadrados posicionados vamos a darles forma y color.
@@ -181,7 +181,7 @@ Ya tenemos los cuadrados posicionados vamos a darles forma y color.
 {{< /highlight >}}
 
 > #### ¿Qué clase prevalece? {#classBehavior}
-> Cuando el browser se encuentra con propiedades repetidas prevalece la que está debajo, siempre y cuando no haya ningún !important y el número de dependencias sea el mismo. Si una clase tiene más dependencias que la otra, es la que prevalece.  !important   prevalece por delante de todo, solo utilizar si es estrictamente necesario, en mi experiencia pocas veces podemos justificar su uso. Abusar de  !important   puede amargar nuestra existencia en un futuro...
+> Cuando el browser se encuentra con propiedades repetidas prevalece la que está debajo, siempre y cuando no haya ningún !important y el número de dependencias sea el mismo. Si una clase tiene más dependencias que la otra, es la que prevalece. <b>!important</b> prevalece por delante de todo, solo utilizar si es estrictamente necesario, en mi experiencia pocas veces podemos justificar su uso. Abusar de  !important   puede amargar nuestra existencia en un futuro...
 >
 >Ahora voy a ponerte unos ejemplos, haz pruebas y comenta en el post de que color será el background en cada uno de los códigos:
 
@@ -276,7 +276,7 @@ Vamos a darle forma y color.
 Recuerda que no hay una única solución, hazlo a tu manera y si tienes alguna duda escríbeme e intentaré ayudarte.
 
 > #### Comportamiento de dos clases en un mismo elemento {#twoClasses}
-> En la cara derecha he añadido la clase  right  . Este divs recibirá las características de la clase principal más las especificas para la parte derecha, como puede ser el cambio de posición. Es importante que la clase  right   en el CSS dependa de la clase principal:
+> En la cara derecha he añadido la clase <b> right</b>. Este divs recibirá las características de la clase principal más las especificas para la parte derecha, como puede ser el cambio de posición. Es importante que la clase <b> right </b> en el CSS dependa de la clase principal:
 >
 >
 {{< highlight css >}}
@@ -322,7 +322,7 @@ Nos falta los ojos y nariz para que se parezca al Tsum de Mickey.
 
 > #### Notas
 
-> Podemos hacer lo mismo sin utilizar más divs, con los atributos de CSS  :before :after  , pero eso lo veremos en los siguientes niveles del curso.
+> Podemos hacer lo mismo sin utilizar más divs, con los atributos de CSS <b>:before :after</b>, pero eso lo veremos en los siguientes niveles del curso.
 
 
 ### mickey.css
@@ -355,7 +355,7 @@ Nos falta los ojos y nariz para que se parezca al Tsum de Mickey.
 {{< /highlight >}}
 
 > #### Clases heredadas {#inheritClass}
-> Para especificar la posición del ojo derecho heredamos la clase  .right   del div padre. Necesitamos poner un espacio entre las clases para crear la jerarquía padre / hijo. El padre siempre debe estar en la izquierda.
+> Para especificar la posición del ojo derecho heredamos la clase <b> .right</b> del div padre. Necesitamos poner un espacio entre las clases para crear la jerarquía padre / hijo. El padre siempre debe estar en la izquierda.
 >
 {{< highlight css >}}
 //hereda del padre
@@ -371,7 +371,7 @@ Nos falta los ojos y nariz para que se parezca al Tsum de Mickey.
 
 ## Paso 4: de Mickey a Minnie
 
-WoW, Ya tenemos a Mickey, vamos a por Minnie! El siguiente paso es transformar a Mickey en Minnie. Para que tengas a los dos por separado, crea dos ficheros llamados  minnie.html   y  minnie.css  , copia el código que tienes de Mickey y cambia todas las palabras 'mickey' por 'minnie' (más adelante veremos como aprovechar código). ¿Tienes los ficheros creados? Vamos a añadirle pestañas y coloretes. ¿Lo intentas tú primero?
+WoW, Ya tenemos a Mickey, vamos a por Minnie! El siguiente paso es transformar a Mickey en Minnie. Para que tengas a los dos por separado, crea dos ficheros llamados <b> minnie.html</b>   y <b> minnie.css</b>, copia el código que tienes de Mickey y cambia todas las palabras 'mickey' por 'minnie' (más adelante veremos como aprovechar código). ¿Tienes los ficheros creados? Vamos a añadirle pestañas y coloretes. ¿Lo intentas tú primero?
 
 ![Minnie con pestañas y coloretes](/mickey_minnie/minnieblushers.png)
 
@@ -449,7 +449,7 @@ WoW, Ya tenemos a Mickey, vamos a por Minnie! El siguiente paso es transformar a
 {{< /highlight >}}
 
 > #### Rotación de elementos sobre su eje {#rotate}
-> En pasos anteriores usamos la propiedad  transform   para trasladar y centrar el div, ahora lo usaremos para rotar sobre su eje.
+> En pasos anteriores usamos la propiedad <b> transform </b>  para trasladar y centrar el div, ahora lo usaremos para rotar sobre su eje.
 >
 {{< highlight css >}}
 // Trasladar, mover, centrar.
@@ -564,7 +564,7 @@ Ya tenemos algo que se parece a Minnie, una Minnie muy cabreada porque no tiene 
 
 
 > #### Z-orden (z-index) {#zindex}
-> z-index indica el z-orden de un elemento y sus descendientes. Cuando varios elementos se superponen, z-index determina que elemento está delante o detrás. Su valor por defecto es auto, pero podemos definirlos con números enteros, el número mayor normalmente se superpone. En mi caso para seguir una regla y que me sea fácil acordarme del z-orden, los determino de la siguiente forma:
+> z-index indica el z-orden de un elemento y sus descendientes. Cuando varios elementos se superponen, z-index determina que elemento está delante o detrás. Su valor por defecto es auto, pero podemos definirlos con números enteros, el número mayor normalmente se superpone. En mi caso para seguir una regla y que me sea fácil acordarme del orden, los determino de la siguiente forma:
 >
 {{< highlight css >}}
 z-index: 1;
@@ -577,14 +577,12 @@ z-index: 10000;
 >
 
 > #### Nota
-> Recuerda que en este nivel no estamos usando  :before :after  , pero si quieres utilizarlo adelante, posiblemente el código te quede más limpio.
+> Recuerda que en este nivel no estamos usando <b> :before :after</b>, pero si quieres utilizarlo adelante, posiblemente el código te quede más limpio.
 >
-> ¿Te has fijado que he utilizado las clases  .two   y  .three  ? Recuerda utilizar palabras fáciles de identificar, esto no sería una buena práctica, ¿qué se te ocurre?
+> ¿Te has fijado que he utilizado las clases <b> .two</b> y  <b>.three</b>? Recuerda utilizar palabras fáciles de identificar, esto no sería una buena práctica, ¿Qué se te ocurre?
 
 ## Paso 6: Vamos a mejorar a Minnie
 Ahora sí, tu dibujo te recuerda a Minnie ¿verdad?. Siempre podemos mejorarla con degradados, bordes, etc... Esta es mi Minnie final, estoy segura de que puedes hacer algo mejor. Juega un rato con tu código y enséñame el resultado.
 
 
 ![last minnie](/mickey_minnie/lastminnie.png)
-
-En este enlace de github puedes ver el código final. Hasta aquí el primer Nivel del curso Tsum, recuerda que  puedes comentar o escribirme para cualquier duda o sugerencia. Nos leemos en el siguiente Nivel con Daisy & Donald.

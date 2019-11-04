@@ -2,32 +2,35 @@
   {{- partial "lab_animation.html" . -}}
   {{.Content}}
     <div class="container">
-      <h2  class="home-title-section">
-        <a>
-            <span class="pad">#</span>
-            Últimas publicaciones
-        </a>
-      </h2>
-      <ul class="home-post">
-        {{range first 3 (where .Site.RegularPages.ByDate "Params.layout" "post")}}
 
-        <li class="home-post-item">
-          <a class="home-post-link" href="{{.Permalink}}">
-          {{ if .Params.img }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
-          {{ else }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
-          {{ end }}
-
-            <div class="home-post-body">
-              <h3 class="home-post-title">{{ .Title | truncate 25 }}</h3>
-              <p class="home-post-resume">{{ .Summary | plainify | truncate 180 }}</p>
-            </div>
+      {{ $countPost := len (where .Site.RegularPages.ByDate "Params.layout" "post") }}
+      {{ if ge $countPost 10}}
+        <h2  class="home-title-section">
+          <a>
+              <span class="pad">#</span>
+              Últimas publicaciones
           </a>
-        </li>
-        {{end}}
-      </ul>
+        </h2>
+        <ul class="home-post">
+          {{range first 3 (where .Site.RegularPages.ByDate "Params.layout" "post")}}
 
+          <li class="home-post-item">
+            <a class="home-post-link" href="{{.Permalink}}">
+            {{ if .Params.img }}
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
+            {{ else }}
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+            {{ end }}
+
+              <div class="home-post-body">
+                <h3 class="home-post-title">{{ .Title | truncate 25 }}</h3>
+                <p class="home-post-resume">{{ .Summary | plainify | truncate 180 }}</p>
+              </div>
+            </a>
+          </li>
+          {{end}}
+        </ul>
+      {{ end }}
       <h2  class="home-title-section">
           <a href="/tags/tsum">
             <span class="pad">#</span>
@@ -55,6 +58,7 @@
         {{end}}
       </ul>
 
+   {{ if .Site.Taxonomies.tags.animaciones }}
       <h2  class="home-title-section">
         <a>
             <span class="pad">#</span>
@@ -82,6 +86,9 @@
       </li>
       {{end}}
     </ul>
+    {{ end }}
+
+    {{ if ge .Site.Taxonomies.tags.ilustraciones 10}}
     <h2  class="home-title-section">
         <a>
             <span class="pad">#</span>
@@ -109,6 +116,7 @@
       </li>
       {{end}}
     </ul>
+    {{ end }}
     <h2  class="home-title-section">
         <a>
             <span class="pad">#</span>
