@@ -1,6 +1,9 @@
 @import "variables";
 @import "mixins";
 @import "common";
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/brands.scss";
 @import "header";
 @import "footer";
 @import "labAnimation";
@@ -11,6 +14,5 @@
 @import "avatar";
 @import "about";
 @import "apocalypse";
-@import "fontawesome/fontawesome.scss";
-@import "fontawesome/solid.scss";
-@import "fontawesome/brands.scss"
+@import "angrycat";
+@import "error";
