@@ -1,0 +1,51 @@
+.post-header{
+    .share-buttons-link{
+        i{
+            color: $c_white;
+        }
+    }
+    .share-buttons-list {
+        list-style: none;
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .share-buttons-item{
+        display: inline-flex;
+        padding-right: 12px;
+        transition: all .2s ease-in-out;
+        &.facebook{
+
+        }
+        &:hover{
+            &.facebook{
+                i{
+                    color: #3B5998
+                    ;
+                }
+            }
+            &.twitter{
+                i{
+                    color: #00acee;
+                }
+            }
+            &.linkedin{
+                i{
+                    color: #0e76a8;
+                }
+            }
+            &.mail{
+                i{
+                    color: #2b587b;
+                }
+            }
+        }
+
+    }
+    .share-buttons-link{
+        i{
+            font-size: 32px;
+        }
+    }
+}

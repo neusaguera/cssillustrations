@@ -144,6 +144,40 @@
       </li>
       {{end}}
     </ul>
+
+
+
+    <h2  class="home-title-section">
+        <a>
+            <span class="pad">#</span>
+            Próximamente
+            <span class="smaller">(ver más)</span>
+        </a>
+    </h2>
+    {{ .Site.Params.Draft }}
+    <ul class="home-post">
+
+        {{ range .Site.Params.draft }}
+      <li class="home-post-item">
+        <a class="home-post-link" href="{{.Permalink}}">
+            {{ if .Params.img }}
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
+            {{ else }}
+              <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+            {{ end }}
+
+            <div class="home-post-body">
+                <h3 class="home-post-title">{{ .Title | truncate 25 }}</h3>
+                <p class="home-post-resume">
+                    {{ .Summary | plainify | truncate 180 }}</p>
+                </div>
+        </a>
+      </li>
+      {{end}}
+    </ul>
+
+
+
       <h2  class="home-title-section">
           <a>
               <span class="pad"><i class="fas fa-tags"></i></span>
