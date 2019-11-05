@@ -31,32 +31,9 @@
           {{end}}
         </ul>
       {{ end }}
-      <h2  class="home-title-section">
-          <a href="/tags/tsum">
-            <span class="pad">#</span>
-            Curso Tsum
-            <span class="smaller">(ver más)</span>
-          </a>
-      </h2>
 
-      <ul class="home-post">
-        {{ range first 3 (sort .Site.Taxonomies.tags.tsum "Date") }}
-        <li class="home-post-item">
-          <a class="home-post-link" href="{{.Permalink}}">
-          {{ if .Params.img }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
-          {{ else }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
-          {{ end }}
-
-            <div class="home-post-body">
-              <h3 class="home-post-title">{{ .Title | truncate 25 }}</h3>
-              <p class="home-post-resume">{{ .Summary | plainify | truncate 180 }}</p>
-            </div>
-          </a>
-        </li>
-        {{end}}
-      </ul>
+  {{ $section := dict "title" "Curso tsum" "url" "/tags/tsum" "list" .Site.Taxonomies.tags.tsum }}
+  {{ partial "home/section_home" (dict "context" . "section" $section) }}
 
    {{ if .Site.Taxonomies.tags.animaciones }}
       <h2  class="home-title-section">
