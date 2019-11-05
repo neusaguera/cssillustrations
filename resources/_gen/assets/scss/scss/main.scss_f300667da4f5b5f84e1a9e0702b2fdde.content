@@ -5162,7 +5162,7 @@ readers do not read off random characters that represent icons */
   color: #fff; }
 
 .post-header {
-  background: repeating-linear-gradient(transparent, #44647a 2px), repeating-linear-gradient(0.25turn, transparent, #3f87a6 2px);
+  background: #44647A;
   min-height: 250px;
   margin-bottom: 24px;
   padding: 12px; }
