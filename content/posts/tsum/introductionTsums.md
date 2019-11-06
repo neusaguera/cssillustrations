@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Piloto. Tsums en Css
+title: Piloto. Tsums en CSS
 tags: ["Tsum", "Ilustraciones"]
 img: /introductionTsums.png
 date: "2019-08-27"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nivel 1. Mickey & Minnie en Css
+title: Nivel 1. Mickey & Minnie en CSS
 img: /mickey_minnie/mickeybody.png
 tags: ["Tsum", "Ilustraciones"]
 date: "2019-08-28"

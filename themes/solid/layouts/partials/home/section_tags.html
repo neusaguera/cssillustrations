@@ -1,0 +1,14 @@
+<h2  class="home-title-section">
+    <span class="pad"><i class="fas fa-tags"></i></span>
+    tags
+</h2>
+<ul class="home-tag-list">
+
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+            <li class="home-tag-item">
+            <a class="home-tag-link" href="{{ .Permalink }}">{{ $name }} ({{$taxonomy.Count}})</a>
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>

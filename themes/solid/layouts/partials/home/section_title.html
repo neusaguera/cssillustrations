@@ -1,7 +1,12 @@
 <h2  class="home-title-section">
-    <a href="{{ .section.url}}">
+    {{if .section.url}}
+        <a href="{{ .section.url}}">
+            <span class="pad">#</span>
+            {{ .section.title}}
+            <span class="smaller">(ver más)</span>
+        </a>
+    {{ else }}
         <span class="pad">#</span>
         {{ .section.title}}
-        <span class="smaller">(ver más)</span>
-    </a>
+    {{ end}}
 </h2>
