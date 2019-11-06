@@ -3,12 +3,11 @@ layout: post
 title: Nivel 2. Daisy & Donald
 img: daisy_donald/facedaisy.png
 tags: ["Tsum", "Ilustraciones"]
-date: "2019-09-02"
-lastmod: "2019-11-05"
+date: "2019-10-02"
+lastmod: "2019-11-06"
 author: "Neus Agüera"
 weight: 100
 categories: ["Tsum"]
-draft: true
 ---
 
 ¿Qué te pareció el primer nivel con Mickey y Minnie? Fácil, ¿verdad?. En este segundo nivel crearemos los Tsums de Daisy y Donald. ¿Qué veremos?
@@ -85,7 +84,7 @@ Nos han salido 3 círculos (manos y cabeza). Cada círculo lo convertiremos en u
 {{< /highlight >}}
 
 >#### Variables {#variables}
-> Aunque el curso acaba de empezar hemos de adquirir buenas prácticas desde el principio. El uso de variables es una de las más importantes para tener un código CSS que sea mantenible en el tiempo.
+> Aunque el curso acaba de empezar hemos de adquirir buenas prácticas desde el inicio. El uso de variables es una de las más importantes para tener un código CSS que sea mantenible en el tiempo.
 >Para declarar las variables sin los pre-procesadores Less o Sass necesitamos añadirlas en un scope global como pueden ser:
 {{< highlight css >}}
     body{
@@ -100,7 +99,7 @@ Nos han salido 3 círculos (manos y cabeza). Cada círculo lo convertiremos en u
 {{< /highlight >}}
 
 >En la declaración de las variables ponemos dos guiones y el nombre de la variable. Si el nombre está compuesto por dos palabras las separamos con un guion para que resulte fácil de leer.
->Par llamar a las variables en las propiedades necesitamos poner la variable entre <b> var() </b>
+>Par llamar a las variables en las propiedades debemos poner la variable entre <b> var() </b>
 {{< highlight css >}}
     :root{
         /*Declaración variable*/
@@ -112,7 +111,8 @@ Nos han salido 3 círculos (manos y cabeza). Cada círculo lo convertiremos en u
     }
 {{< /highlight >}}
 
->¿Cuándo utilizar las variables? Normalmente tenemos unos valores definidos a la hora de picar CSS como pueden ser los colores, tamaños de pantalla, paddings, fuentes... Nos encontraremos más de una vez que mientras estamos trabajando necesitaremos cambiar uno de estos valores por otro, si hemos creado variables solo tendremos que hacer un cambio. En nuestro código prueba cambiar el color principal de daisy para ver como funciona.
+>¿Cuándo utilizar las variables? Normalmente tenemos unos valores definidos a la hora de picar CSS como pueden ser los colores, tamaños de pantalla, paddings, fuentes... Nos encontraremos más de una vez que mientras estamos trabajando nos pidan cambiar uno de estos valores, si hemos creado variables solo tendremos que hacer un cambio.
+>En nuestro código prueba cambiar el color principal de daisy para ver como funciona.
 
 ## Paso 2: La cara de Daisy.
 
@@ -352,7 +352,7 @@ Añade entre <b>character</b> y <b>daisy-head</b> el siguiente código:
 
 ## Paso 4: Donald.
 
-Ya tenemos a Daisy y ahora vamos a por Donald, como siempre para un nuevo tsum crearemos dos ficheros <b> donald.html </b> y <b>donald.css</b>. El código básico para Donald será el de Daisy sin pestañas ni lazo.
+Ya tenemos a Daisy y ahora vamos a por Donald, como siempre para un nuevo tsum crearemos dos ficheros <b> donald.html </b> y <b>donald.css</b>. El código básico de Donald es el mismo de Daisy sin pestañas ni lazo.
 
 ![La cara de Donald](/daisy_donald/facedonald.png)
 
@@ -542,7 +542,7 @@ Añadiremos los divs del gorro entre <b> character </b> y <b> donald-head</b>
 }
 {{< / highlight >}}
 >
-> ¿Te ha llamado la atención? En esta parte del código añado las mismas propiedades a dos clases a la vez. Cuando tenemos un ejemplo como el anterior donde necesitamos dos clases pero estas tienen propiedades iguales las declaramos juntas y nos ahorramos tener el mismo código dos veces. Si tienen alguna propiedad distinta volvemos a declarar debajo la clase y le añadimos esas diferencias.
+> ¿Te ha llamado la atención? En esta parte del código añado las mismas propiedades a dos clases a la vez. Cuando tenemos un ejemplo como el anterior donde necesitamos dos clases pero estas tienen propiedades iguales las declaramos juntas y nos ahorramos tener el mismo código dos veces. Si tienen alguna propiedad distinta volvemos a declararla debajo y le añadimos los valores necesarios.
 
 ## Paso 6: La pajarita de Donald.
 
