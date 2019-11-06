@@ -43,6 +43,9 @@
         padding: 0;
         font-feature-settings: normal;
         border-radius: 5px;
+        color: $c_white;
+        font-size: 14px;
+        line-height: 18px;
     }
     ul, ol {
         margin-left: 20px;
@@ -51,12 +54,23 @@
     .highlight{
         font-weight: 400;
         font-style: italic;
+        position: relative;
+        margin-bottom: 24px;
+    }
+    .copy-code {
+        top: 6px;
+        position: absolute;
+        right: 6px;
+        background: #eff4fe;
+        padding: 6px;
+        border-radius: 3px;
+        width: 75px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     h2{
         margin: 24px 0 12px 0;
-    }
-    .highlight{
-        margin-bottom: 24px;
     }
     .post-tag-list {
         margin: 24px 0;

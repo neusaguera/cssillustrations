@@ -1,5 +1,7 @@
 {{ $menu := resources.Get "js/menu.js" }}
+{{ $clipboard := resources.Get "js/clipboard.js" }}
 
-{{ $js := slice $menu | resources.Concat "js/bundle.js" | resources.Minify }}
+{{ $js := slice $menu $clipboard | resources.Concat "js/bundle.js" | resources.Minify }}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 <script type="text/javascript" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
