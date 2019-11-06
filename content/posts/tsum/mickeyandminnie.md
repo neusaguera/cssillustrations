@@ -23,8 +23,6 @@ En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillo
 
 Aunque parezcan muchas cosas no te preocupes y vamos a ponernos con el código. Let's go!
 
-(Si por el contrario eres un/a máster del CSS te invito a seguir el curso y quizá puedas a portar mejores ideas )
-
 ## Paso 1: Las formas básicas.
 
 Antes de empezar con el HTML, estudio la imagen que quiero crear y la desgloso en mi mente. Para que te sea más fácil, te aconsejo que cojas papel y lápiz, dibuja la forma más básica del Tsum, en este caso la forma de Mickey. No hace falta que seas un gran dibujante solo son las formas. Algo parecido a esto:
