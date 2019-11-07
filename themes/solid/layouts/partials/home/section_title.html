@@ -1,9 +1,13 @@
 <h2  class="home-title-section">
     {{if .section.url}}
-        <a href="{{ .section.url}}">
-            <span class="pad">#</span>
+    <a href="{{ .section.url}}">
+        <span class="pad">#</span>
             {{ .section.title}}
-            <span class="smaller">(ver más)</span>
+            {{$count := len .section}}
+            {{ if ge $count 4}}
+                <span class="smaller">(ver más)</span>
+            {{ end }}
+
         </a>
     {{ else }}
         <span class="pad">#</span>
