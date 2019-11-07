@@ -580,7 +580,8 @@ z-index: 10000;
 > ¿Te has fijado que he utilizado las clases <b> .two</b> y  <b>.three</b>? Recuerda utilizar palabras fáciles de identificar, esto no sería una buena práctica, ¿Qué se te ocurre?
 
 ## Paso 6: Vamos a mejorar a Minnie
-Ahora sí, tu dibujo te recuerda a Minnie ¿verdad?. Siempre podemos mejorarla con degradados, bordes, etc... Esta es mi Minnie final, estoy segura de que puedes hacer algo mejor. Juega un rato con tu código y enséñame el resultado.
+Ahora sí, ya tenemos a Daisy y Donald aunque siempre se pueden mejorar. ¿Lo intentas? aquí te dejo un par de enlaces en Codepen para que veas mis Tsums finales. Juega un rato, mejora y enséñame el resultado.
 
+<a href="https://codepen.io/neusaguera/pen/JjjvEwK" target="_blank"> Codepen Mickey </a> - <a href="https://codepen.io/neusaguera/pen/dyyeNBW" target="_blank"> Codepen Minnie </a>
 
-![last minnie](/mickey_minnie/lastminnie.png)
+Nos leemos en el próximo nivel.
