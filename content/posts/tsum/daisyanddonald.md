@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nivel 2. Daisy & Donald
-img: daisy_donald/facedaisy.png
+img: daisy_donald/daisydonald.png
 tags: ["Tsum", "Ilustraciones"]
 date: "2019-10-02"
 lastmod: "2019-11-06"

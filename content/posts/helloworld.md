@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HelloWorld
-img: helloworld.png
+img: /helloworld/introduction.png
 tags: ["Basic"]
 date: "2016-03-08"
 weight: 200

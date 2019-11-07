@@ -2,13 +2,13 @@
 layout: post
 title: Piloto. Tsums en CSS
 tags: ["Tsum"]
-img: /introductionTsums.png
+img: /tsum/introduction.png
 date: "2019-08-27"
 weight: 100
 categories: ["Tsum"]
 ---
 
-![Pasos de Minnie](/introductionTsums.png)
+![Pasos de Minnie](/tsum/introduction.png)
 
 Dibujar personajes, vistas y crear animaciones con HTML y CSS es uno de mis hobbies. Me gusta crear estos dibujos desde sus formas geométricas, sin utilizar imágenes, svg o JavaScript. Con paciencia y la magia del CSS podemos hacer cosas maravillosas. Si eres un amante del CSS o quieres aprender más sobre este lenguaje ¡Quédate!
 
