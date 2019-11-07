@@ -4614,11 +4614,11 @@ readers do not read off random characters that represent icons */
 
 .footer-content {
   padding: 24px; }
-  .footer-content .footer-social-item {
+  .footer-content .footer-social-item, .footer-content .footer-policy-link {
     color: #fff;
     font-family: "Oswald", sans-serif; }
 
-.footer-contact {
+.footer-contact-title {
   margin-bottom: 12px;
   color: #EBF2FF; }
 
@@ -4637,16 +4637,28 @@ readers do not read off random characters that represent icons */
   line-height: 26px;
   color: #EBF2FF; }
 
+.footer-policy-item {
+  display: inline-flex;
+  padding-right: 18px; }
+
 @media only screen and (min-width: 1024px) {
   .footer-content {
-    padding: 24px 0; }
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; }
   .footer-social-item {
     font-size: 20px;
     line-height: 24px; }
     .footer-social-item.inline {
-      padding-top: 24px; }
+      padding-top: 12px; }
+  .footer .logo {
+    flex: 1; }
   .footer .logo-text {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .footer-contact {
+    flex: 1; } }
 
 .lab-animation {
   position: relative;

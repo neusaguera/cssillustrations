@@ -11,12 +11,12 @@
 }
 .footer-content{
     padding: 24px ;
-    .footer-social-item{
+    .footer-social-item, .footer-policy-link{
       color: $c_white;
       font-family: $oswald;
     }
 }
-.footer-contact{
+.footer-contact-title{
     margin-bottom: 12px;
     color: $c_snowblue;
 }
@@ -37,21 +37,34 @@
         color: $c_snowblue;
     }
 }
-
+.footer-policy-item{
+    display: inline-flex;
+    padding-right: 18px;
+}
 @media only screen and (min-width: 1024px) {
     .footer-content {
         padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
     }
     .footer-social-item{
         font-size: 20px;
         line-height: 24px;
         &.inline{
-            padding-top: 24px;
+            padding-top: 12px;
         }
     }
     .footer{
+        .logo{
+            flex: 1;
+        }
         .logo-text {
             font-size: 30px
         }
+    }
+    .footer-contact{
+        flex:1;
     }
 }
