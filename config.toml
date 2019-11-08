@@ -27,6 +27,7 @@ theme = "solid"
   defaultImage = "dino.png"
   disqusShortname = "neusageravalls"
   socialImage = "presentation.png"
+  twitterImage = "presentationTwitter.png"
 
 [taxonomies]
   category = "categories"
