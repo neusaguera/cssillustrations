@@ -5,9 +5,9 @@
         <li class="home-post-item">
             <a class="home-post-link" href="{{.Permalink}}">
             {{ if .Params.img }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
+            <img class="home-post-image" src="{{ .Site.BaseURL }}/{{ .Params.img }}" alt="{{ .Title }}">
             {{ else }}
-            <img class="home-post-image" width="100%" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+            <img class="home-post-image" src="{{ .Site.BaseURL }}/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
             {{ end }}
 
             <div class="home-post-body">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     {{- partial "common/head.html" . -}}
     <body>
         {{ partial "common/cookieconsent.html"}}
@@ -8,6 +8,6 @@
             {{- block "main" . }}{{- end }}
         </div>
         {{- partial "common/footer.html" . -}}
+        {{- partial "javascript.html"}}
     </body>
-    {{- partial "javascript.html"}}
 </html>
