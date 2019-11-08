@@ -209,7 +209,6 @@
 }
 
 @keyframes fire-color{
-    0%{}
     5%,25%, 45%, 65%, 85%{
         transform: scale(1.2) rotate(45deg);
 }
@@ -219,7 +218,6 @@
     15%, 35%, 55%, 75%, 95%{
         transform: scale(1.3) rotate(45deg);
 }
- 100%{}
 }
 
 @keyframes move-bubble{

@@ -323,7 +323,6 @@
     opacity: 0;
 }
 @keyframes move-meteorite {
-    0%{}
     30%, 35%, 39%{
         right: 26%;
         top: 68px;
@@ -344,7 +343,6 @@
 }
 
 @keyframes move-head {
-    0%{}
     30%, 40%{
         top: 26%;
     }
@@ -358,7 +356,6 @@
 }
 
 @keyframes move-hand {
-    0%{}
     30%, 40%{
         bottom: 60%;
     }
