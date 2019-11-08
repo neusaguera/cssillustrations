@@ -15,12 +15,12 @@ theme = "solid"
   [[menu.main]]
     identifier = "about"
     name       = "Sobre mi"
-    url        = "/about"
+    url        = "/about/"
     weight    = -100
 [[menu.main]]
     identifier = "tsum"
     name       = "Curso Tsum"
-    url        = "/tags/tsum"
+    url        = "/tags/tsum/"
     weight    = -120
 
 [params]
