@@ -26,7 +26,7 @@ theme = "solid"
 [params]
   defaultImage = "dino.png"
   disqusShortname = "neusageravalls"
-  hideImage = "presentation.png"
+  socialImage = "presentation.png"
 
 [taxonomies]
   category = "categories"
