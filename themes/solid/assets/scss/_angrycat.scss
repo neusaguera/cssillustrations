@@ -18,11 +18,6 @@
     z-index: 1000;
     transform: translateX(-50%);
     background: $c_cat_brownlight;
-    background: -moz-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, $c_cat_brownlight), color-stop(100%, $c_cat_browndark));
-    background: -webkit-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -o-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -ms-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
     background: radial-gradient(ellipse at center, $c_cat_brownlight 30%, $c_cat_browndark 100%);
     &:after{
         content: '';
@@ -140,13 +135,7 @@
     transform: translate(10px, 10px) rotate(31deg);
     z-index: 1;
     background: $c_cat_brownlight;
-    background: -moz-radial-gradient(center, ellipse cover, $c_cat_brownlight 10%, rgba(77,40,1,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, $c_cat_brownlight), color-stop(100%, rgba(77,40,1,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, $c_cat_brownlight 10%, rgba(77,40,1,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, $c_cat_brownlight 10%, rgba(77,40,1,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, $c_cat_brownlight 10%, rgba(77,40,1,1) 100%);
     background: radial-gradient(ellipse at center, $c_cat_brownlight 10%, rgba(77,40,1,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c_cat_brownlight', endColorstr='$c_cat_browndark', GradientType=1 );
     &.right{
         left: 50%;
         border-radius: 120px 12px 120px 20px;
@@ -171,13 +160,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: $c_cat_browndark;
-    background: -moz-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, $c_cat_brownlight), color-stop(100%, $c_cat_browndark));
-    background: -webkit-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -o-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -ms-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
     background: radial-gradient(ellipse at center, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c_cat_brownlight', endColorstr='$c_cat_browndark', GradientType=1 );
 }
 .angrycat-tail{
     width: 132px;
@@ -188,7 +171,6 @@
     z-index: 10;
     top: 141px;
     position: absolute;
-
 }
 
 .angrycat-poster {
@@ -202,7 +184,6 @@
 }
 
 .angrycat-text, .angrycat-fall {
-
         color: $c_white;
         margin: 0 auto;
         text-align: center;
@@ -211,6 +192,7 @@
         font-weight: 900;
         line-height: 113px;
 }
+
 .angrycat-fall{
     display: inline-block;
 }
@@ -227,6 +209,7 @@
     z-index: 0;
     transform: rotate(9deg);
 }
+
 .angrycat-tail-pro{
     width: 13px;
     height: 19px;
@@ -251,13 +234,7 @@
     overflow: hidden;
     left: 32%;
     background: $c_cat_brownlight;
-    background: -moz-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, $c_cat_brownlight), color-stop(100%, $c_cat_browndark));
-    background: -webkit-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -o-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    background: -ms-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
     background: radial-gradient(ellipse at center, $c_cat_brownlight 30%, $c_cat_browndark 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c_cat_brownlight', endColorstr='$c_cat_browndark', GradientType=1 );
     &.right{
         left: 51%
     }

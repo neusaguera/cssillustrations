@@ -170,11 +170,6 @@
     width: 100px;
     height: 150px;
     background: $c_hairdark;
-    background: -moz-linear-gradient(top, $c_hairdark 60%, $c_hairlight 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(60%, $c_hairdark), color-stop(100%, $c_hairlight));
-    background: -webkit-linear-gradient(top, $c_hairdark 60%, $c_hairlight 100%);
-    background: -o-linear-gradient(top, $c_hairdark 60%, $c_hairlight 100%);
-    background: -ms-linear-gradient(top, $c_hairdark 60%, $c_hairlight 100%);
     background: linear-gradient(to bottom, $c_hairdark 60%, $c_hairlight 100%);
     position: absolute;
     z-index: $z10;

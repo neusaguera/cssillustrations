@@ -5455,11 +5455,6 @@ readers do not read off random characters that represent icons */
   width: 100px;
   height: 150px;
   background: #a96b31;
-  background: -moz-linear-gradient(top, #a96b31 60%, #edab03 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(60%, #a96b31), color-stop(100%, #edab03));
-  background: -webkit-linear-gradient(top, #a96b31 60%, #edab03 100%);
-  background: -o-linear-gradient(top, #a96b31 60%, #edab03 100%);
-  background: -ms-linear-gradient(top, #a96b31 60%, #edab03 100%);
   background: linear-gradient(to bottom, #a96b31 60%, #edab03 100%);
   position: absolute;
   z-index: 10;
@@ -5932,11 +5927,6 @@ readers do not read off random characters that represent icons */
   z-index: 1000;
   transform: translateX(-50%);
   background: #d6bd7c;
-  background: -moz-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, #d6bd7c), color-stop(100%, #795548));
-  background: -webkit-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -o-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
   background: radial-gradient(ellipse at center, #d6bd7c 30%, #795548 100%); }
   .angrycat-head:after {
     content: '';
@@ -6044,13 +6034,7 @@ readers do not read off random characters that represent icons */
   transform: translate(10px, 10px) rotate(31deg);
   z-index: 1;
   background: #d6bd7c;
-  background: -moz-radial-gradient(center, ellipse cover, #d6bd7c 10%, #4d2801 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, #d6bd7c), color-stop(100%, #4d2801));
-  background: -webkit-radial-gradient(center, ellipse cover, #d6bd7c 10%, #4d2801 100%);
-  background: -o-radial-gradient(center, ellipse cover, #d6bd7c 10%, #4d2801 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #d6bd7c 10%, #4d2801 100%);
-  background: radial-gradient(ellipse at center, #d6bd7c 10%, #4d2801 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c_cat_brownlight', endColorstr='$c_cat_browndark', GradientType=1 ); }
+  background: radial-gradient(ellipse at center, #d6bd7c 10%, #4d2801 100%); }
   .angrycat-ear.right {
     left: 50%;
     border-radius: 120px 12px 120px 20px;
@@ -6073,13 +6057,7 @@ readers do not read off random characters that represent icons */
   left: 50%;
   transform: translateX(-50%);
   background: #795548;
-  background: -moz-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, #d6bd7c), color-stop(100%, #795548));
-  background: -webkit-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -o-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: radial-gradient(ellipse at center, #d6bd7c 30%, #795548 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c_cat_brownlight', endColorstr='$c_cat_browndark', GradientType=1 ); }
+  background: radial-gradient(ellipse at center, #d6bd7c 30%, #795548 100%); }
 
 .angrycat-tail {
   width: 132px;
@@ -6147,13 +6125,7 @@ readers do not read off random characters that represent icons */
   overflow: hidden;
   left: 32%;
   background: #d6bd7c;
-  background: -moz-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, #d6bd7c), color-stop(100%, #795548));
-  background: -webkit-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -o-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
-  background: radial-gradient(ellipse at center, #d6bd7c 30%, #795548 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c_cat_brownlight', endColorstr='$c_cat_browndark', GradientType=1 ); }
+  background: radial-gradient(ellipse at center, #d6bd7c 30%, #795548 100%); }
   .angrycat-leg.right {
     left: 51%; }
   .angrycat-leg:before {
