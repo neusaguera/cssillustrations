@@ -6,8 +6,8 @@
     margin: 24px auto;
     position: relative;
     overflow: hidden;
-    @include transform(scale(0.9));
-    @include border-radius(50%);
+    transform: scale(0.9);
+    border-radius: 50%;
 }
 .avatar-head {
     width: 80px;
@@ -16,8 +16,8 @@
     margin: 32px auto 0 auto;
     z-index: $z1000;
     position: inherit;
-    @include box-shadow(0px 3px 0px -2px rgba(0,0,0,0.2));
-    @include border-radius(50%);
+    box-shadow: 0px 3px 0px -2px rgba(0,0,0,0.2);
+    border-radius: 50%;
     &:before, &:after{
         content: '';
         display: block;
@@ -28,8 +28,7 @@
         left: 1%;
         top: -1%;
         position: absolute;
-        @include border-radius(50%);
-
+        border-radius: 50%;
     }
 
     &:after {
@@ -62,7 +61,7 @@
         position: absolute;
         bottom: 10px;
         left: 1px;
-        @include border-radius(50%);
+        border-radius: 50%;
     }
     &:after{
         width: 4px;
@@ -82,7 +81,7 @@
     border-top: 2px solid $iris-color;
     top: -8px;
     left: -1px;
-    @include border-radius(50%);
+    border-radius: 50%;
 }
 .avatar-glasses {
     position: absolute;
@@ -97,7 +96,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    @include border-radius(6px 6px 12px 12px);
+    border-radius: 6px 6px 12px 12px;
     &.right{
         left: 35px;
     }
@@ -129,8 +128,8 @@
         bottom: -2px;
         left: 6px;
         z-index: 100;
-        @include transform(translateX(-50%));
-        @include border-radius(50%);
+        transform: translateX(-50%);
+        border-radius: 50%;
     }
     &.right{
         left: inherit;
@@ -153,8 +152,8 @@
     border-left: 1px;
     border-right: 1px;
     bottom: 13px;
-    @include border-radius(22% 19% 50% 50%);
-    @include transform(translate(-50%));
+    border-radius: 22% 19% 50% 50%;
+    transform: translate(-50%);
 }
 .avatar-nose {
     width: 9px;
@@ -164,8 +163,8 @@
     z-index: 100;
     left: 50%;
     top: 70px;
-    @include border-radius(26% 26% 50% 50%);
-    @include transform(translate(-50%));
+    border-radius: 26% 26% 50% 50%;
+    transform: translate(-50%);
 }
 .avatar-hair {
     width: 100px;
@@ -181,8 +180,8 @@
     z-index: $z10;
     left: 50%;
     top: 20px;
-    @include transform(translate(-50%));
-    @include border-radius(44% 44% 26% 26%);
+    transform: translate(-50%);
+    border-radius: 44% 44% 26% 26%;
 
 }
 .avatar-neck {
@@ -200,7 +199,7 @@
     margin: -20px auto 0 auto;
     z-index: 100;
     position: relative;
-    @include border-radius(50%);
+    border-radius: 50%;
     &:before{
         content:'';
         display: block;
@@ -212,19 +211,16 @@
         left: 50%;
         z-index: 100;
         border-bottom: 3px solid $c_deepblue;
-        @include transform(translateX(-50%));
-        @include border-radius(50%);
+        transform: translateX(-50%);
+        border-radius: 50%;
     }
 }
 
-
-
-
 @media only screen and (min-width: 1024px) {
     .avatar {
-        @include transform(scale(1.2));
+        transform: scale(1.2);
         &.small {
-            @include transform(scale(0.7));
+            transform: scale(0.7);
         }
     }
 }

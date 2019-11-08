@@ -105,8 +105,6 @@ h3 {
 .fal,
 .fad,
 .fab {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -210,27 +208,21 @@ h3 {
     transform: rotate(360deg); } }
 
 .fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   transform: scale(1, -1); }
 
 .fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   transform: scale(-1, -1); }
 
 :root .fa-rotate-90,
@@ -4665,18 +4657,13 @@ readers do not read off random characters that represent icons */
   width: 275px;
   height: 500px;
   margin: -75px auto;
-  transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
-  -webkit-transform: scale(0.5); }
+  transform: scale(0.5); }
 
 .lab-flask {
   position: absolute;
   width: 242px;
   height: 383px;
   animation: shake 10s linear 1;
-  -webkit-animation: shake 10s linear 1;
   left: 13%; }
 
 .lab-flask-body {
@@ -4687,11 +4674,7 @@ readers do not read off random characters that represent icons */
   position: absolute;
   bottom: 0%;
   left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%); }
+  transform: translateX(-50%); }
 
 .lab-flask-neck {
   width: 85px;
@@ -4700,11 +4683,7 @@ readers do not read off random characters that represent icons */
   position: absolute;
   bottom: 140px;
   left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%); }
+  transform: translateX(-50%); }
 
 .lab-flask-liquid {
   width: 240px;
@@ -4753,8 +4732,7 @@ readers do not read off random characters that represent icons */
   left: 22%;
   border-left: 2px solid #44647A;
   border-top: 1px solid #44647A;
-  animation: fire-color 10s linear 1;
-  -webkit-animation: fire-color 10s linear 1; }
+  animation: fire-color 10s linear 1; }
 
 .lab-fire-flame {
   height: 48px;
@@ -4765,17 +4743,9 @@ readers do not read off random characters that represent icons */
   border-radius: 5px 50px 50px 50px;
   border-left: 4px solid #D52941;
   transform: rotate(25deg);
-  -webkit-transform: rotate(25deg);
-  -moz-transform: rotate(25deg);
-  -ms-transform: rotate(25deg);
-  -o-transform: rotate(25deg);
   left: 20%; }
   .lab-fire-flame.right {
-    transform: rotate(-25deg);
-    -webkit-transform: rotate(-25deg);
-    -moz-transform: rotate(-25deg);
-    -ms-transform: rotate(-25deg);
-    -o-transform: rotate(-25deg); }
+    transform: rotate(-25deg); }
 
 .lab-bubble {
   position: absolute;
@@ -4786,12 +4756,7 @@ readers do not read off random characters that represent icons */
   border: 4px solid #D52941;
   background: #ED254E;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   animation: move-bubble 10s linear infinite;
-  -webkit-animation: move-bubble 10s linear infinite;
   animation-delay: 4s;
   opacity: 0; }
   .lab-bubble.medium {
@@ -4818,11 +4783,7 @@ readers do not read off random characters that represent icons */
     height: 20px;
     width: 20px;
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 50px 0 50px 0;
-    -webkit-border-radius: 50px 0 50px 0;
-    -moz-border-radius: 50px 0 50px 0;
-    -ms-border-radius: 50px 0 50px 0;
-    -o-border-radius: 50px 0 50px 0; }
+    border-radius: 50px 0 50px 0; }
     .lab-bubble:before.small {
       height: 15px;
       width: 15px; }
@@ -4840,11 +4801,7 @@ readers do not read off random characters that represent icons */
   height: 115px;
   width: 190px;
   background: #44647A;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%; }
+  border-radius: 50%; }
   .lab-explosion:before, .lab-explosion:after, .lab-explosion-bubble:before, .lab-explosion-bubble:after {
     content: '';
     position: absolute;
@@ -4853,11 +4810,7 @@ readers do not read off random characters that represent icons */
     height: 81px;
     width: 95px;
     background: #44647A;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%; }
+    border-radius: 50%; }
   .lab-explosion:after, .lab-explosion-bubble:after {
     top: 60px;
     left: 11px; }
@@ -4874,91 +4827,39 @@ readers do not read off random characters that represent icons */
 
 @keyframes shake {
   1%, 30% {
-    transform: translate3d(-50%, 0, 0%);
-    -webkit-transform: translate3d(-50%, 0, 0%);
-    -moz-transform: translate3d(-50%, 0, 0%);
-    -ms-transform: translate3d(-50%, 0, 0%);
-    -o-transform: translate3d(-50%, 0, 0%); }
+    transform: translate(0, 0); }
   31%, 39%, 47% {
-    transform: translate3d(-50%, 0, 0%);
-    -webkit-transform: translate3d(-50%, 0, 0%);
-    -moz-transform: translate3d(-50%, 0, 0%);
-    -ms-transform: translate3d(-50%, 0, 0%);
-    -o-transform: translate3d(-50%, 0, 0%); }
+    transform: translate(0, 0); }
   32%, 38%, 40%, 46% {
-    transform: translate3d(2px, 0, 0);
-    -webkit-transform: translate3d(2px, 0, 0);
-    -moz-transform: translate3d(2px, 0, 0);
-    -ms-transform: translate3d(2px, 0, 0);
-    -o-transform: translate3d(2px, 0, 0); }
+    transform: translate(2px, 0); }
   33%, 35%, 37%, 41%, 43%, 45% {
-    transform: translate3d(-4px, 0, 0);
-    -webkit-transform: translate3d(-4px, 0, 0);
-    -moz-transform: translate3d(-4px, 0, 0);
-    -ms-transform: translate3d(-4px, 0, 0);
-    -o-transform: translate3d(-4px, 0, 0); }
+    transform: translate(-4px, 0); }
   34%, 36%, 42%, 44% {
-    transform: translate3d(4px, 0, 0);
-    -webkit-transform: translate3d(4px, 0, 0);
-    -moz-transform: translate3d(4px, 0, 0);
-    -ms-transform: translate3d(4px, 0, 0);
-    -o-transform: translate3d(4px, 0, 0); }
+    transform: translate(4px, 0); }
   48%, 100% {
-    transform: translate3d(-50%, 0, 0%);
-    -webkit-transform: translate3d(-50%, 0, 0%);
-    -moz-transform: translate3d(-50%, 0, 0%);
-    -ms-transform: translate3d(-50%, 0, 0%);
-    -o-transform: translate3d(-50%, 0, 0%); } }
+    transform: translate(0, 0); } }
 
 @keyframes fire-color {
   0% { }
   5%, 25%, 45%, 65%, 85% {
-    transform: scale(1.2) rotate(45deg);
-    -webkit-transform: scale(1.2) rotate(45deg);
-    -moz-transform: scale(1.2) rotate(45deg);
-    -ms-transform: scale(1.2) rotate(45deg);
-    -o-transform: scale(1.2) rotate(45deg); }
+    transform: scale(1.2) rotate(45deg); }
   10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
-    transform: scale(1) rotate(45deg);
-    -webkit-transform: scale(1) rotate(45deg);
-    -moz-transform: scale(1) rotate(45deg);
-    -ms-transform: scale(1) rotate(45deg);
-    -o-transform: scale(1) rotate(45deg); }
+    transform: scale(1) rotate(45deg); }
   15%, 35%, 55%, 75%, 95% {
-    transform: scale(1.3) rotate(45deg);
-    -webkit-transform: scale(1.3) rotate(45deg);
-    -moz-transform: scale(1.3) rotate(45deg);
-    -ms-transform: scale(1.3) rotate(45deg);
-    -o-transform: scale(1.3) rotate(45deg); }
+    transform: scale(1.3) rotate(45deg); }
   100% { } }
 
 @keyframes move-bubble {
   0% {
     transform: translate(0, 0) scale(0);
-    -webkit-transform: translate(0, 0) scale(0);
-    -moz-transform: translate(0, 0) scale(0);
-    -ms-transform: translate(0, 0) scale(0);
-    -o-transform: translate(0, 0) scale(0);
     opacity: 0; }
   20% {
     opacity: 1;
-    transform: scale(0.75);
-    -moz-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-    -o-transform: scale(0.75);
-    -webkit-transform: scale(0.75); }
+    transform: scale(0.75); }
   50% {
-    transform: translate(60px, -100px) scale(1.3);
-    -webkit-transform: translate(60px, -100px) scale(1.3);
-    -moz-transform: translate(60px, -100px) scale(1.3);
-    -ms-transform: translate(60px, -100px) scale(1.3);
-    -o-transform: translate(60px, -100px) scale(1.3); }
+    transform: translate(60px, -100px) scale(1.3); }
   100% {
     transform: translate(50px, -400px) scale(1.3);
-    -webkit-transform: translate(50px, -400px) scale(1.3);
-    -moz-transform: translate(50px, -400px) scale(1.3);
-    -ms-transform: translate(50px, -400px) scale(1.3);
-    -o-transform: translate(50px, -400px) scale(1.3);
     opacity: 0; } }
 
 @media only screen and (min-width: 1024px) {
@@ -4967,10 +4868,6 @@ readers do not read off random characters that represent icons */
     margin-bottom: 48px; }
   .lab-animation {
     transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
     transform-origin: top;
     margin: 24px auto calc( (-500px * (1 - 0.5)) + 24px); }
   .lab-flask-body {
@@ -5088,20 +4985,12 @@ readers do not read off random characters that represent icons */
     transition: all .2s ease-in-out; }
     .home-post-link:hover {
       box-shadow: 1px 1px 11px #44647A;
-      transform: scale(0.95);
-      -webkit-transform: scale(0.95);
-      -moz-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-      -o-transform: scale(0.95); }
+      transform: scale(0.95); }
   .home-post-item {
     max-width: 30%;
     margin-right: 32px; }
   .home-tag-item:hover {
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9); } }
+    transform: scale(0.9); } }
 
 .post {
   width: 100%;
@@ -5229,11 +5118,7 @@ readers do not read off random characters that represent icons */
     transition: all .2s ease-in-out; }
     .nav-insection .nav-insection-link:hover {
       text-decoration: none;
-      transform: scale(0.9);
-      -webkit-transform: scale(0.9);
-      -moz-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-      -o-transform: scale(0.9); }
+      transform: scale(0.9); }
 
 @media only screen and (min-width: 1024px) {
   .post {
@@ -5349,7 +5234,6 @@ readers do not read off random characters that represent icons */
 .list-post-item {
   width: 100%;
   list-style: none;
-  float: 1;
   border-bottom: 0.5px solid #44647A;
   margin-bottom: 12px; }
   .list-post-item:last-child {
@@ -5365,7 +5249,6 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap; }
 
 .list-post-image {
-  float: 1 30%;
   width: 30%;
   align-self: start; }
 
@@ -5419,11 +5302,7 @@ readers do not read off random characters that represent icons */
   margin: 24px auto;
   position: relative;
   overflow: hidden;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%; }
 
 .avatar-head {
@@ -5433,11 +5312,7 @@ readers do not read off random characters that represent icons */
   margin: 32px auto 0 auto;
   z-index: 1000;
   position: inherit;
-  -webkit-box-shadow: 0px 3px 0px -2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 3px 0px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 0px -2px rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%; }
   .avatar-head:before, .avatar-head:after {
     content: '';
@@ -5449,8 +5324,6 @@ readers do not read off random characters that represent icons */
     left: 1%;
     top: -1%;
     position: absolute;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%; }
   .avatar-head:after {
     height: 38px;
@@ -5480,8 +5353,6 @@ readers do not read off random characters that represent icons */
     position: absolute;
     bottom: 10px;
     left: 1px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%; }
   .avatar-eye:after {
     width: 4px;
@@ -5499,8 +5370,6 @@ readers do not read off random characters that represent icons */
   border-top: 2px solid #804e1f;
   top: -8px;
   left: -1px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%; }
 
 .avatar-glasses {
@@ -5516,8 +5385,6 @@ readers do not read off random characters that represent icons */
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-border-radius: 6px 6px 12px 12px;
-  -moz-border-radius: 6px 6px 12px 12px;
   border-radius: 6px 6px 12px 12px; }
   .avatar-glasses-len.right {
     left: 35px; }
@@ -5549,11 +5416,7 @@ readers do not read off random characters that represent icons */
     bottom: -2px;
     left: 6px;
     z-index: 100;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%; }
   .avatar-ear.right {
     left: inherit;
@@ -5574,11 +5437,7 @@ readers do not read off random characters that represent icons */
   border-left: 1px;
   border-right: 1px;
   bottom: 13px;
-  -webkit-border-radius: 22% 19% 50% 50%;
-  -moz-border-radius: 22% 19% 50% 50%;
   border-radius: 22% 19% 50% 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%); }
 
 .avatar-nose {
@@ -5589,11 +5448,7 @@ readers do not read off random characters that represent icons */
   z-index: 100;
   left: 50%;
   top: 70px;
-  -webkit-border-radius: 26% 26% 50% 50%;
-  -moz-border-radius: 26% 26% 50% 50%;
   border-radius: 26% 26% 50% 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%); }
 
 .avatar-hair {
@@ -5610,11 +5465,7 @@ readers do not read off random characters that represent icons */
   z-index: 10;
   left: 50%;
   top: 20px;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
-  -webkit-border-radius: 44% 44% 26% 26%;
-  -moz-border-radius: 44% 44% 26% 26%;
   border-radius: 44% 44% 26% 26%; }
 
 .avatar-neck {
@@ -5632,8 +5483,6 @@ readers do not read off random characters that represent icons */
   margin: -20px auto 0 auto;
   z-index: 100;
   position: relative;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%; }
   .avatar-body:before {
     content: '';
@@ -5646,21 +5495,13 @@ readers do not read off random characters that represent icons */
     left: 50%;
     z-index: 100;
     border-bottom: 3px solid #44647A;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%; }
 
 @media only screen and (min-width: 1024px) {
   .avatar {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
     transform: scale(1.2); }
     .avatar.small {
-      -webkit-transform: scale(0.7);
-      -ms-transform: scale(0.7);
       transform: scale(0.7); } }
 
 .about-header {
@@ -5736,16 +5577,11 @@ readers do not read off random characters that represent icons */
   left: 50%;
   top: 5%;
   background: green;
-  -webkit-transform: translateX(-50%) rotate(46deg);
-  -ms-transform: translateX(-50%) rotate(46deg);
   transform: translateX(-50%) rotate(46deg);
-  -webkit-border-radius: 80% 150% 25% 250%;
-  -moz-border-radius: 80% 150% 25% 250%;
   border-radius: 80% 150% 25% 250%;
   box-shadow: 1px 1px 3px black;
   z-index: 100;
-  animation: move-head 10s infinite ease;
-  -webkit-animation: move-head 10s infinite ease; }
+  animation: move-head 10s infinite ease; }
 
 .dino-eye {
   background: green;
@@ -5812,19 +5648,11 @@ readers do not read off random characters that represent icons */
   bottom: 9%;
   left: 62%;
   z-index: 10;
-  transform: rotate(105deg);
-  -webkit-transform: rotate(105deg);
-  -moz-transform: rotate(105deg);
-  -ms-transform: rotate(105deg);
-  -o-transform: rotate(105deg); }
+  transform: rotate(105deg); }
   .dino-nostril.right {
     left: 75%;
     bottom: 24%;
-    transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    -o-transform: rotate(-10deg); }
+    transform: rotate(-10deg); }
 
 .dino-body {
   background: green;
@@ -5857,8 +5685,7 @@ readers do not read off random characters that represent icons */
   z-index: 1000;
   overflow: hidden;
   box-shadow: 0px 1px 1px #315320;
-  animation: move-hand 10s infinite ease;
-  -webkit-animation: move-hand 10s infinite ease; }
+  animation: move-hand 10s infinite ease; }
   .dino-hand .dino-hoff {
     background: white;
     border-radius: 50%;
@@ -5877,10 +5704,6 @@ readers do not read off random characters that represent icons */
       left: -1%; }
   .dino-hand.right {
     border-radius: 50% 20% 20% 50%;
-    -webkit-border-radius: 50% 20% 20% 50%;
-    -moz-border-radius: 50% 20% 20% 50%;
-    -ms-border-radius: 50% 20% 20% 50%;
-    -o-border-radius: 50% 20% 20% 50%;
     left: 53%; }
     .dino-hand.right .dino-hoff {
       right: inherit;
@@ -5895,11 +5718,7 @@ readers do not read off random characters that represent icons */
   left: 16%;
   bottom: 0;
   z-index: 10;
-  box-shadow: -1px -1px 1px #315320;
-  -webkit-border-radius: 50% 50% 20% 20%;
-  -moz-border-radius: 50% 50% 20% 20%;
-  -ms-border-radius: 50% 50% 20% 20%;
-  -o-border-radius: 50% 50% 20% 20%; }
+  box-shadow: -1px -1px 1px #315320; }
   .dino-foot.right {
     left: 59%;
     box-shadow: 1px -1px 1px #315320; }
@@ -5950,8 +5769,7 @@ readers do not read off random characters that represent icons */
   right: 5%;
   width: 140px;
   height: 100px;
-  animation: move-meteorite 10s infinite ease;
-  -webkit-animation: move-meteorite 10s infinite ease; }
+  animation: move-meteorite 10s infinite ease; }
 
 .meteor-fire {
   width: 140px;
@@ -5962,8 +5780,7 @@ readers do not read off random characters that represent icons */
   background: red;
   border-radius: 150px 10px 300px 150px;
   box-shadow: 8px -3px 6px orange, inset -11px 1px 17px #FFEB3B;
-  animation: move-shadowfire 1.5s infinite ease;
-  -webkit-animation: move-shadowfire 1.5s infinite ease; }
+  animation: move-shadowfire 1.5s infinite ease; }
 
 .meteor-rock {
   width: 80px;
@@ -5971,10 +5788,6 @@ readers do not read off random characters that represent icons */
   background: gray;
   position: absolute;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   bottom: 2%;
   left: 3%;
   box-shadow: inset -3px 6px 11px black; }
@@ -5988,7 +5801,6 @@ readers do not read off random characters that represent icons */
   position: absolute;
   opacity: 0;
   animation: speech-visible 10s infinite ease;
-  -webkit-animation: speech-visible 10s infinite ease;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -6014,7 +5826,6 @@ readers do not read off random characters that represent icons */
   font-style: italic;
   line-height: 20px;
   animation: knock-visible 10s infinite ease;
-  -webkit-animation: knock-visible 10s infinite ease;
   opacity: 0; }
   .dino-knock span {
     display: block;
@@ -6031,7 +5842,6 @@ readers do not read off random characters that represent icons */
   font-style: italic;
   line-height: 20px;
   animation: uhh-visible 10s infinite ease;
-  -webkit-animation: uhh-visible 10s infinite ease;
   opacity: 0; }
 
 @keyframes move-meteorite {
@@ -6121,10 +5931,6 @@ readers do not read off random characters that represent icons */
   left: 50%;
   z-index: 1000;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   background: #d6bd7c;
   background: -moz-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, #d6bd7c), color-stop(100%, #795548));
@@ -6157,18 +5963,10 @@ readers do not read off random characters that represent icons */
   top: 31%;
   overflow: hidden;
   transform: rotate(12deg);
-  -webkit-transform: rotate(12deg);
-  -moz-transform: rotate(12deg);
-  -ms-transform: rotate(12deg);
-  -o-transform: rotate(12deg);
   box-shadow: -2px 5px 4px #795548; }
   .angrycat-eye.right {
     left: 64%;
     border-radius: 12px 37px 120px 120px;
-    -webkit-border-radius: 12px 37px 120px 120px;
-    -moz-border-radius: 12px 37px 120px 120px;
-    -ms-border-radius: 12px 37px 120px 120px;
-    -o-border-radius: 12px 37px 120px 120px;
     transform: rotate(-12deg);
     box-shadow: 2px 5px 4px #795548; }
   .angrycat-eye:before {
@@ -6180,11 +5978,7 @@ readers do not read off random characters that represent icons */
     top: -15%;
     left: 17%;
     background: #795548;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%; }
+    border-radius: 50%; }
   .angrycat-eye:after {
     content: '';
     background: #795548;
@@ -6231,11 +6025,7 @@ readers do not read off random characters that represent icons */
     top: 3px;
     left: 23%;
     position: absolute;
-    transform: rotate(-18deg);
-    -webkit-transform: rotate(-18deg);
-    -moz-transform: rotate(-18deg);
-    -ms-transform: rotate(-18deg);
-    -o-transform: rotate(-18deg); }
+    transform: rotate(-18deg); }
   .angrycat-whiskered.right {
     left: 66%;
     transform: scale(-1);
@@ -6282,10 +6072,6 @@ readers do not read off random characters that represent icons */
   overflow: hidden;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   background: #795548;
   background: -moz-radial-gradient(center, ellipse cover, #d6bd7c 30%, #795548 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, #d6bd7c), color-stop(100%, #795548));

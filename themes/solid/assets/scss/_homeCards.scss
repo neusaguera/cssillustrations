@@ -93,10 +93,6 @@
         &:hover{
             box-shadow: 1px 1px 11px $c_deepblue;
             transform: scale(0.95);
-            -webkit-transform: scale(0.95);
-            -moz-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-            -o-transform: scale(0.95);
         }
     }
     .home-post-item{
@@ -106,10 +102,6 @@
     .home-tag-item{
         &:hover{
            transform: scale(0.9);
-           -webkit-transform: scale(0.9);
-           -moz-transform: scale(0.9);
-           -ms-transform: scale(0.9);
-           -o-transform: scale(0.9);
         }
     }
 }

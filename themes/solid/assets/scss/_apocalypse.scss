@@ -21,12 +21,11 @@
     left: 50%;
     top: 5%;
     background: green;
-    @include transform(translateX(-50%)rotate(46deg));
-    @include border-radius(80%150%25%250%);
+    transform: translateX(-50%) rotate(46deg);
+    border-radius: 80% 150% 25% 250%;
     box-shadow: 1px 1px 3px black;
     z-index: 100;
     animation: move-head 10s infinite ease ;
-    -webkit-animation: move-head 10s infinite ease ;
 }
 
 .dino-eye {
@@ -102,18 +101,10 @@
     left: 62%;
     z-index: 10;
     transform: rotate(105deg);
-    -webkit-transform: rotate(105deg);
-    -moz-transform: rotate(105deg);
-    -ms-transform: rotate(105deg);
-    -o-transform: rotate(105deg);
     &.right{
         left: 75%;
         bottom: 24%;
         transform: rotate(-10deg);
-        -webkit-transform: rotate(-10deg);
-        -moz-transform: rotate(-10deg);
-        -ms-transform: rotate(-10deg);
-        -o-transform: rotate(-10deg);
 }
 }
 .dino-body {
@@ -149,7 +140,6 @@
     overflow: hidden;
     box-shadow: 0px 1px 1px #315320;
     animation: move-hand 10s infinite ease ;
-    -webkit-animation: move-hand 10s infinite ease ;
     .dino-hoff {
         background: white;
         border-radius: 50%;
@@ -172,10 +162,6 @@
     }
     &.right{
         border-radius: 50% 20% 20% 50%;
-        -webkit-border-radius: 50% 20% 20% 50%;
-        -moz-border-radius: 50% 20% 20% 50%;
-        -ms-border-radius: 50% 20% 20% 50%;
-        -o-border-radius: 50% 20% 20% 50%;
         left: 53%;
         .dino-hoff{
             right: inherit;
@@ -195,10 +181,6 @@
     bottom: 0;
     z-index: 10;
     box-shadow: -1px -1px 1px #315320;
-    -webkit-border-radius: 50% 50% 20% 20%;
-    -moz-border-radius: 50% 50% 20% 20%;
-    -ms-border-radius: 50% 50% 20% 20%;
-    -o-border-radius: 50% 50% 20% 20%;
     &.right{
         left: 59%;
         box-shadow: 1px -1px 1px #315320;
@@ -259,7 +241,6 @@
     width: 140px;
     height: 100px;
     animation: move-meteorite 10s infinite ease ;
-    -webkit-animation: move-meteorite 10s infinite ease ;
 }
 
 .meteor-fire {
@@ -272,7 +253,6 @@
     border-radius: 150px 10px 300px 150px;
     box-shadow:8px -3px 6px orange, inset -11px 1px 17px #FFEB3B;
     animation: move-shadowfire 1.5s infinite ease ;
-    -webkit-animation: move-shadowfire 1.5s infinite ease ;
 }
 .meteor-rock{
     width: 80px;
@@ -280,10 +260,6 @@
     background: gray;
     position: absolute;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     bottom: 2%;
     left: 3%;
     box-shadow: inset -3px 6px 11px black;
@@ -298,7 +274,6 @@
     position: absolute;
     opacity: 0;
     animation: speech-visible 10s infinite ease;
-    -webkit-animation: speech-visible 10s infinite ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,7 +302,6 @@
     font-style: italic;
     line-height: 20px;
     animation: knock-visible 10s infinite ease ;
-    -webkit-animation: knock-visible 10s infinite ease ;
     opacity: 0;
     span{
         display: block;
@@ -346,7 +320,6 @@
     font-style: italic;
     line-height: 20px;
     animation: uhh-visible 10s infinite ease ;
-    -webkit-animation: uhh-visible 10s infinite ease ;
     opacity: 0;
 }
 @keyframes move-meteorite {

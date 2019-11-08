@@ -20,7 +20,6 @@
 .list-post-item {
     width: 100%;
     list-style: none;
-    float: 1;
     border-bottom: 0.5px solid $c_deepblue;
     margin-bottom: 12px;
     &:last-child{
@@ -37,7 +36,6 @@
     flex-wrap: wrap;
 }
 .list-post-image {
-    float: 1 30%;
     width: 30%;
     align-self: start;
 }

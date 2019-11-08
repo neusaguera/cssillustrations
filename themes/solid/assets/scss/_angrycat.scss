@@ -17,10 +17,6 @@
     left: 50%;
     z-index: 1000;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     background: $c_cat_brownlight;
     background: -moz-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, $c_cat_brownlight), color-stop(100%, $c_cat_browndark));
@@ -55,18 +51,10 @@
     top: 31%;
     overflow: hidden;
     transform: rotate(12deg);
-    -webkit-transform: rotate(12deg);
-    -moz-transform: rotate(12deg);
-    -ms-transform: rotate(12deg);
-    -o-transform: rotate(12deg);
     box-shadow: -2px 5px 4px $c_cat_browndark;
     &.right{
         left: 64%;
         border-radius: 12px 37px 120px 120px;
-        -webkit-border-radius: 12px 37px 120px 120px;
-        -moz-border-radius: 12px 37px 120px 120px;
-        -ms-border-radius: 12px 37px 120px 120px;
-        -o-border-radius: 12px 37px 120px 120px;
         transform: rotate(-12deg);
         box-shadow: 2px 5px 4px $c_cat_browndark;
     }
@@ -80,10 +68,6 @@
         left: 17%;
         background: $c_cat_browndark;
         border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
     }
     &:after{
         content: '';
@@ -135,11 +119,7 @@
         top: 3px;
         left: 23%;
         position: absolute;
-        transform: rotate(-18deg)    ;
-        -webkit-transform: rotate(-18deg)    ;
-        -moz-transform: rotate(-18deg)    ;
-        -ms-transform: rotate(-18deg)    ;
-        -o-transform: rotate(-18deg)    ;
+        transform: rotate(-18deg);
     }
     &.right{
         left: 66%;
@@ -190,10 +170,6 @@
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     background: $c_cat_browndark;
     background: -moz-radial-gradient(center, ellipse cover, $c_cat_brownlight 30%, $c_cat_browndark 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%, $c_cat_brownlight), color-stop(100%, $c_cat_browndark));
