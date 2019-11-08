@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     {{- partial "common/head.html" . -}}
-    {{ partial "cookieconsent.html"}}
     <body>
+        {{ partial "common/cookieconsent.html"}}
         {{- partial "header.html" . -}}
         <div class="content" id="content">
             {{- block "main" . }}{{- end }}
