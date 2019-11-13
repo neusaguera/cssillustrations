@@ -30,9 +30,6 @@
             color: $c_rustyred;
             margin-bottom: 12px;
         }
-        .highlight{
-            width: max-content;
-        }
     }
     pre {
         white-space: pre-wrap;
@@ -179,11 +176,18 @@
         }
         .highlight{
             margin: 24px 0;
+            width: max-content;
+            min-width: 45%;
         }
         blockquote {
             p{
                 font-size: 16px;
                 line-height: 20px;
+            }
+
+            .highlight{
+                width: max-content;
+                min-width: 45%;
             }
         }
         h4{

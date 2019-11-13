@@ -5017,8 +5017,6 @@ readers do not read off random characters that represent icons */
       font-style: normal;
       color: #D52941;
       margin-bottom: 12px; }
-    .post blockquote .highlight {
-      width: max-content; }
   .post pre {
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -5138,10 +5136,15 @@ readers do not read off random characters that represent icons */
       .post a:hover {
         text-decoration: underline; }
     .post .highlight {
-      margin: 24px 0; }
+      margin: 24px 0;
+      width: max-content;
+      min-width: 45%; }
     .post blockquote p {
       font-size: 16px;
       line-height: 20px; }
+    .post blockquote .highlight {
+      width: max-content;
+      min-width: 45%; }
     .post h4 {
       letter-spacing: 0; }
     .post h2 {
