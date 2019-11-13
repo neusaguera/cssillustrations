@@ -1,0 +1,13 @@
+@media only screen and (min-width: 1024px) {
+    .twocodes{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 24px;
+        .highlight {
+            width: max-content;
+            flex: 1;
+            margin-right: 12px;
+        }
+    }
+}

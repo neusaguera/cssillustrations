@@ -1,6 +1,6 @@
 <ul class="home-post">
 
-    {{ range first 3 (sort .section.list "Date") }}
+    {{ range first 3 (sort .section.list) }}
 
         <li class="home-post-item">
             <a class="home-post-link" href="{{.Permalink}}">

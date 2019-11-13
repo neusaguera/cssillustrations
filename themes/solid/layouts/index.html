@@ -10,7 +10,8 @@
         {{ partial "home/section_home" (dict "context" . "section" $news) }}
       {{ end }}
 
-      {{ $tsum := dict "title" "Curso tsum" "url" "/tags/tsum/" "list" .Site.Taxonomies.tags.tsum }}
+      {{ $list := (.Site.Taxonomies.tags.tsum).Pages.ByDate}}
+      {{ $tsum := dict "title" "Curso tsum" "url" "/tags/tsum/" "list" $list }}
       {{ partial "home/section_home" (dict "context" . "section" $tsum) }}
 
       {{ $animation := dict "title" "Animaciones" "url" "/tags/animaciones/" "list" .Site.Taxonomies.tags.animaciones }}
@@ -23,7 +24,8 @@
         {{ partial "home/section_home" (dict "context" . "section" $illustration) }}
       {{ end }}
 
-      {{ $first := dict "title" "Primeros pasos" "url" "/tags/basic/" "list" .Site.Taxonomies.tags.basic }}
+      {{ $list := (.Site.Taxonomies.tags.elemental).Pages.ByDate}}
+      {{ $first := dict "title" "Primeros pasos" "url" "/tags/elemental/" "list" $list }}
       {{ partial "home/section_home" (dict "context" . "section" $first) }}
 
       {{ partial "home/section_tags" . }}

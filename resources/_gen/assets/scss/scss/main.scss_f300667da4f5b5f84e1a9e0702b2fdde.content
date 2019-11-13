@@ -5017,6 +5017,8 @@ readers do not read off random characters that represent icons */
       font-style: normal;
       color: #D52941;
       margin-bottom: 12px; }
+    .post blockquote .highlight {
+      width: max-content; }
   .post pre {
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -5039,6 +5041,8 @@ readers do not read off random characters that represent icons */
     font-style: italic;
     position: relative;
     margin-bottom: 24px; }
+    .post .highlight pre {
+      height: 85%; }
   .post .copy-code {
     top: 6px;
     position: absolute;
@@ -5184,6 +5188,17 @@ readers do not read off random characters that represent icons */
         font-family: "Oswald", sans-serif; }
   .nav-insection .nav-insection-link {
     font-size: 22px; } }
+
+@media only screen and (min-width: 1024px) {
+  .twocodes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 24px; }
+    .twocodes .highlight {
+      width: max-content;
+      flex: 1;
+      margin-right: 12px; } }
 
 .post-header .share-buttons-link i {
   color: #fff; }

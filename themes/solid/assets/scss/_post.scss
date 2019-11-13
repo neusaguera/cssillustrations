@@ -30,6 +30,9 @@
             color: $c_rustyred;
             margin-bottom: 12px;
         }
+        .highlight{
+            width: max-content;
+        }
     }
     pre {
         white-space: pre-wrap;
@@ -56,6 +59,9 @@
         font-style: italic;
         position: relative;
         margin-bottom: 24px;
+        pre{
+            height: 85%;
+        }
     }
     .copy-code {
         top: 6px;

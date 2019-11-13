@@ -3,7 +3,7 @@
     <a href="{{ .section.url}}">
         <span class="pad">#</span>
             {{ .section.title}}
-            {{$count := len .section}}
+            {{$count := len .section.list}}
             {{ if ge $count 4}}
                 <span class="smaller">(ver más)</span>
             {{ end }}
