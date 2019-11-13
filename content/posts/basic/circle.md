@@ -6,16 +6,15 @@ tags: ["Elemental"]
 date: "2019-11-10"
 weight: 297
 categories: ["Basic"]
-draft: true
 ---
 
-## Circulo y sus variantes
+## círculo y sus variantes
 
-En esta entrada aprenderemos a crear circulos y algunas de sus variantes (óvalo, huevo y gota).
+En esta entrada aprenderemos a crear círculos y algunas de sus variantes (óvalo, huevo y gota).
 
-![formas geometricas circulo, ovalo, huego y gota](/geometric/circle-steps.png)
-### Circulo
-Para crear un circulo seguimos los mismos pasos que para crear un cuadrado. Una vez lo tenemos le añadiremos la propiedad <b>border-radius</b> para que tenga la forma circular. Esta propiedad define el radio que tiene cada esquina (arriba-izquierda, arriba-derecha, abajo-derecha, abajo-izquierda).
+![formas geometricas círculo, ovalo, huego y gota](/geometric/circle-steps.png)
+### círculo
+Para crear este objeto seguimos los mismos pasos que para crear un cuadrado. Una vez lo tenemos, le añadiremos la propiedad <b>border-radius</b> para que tenga forma circular. Esta propiedad define el radio de cada esquina (arriba izquierda, arriba derecha, abajo derecha, abajo izquierda).
 
 {{< twocodes >}}
 {{< highlight HTML>}}
@@ -35,7 +34,7 @@ Para crear un circulo seguimos los mismos pasos que para crear un cuadrado. Una 
 
 ### Óvalo
 
-Una vez tenemos el circulo crear el óvalo es tan fácil como crear el rectangulo depués del cuadrado, cambiale el alto o ancho y ya lo tienes.
+Una vez tenemos el círculo crear el óvalo es tan fácil como crear el rectángulo después del cuadrado, cámbiale el alto o ancho y ya lo tienes.
 
 {{< twocodes >}}
 {{< highlight HTML>}}
@@ -54,7 +53,7 @@ Una vez tenemos el circulo crear el óvalo es tan fácil como crear el rectangul
 
 ### Huevo
 
-Para reproducir la forma de huevo la altura debe ser aproximadamente un 25% mayor que el ancho. Una vez tenemos este rectángulo vamos a aplicar la propiedad <b>border-radius</b> en dos pasos. Primero le aplicamos un 50% para que se nos convierta en un óvalo, ahora le aplicaremos un segundo valor separado por <b>/</b>. En el segundo valor queremos que los bordes de arriba sean más cerrados así que le aplicaremos un 60% a cada uno y a los de abajo que los queremos más anchos un 40%.
+Para reproducir la forma de huevo, la altura debe ser aproximadamente un 25% mayor que el ancho. Una vez tenemos este rectángulo aplicamos la propiedad <b>border-radius</b> en dos pasos. Primero le damos un valor de 50% en todas las esquinas para que se nos convierta en un óvalo. Seguidamente añadimos un segundo valor separado por <b>/</b>. Los bordes de arriba deben ser más cerrados así que le aplicaremos un 60% y a los de abajo un 40%.
 
 {{< twocodes >}}
 {{< highlight HTML>}}
@@ -71,9 +70,9 @@ Para reproducir la forma de huevo la altura debe ser aproximadamente un 25% mayo
 {{< /highlight >}}
 {{</ twocodes >}}
 
-#### Gota
+### Gota
 
-Para la gota partiremos del circulo, le aplicaremos 50% a todas las esquinas menos a la arriba-izquierda que le aplicaremos un 0%. Ya tenemos la forma de la gota pero para que quede mejor la haremos rotar 45 grados.
+Para la gota partiremos del círculo, le aplicamos un 50% de radio a todas las esquinas menos a una, la de arriba izquierda, a esta le aplicaremos un 0%. Ya tenemos la forma de la gota, para que quede mejor la hacemos rotar 45 grados.
 
 {{< twocodes >}}
 {{< highlight HTML>}}
@@ -91,3 +90,6 @@ Para la gota partiremos del circulo, le aplicaremos 50% a todas las esquinas men
 }
 {{< /highlight >}}
 {{</ twocodes >}}
+
+## Juega
+Como en la anterior entrega te he comentado, juega con estos objetos para ir familiarizándote con las propiedades de CSS. Te dejo el enlace a <a href="https://codepen.io/neusaguera/pen/ZEEMMbM" target="_blank"> Codepen </a> donde puedes ver el código.
