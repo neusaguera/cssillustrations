@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formas cuadradas
-img: /geometric/square.png
+img: geometric/square.png
 tags: ["Elemental"]
 date: "2019-11-09"
 weight: 298

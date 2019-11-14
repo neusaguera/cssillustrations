@@ -1,4 +1,10 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="es">
+    {{ partial "common/head-post.html" (dict "context" . ) }}
+    <body>
+    {{ partial "common/cookieconsent.html"}}
+    {{- partial "header.html" . -}}
+    <div class="content" id="content">
     <main class="post">
         <div class="post-info">
             {{ if .IsTranslated }}
@@ -108,4 +114,9 @@
       		</div>
         {{ end }}
     </main>
-{{ end }}
+    </div>
+</div>
+{{- partial "common/footer.html" . -}}
+{{- partial "javascript.html"}}
+</body>
+</html>

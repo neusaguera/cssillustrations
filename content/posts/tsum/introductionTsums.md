@@ -2,7 +2,7 @@
 layout: post
 title: Piloto. Tsums en CSS
 tags: ["Tsum"]
-img: /tsum/introduction.png
+img: tsum/introduction.png
 date: "2019-08-27"
 weight: 199
 categories: ["Tsum"]

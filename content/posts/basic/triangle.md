@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formas triangulares
-img: /geometric/triangle.png
+img: geometric/triangle.png
 tags: ["Elemental"]
 date: "2019-11-11"
 weight: 296

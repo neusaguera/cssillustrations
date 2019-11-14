@@ -8,6 +8,7 @@
             {{range (where .Site.RegularPages.ByDate "Params.layout" "post")}}
                 <li class="list-post-item">
                     <a class="list-post-link" href="{{.Permalink}}">
+
                         {{ if .Params.img }}
                         <img class="list-post-image" width="100%" src="{{ .Site.BaseURL }}{{ .Params.img }}" alt="{{ .Title }}">
                         {{ else }}
@@ -16,6 +17,7 @@
 
                         <div class="list-post-body">
                             <h3 class="list-post-title">{{ .Title | truncate 25 }}</h3>
+
                             <p class="list-post-resume">{{ .Summary | plainify | truncate 150 }}</p>
                             {{- with .Params.tags }}
                             <div class="list-post-tags">

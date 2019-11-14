@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formas circulares
-img: /geometric/circle.png
+img: geometric/circle.png
 tags: ["Elemental"]
 date: "2019-11-10"
 weight: 297

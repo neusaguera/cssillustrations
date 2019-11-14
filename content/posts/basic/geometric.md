@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Otras formas
-img: /geometric/geometric.png
+img: geometric/geometric.png
 tags: ["Elemental"]
 date: "2019-11-13"
 weight: 214
