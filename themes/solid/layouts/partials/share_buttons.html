@@ -1,24 +1,34 @@
-{{ $pageurl := .Page.URL }}
-{{ $siteurl := .Site.BaseURL }}
+{{ $title := .Page.Title }}
+{{ $absUrl := .Permalink }}
 <div class="share-buttons">
     <ul class="share-buttons-list">
         <li class="share-buttons-item facebook">
-            <a class="share-buttons-link" target="_blank" href='http://www.facebook.com/share.php?u={{ $siteurl }}{{ $pageurl }}'>
+            <a class="share-buttons-link" target="_blank" href='http://www.facebook.com/share.php?u={{ $absUrl }}'>
                 <i class="fab fa-facebook-square"></i>
             </a>
         </li>
         <li class="share-buttons-item twitter">
-            <a class="share-buttons-link" target="_blank" href='http://twitter.com/home?status={{ $siteurl }}{{ $pageurl }}'>
+            <a class="share-buttons-link" target="_blank" href='http://twitter.com/home?status={{ $absUrl }}'>
                 <i class="fab fa-twitter-square"></i>
             </a>
         </li>
         <li class="share-buttons-item linkedin">
-            <a class="share-buttons-link" target="_blank" href='https://www.linkedin.com/shareArticle?mini=true&url={{ $siteurl }}{{ $pageurl }}&title=&summary=&source='>
+            <a class="share-buttons-link" target="_blank" href='https://www.linkedin.com/shareArticle?mini=true&url={{ $absUrl }}&title={{ $title}}&summary=&source='>
                 <i class="fab fa-linkedin"></i>
             </a>
         </li>
+        <li class="share-buttons-item whatsapp">
+            <a class="share-buttons-link"  href="whatsapp://send?text={{ $title }}%20{{ $absUrl }}" data-gtm-social-provider="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item telegram">
+            <a class="share-buttons-link" href="tg://msg_url?text={{ $title }}=12&url={{ $absUrl }}">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </li>
         <li class="share-buttons-item mail">
-            <a class="share-buttons-link" target="_blank" href='mailto:?&body={{ $siteurl }}{{ $pageurl }}'>
+            <a class="share-buttons-link" target="_blank" href='mailto:?&body={{ $absUrl }}'>
                 <i class="fas fa-envelope"></i>
             </a>
         </li>
