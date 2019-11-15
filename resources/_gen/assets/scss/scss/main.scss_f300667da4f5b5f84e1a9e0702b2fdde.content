@@ -5203,7 +5203,7 @@ readers do not read off random characters that represent icons */
     .twocodes .highlight {
       width: max-content;
       flex: 1;
-      margin-right: 12px; } }
+      margin: 0 12px 12px 0; } }
 
 .post-header .share-buttons-link i {
   color: #fff; }
