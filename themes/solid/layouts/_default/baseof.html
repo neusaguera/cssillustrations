@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-    {{- partial "common/head.html" . -}}
+    {{ if eq .Params.layout "post" }}
+        {{ partial "common/head-post.html" (dict "context" . ) }}
+    {{ else }}
+        {{- partial "common/head.html" . -}}
+    {{ end }}
     <body>
         {{ partial "common/cookieconsent.html"}}
         {{- partial "header.html" . -}}

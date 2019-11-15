@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-    {{ partial "common/head-post.html" (dict "context" . ) }}
-    <body>
-    {{ partial "common/cookieconsent.html"}}
-    {{- partial "header.html" . -}}
+{{ define "main" }}
     <div class="content" id="content">
     <main class="post">
         <div class="post-info">
@@ -113,10 +108,4 @@
                 {{ partial "disqus.html" . }}
       		</div>
         {{ end }}
-    </main>
-    </div>
-</div>
-{{- partial "common/footer.html" . -}}
-{{- partial "javascript.html"}}
-</body>
-</html>
+{{ end }}
