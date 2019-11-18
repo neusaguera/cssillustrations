@@ -3,12 +3,11 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
 
-<meta name="author"
-    content="{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ range .Site.Author }}{{ . }} {{ end }}{{ end }}">
-<meta name="keywords" content="{{ .Site.Params.keywords }}" />
-<!--Insert OG Markup -->
+<meta name="author" content="{{ if .Params.author }}{{ .context.Params.author }}{{ else }}{{ .context.Site.Params.Author }}{{ end }}">
+<meta name="keywords" content="{{ .context.Site.Params.keywords }}" />
+
 <meta property="og:locale" content="es_ES" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
 <meta property="og:title" content="{{ .context.Title }}" />
 <meta name="description" property="og:description" content="{{ .context.Summary | plainify | truncate 150  }}" />
 <meta property="og:url" content="{{ .context.Permalink }}" />
@@ -17,13 +16,17 @@
 <meta property="og:image:secure_url" content="{{ .context.Site.BaseURL }}{{ .context.Params.img }}" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="632" />
-
-<!--Insert Twitter Card Markup -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@Neuxi11" />
 <meta name="twitter:creator" content="@Neuxi11" />
 <meta name="twitter:image" content="{{ .context.Site.BaseURL }}{{ .context.Params.img }}" />
-
+{{ range $name, $taxonomy := .context.Site.Taxonomies.tags }}
+<meta name="article:tag" content="{{ $name }}">
+{{ end }}
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="{{ .context.Params.date }}" />
+<meta property="article:modified_time" content="{{ .context.Params.lastmod }}" />
+<meta name="theme-color" content="#D52941">
 <meta name="robots" content="noodp" />
 <link rel="icon"
       type="image/png"

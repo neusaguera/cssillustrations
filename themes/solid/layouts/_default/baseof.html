@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     {{ if eq .Params.layout "post" }}
-        {{ partial "common/head-post.html" (dict "context" . ) }}
+        {{- partial "common/head-post.html" (dict "context" . ) -}}
     {{ else }}
         {{- partial "common/head.html" . -}}
     {{ end }}

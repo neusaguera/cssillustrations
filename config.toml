@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "CSS ILLUSTRATIONS"
 defaultContentLanguage = "es"
 languageName = "es"
-
 theme = "solid"
 
 [menu]
@@ -28,6 +27,8 @@ theme = "solid"
   disqusShortname = "neusageravalls"
   socialImage = "presentation.png"
   twitterImage = "presentationTwitter.png"
+  author = "Neus Agüera Valls"
+  keywords= "HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass"
 
 [taxonomies]
   category = "categories"
