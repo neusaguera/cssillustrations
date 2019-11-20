@@ -5126,6 +5126,8 @@ readers do not read off random characters that represent icons */
   .post {
     max-width: 100%;
     margin-top: -10px; }
+    .post img {
+      max-width: 100%; }
     .post article {
       padding: 0; }
     .post p, .post li {

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nivel 2. Daisy & Donald
-img: daisy_donald/daisydonald.png
+img: daisy_donald/daisydonald.webp
 tags: ["Tsum", "Ilustraciones"]
 date: "2019-10-02"
 lastmod: "2019-11-06"
@@ -22,7 +22,7 @@ categories: ["Tsum"]
 
 Esta vez empezaremos con Daisy, como en el primer nivel antes de empezar a crear nuestro HTML, nos fijaremos en el tsum de Daisy y dibujaremos su forma básica, ya sea en papel, photoshop o en tu mente, ¿Lo tienes?
 
-{{< image src="/daisy_donald/basicdaisy.png" alt="formas básicas Daisy">}}
+{{< image src="/daisy_donald/basicdaisy.webp" alt="formas básicas Daisy">}}
 
 Ahora que tenemos el dibujo creamos dos ficheros   <b>daisy.html</b> y <b>daisy.css</b>.
 
@@ -118,7 +118,7 @@ Nos han salido 3 círculos (manos y cabeza). Cada círculo lo convertiremos en u
 
 Ya tenemos la forma básica de Daisy, ahora vamos a por la cara, ojos, pico y coloretes. Intenta crear el código necesario para tener algo parecido a esto:
 
-{{< image src="/daisy_donald/facedaisy.png" alt="Creando la cara de Daisy">}}
+{{< image src="/daisy_donald/facedaisy.webp" alt="Creando la cara de Daisy">}}
 ### daisy.html
 Añade dentro de  <b>daisy-head</b> estos divs
 
@@ -240,7 +240,7 @@ Recuerda que no hay una única solución, intenta hacerlo a tu manera y si tiene
 
 Ahora vamos a añadirle el lazo. Puedes mirar como hicimos con el lazo de Minnie pero en este paso yo lo he creado con <b>:before</b> y <b>:after</b>.
 
-{{< image src="/daisy_donald/bowdaisy.png" alt="Daisy con lazo">}}
+{{< image src="/daisy_donald/bowdaisy.webp" alt="Daisy con lazo">}}
 ### daisy.html
 Añade entre <b>character</b> y <b>daisy-head</b> el siguiente código:
 
@@ -352,7 +352,7 @@ Añade entre <b>character</b> y <b>daisy-head</b> el siguiente código:
 
 Ya tenemos a Daisy y ahora vamos a por Donald, como siempre para un nuevo tsum crearemos dos ficheros <b> donald.html </b> y <b>donald.css</b>. El código básico de Donald es el mismo de Daisy sin pestañas ni lazo.
 
-{{< image src="/daisy_donald/facedonald.png" alt="La cara de Donald">}}
+{{< image src="/daisy_donald/facedonald.webp" alt="La cara de Donald">}}
 ### donald.html
 {{< highlight html >}}
 <div class="character donald">
@@ -454,7 +454,7 @@ Ya tenemos a Daisy y ahora vamos a por Donald, como siempre para un nuevo tsum c
 
 El gorro de Donald lo dividimos en dos partes la copa y el ribete. Para la copa creamos un div rectangular al que le redondeamos los bordes. Para el ribete otro div rectangular redondeado y utilizaremos los pseudo elementos <b>:before</b> y <b>:after</b> para la cinta colgante.
 
-{{< image src="/daisy_donald/hatdonald.png" alt="Daisy con lazo">}}
+{{< image src="/daisy_donald/hatdonald.webp" alt="Daisy con lazo">}}
 ### donald.html
 Añadiremos los divs del gorro entre <b> character </b> y <b> donald-head</b>
 {{< highlight html >}}
@@ -544,7 +544,7 @@ Añadiremos los divs del gorro entre <b> character </b> y <b> donald-head</b>
 
 Lo único que nos queda para acabar es crear una pajarita para Donald.
 
-{{< image src="/daisy_donald/bowtiedonald.png" alt="La cara de Donald">}}
+{{< image src="/daisy_donald/bowtiedonald.webp" alt="La cara de Donald">}}
 ### donald.html
 Añadiremos los divs entre <b> donald-head </b> y <b> donald-hand</b>
 {{< highlight html >}}
