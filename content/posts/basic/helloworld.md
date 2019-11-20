@@ -51,8 +51,7 @@ Crea un archivo nuevo y guardalo como helloworld.html. Copia el siguiente códig
 > 3. <strong>&lt;head&gt;&lt;/head&gt;</strong>  Engloba los elementos que informan sobre el documento, título, estilos, meta, links, scripts...
 > 4. <strong>&lt;title&gt;&lt;/title&gt;</strong> Aquí pondremos el título de la web y es lo que aparecerá en la pastilla del navegador.
 
-> ![Navegador con hello world](/helloworld/helloworld.png)
-
+> {{< image src="/helloworld/helloworld.png" alt="Navegador con hello world">}}
 > 5. <strong>&lt;body&gt;&lt;/body&gt;</strong> Engloba el contenido HTML de toda la web, texto, imagenes, tablas...&lt;
 
 ### Paso 3: Añadir CSS

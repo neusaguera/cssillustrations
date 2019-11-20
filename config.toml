@@ -4,6 +4,7 @@ title = "CSS ILLUSTRATIONS"
 defaultContentLanguage = "es"
 languageName = "es"
 theme = "solid"
+disableLiveReload = true
 
 [menu]
   [[menu.main]]
@@ -16,11 +17,11 @@ theme = "solid"
     name       = "Sobre mi"
     url        = "/about/"
     weight    = -100
-[[menu.main]]
-    identifier = "tsum"
-    name       = "Curso Tsum"
-    url        = "/tags/tsum/"
-    weight    = -120
+  [[menu.main]]
+      identifier = "tsum"
+      name       = "Curso Tsum"
+      url        = "/tags/tsum/"
+      weight    = -120
 
 [params]
   defaultImage = "dino.png"
@@ -34,3 +35,7 @@ theme = "solid"
   category = "categories"
   series = "series"
   tag = "tags"
+
+[outputs]
+  home = ["HTML", "AMP"]
+  page = ["HTML", "AMP"]

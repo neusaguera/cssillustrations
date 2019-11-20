@@ -1,0 +1,14 @@
+.amp-share-buttons-link{
+    display: inline-flex;
+    padding-right: 12px;
+    i{
+        color: $c_white;
+        font-size: 32px;
+    }
+}
+.amp-share-buttons-list {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}

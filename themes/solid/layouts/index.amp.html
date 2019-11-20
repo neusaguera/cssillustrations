@@ -1,0 +1,34 @@
+{{ define "main" }}
+  {{- partial "home/lab_animation.html" . -}}
+  {{.Content}}
+    <div class="amp-container">
+
+      {{ $list := (where .Site.RegularPages.ByDate "Params.layout" "post") }}
+      {{ $news := dict "title" "Últimas publicaciones" "list" $list }}
+      {{ $countPost := len $news.list }}
+      {{ if ge $countPost 10}}
+        {{ partial "amp/home/amp-section_home" (dict "context" . "section" $news) }}
+      {{ end }}
+
+      {{ $list := (.Site.Taxonomies.tags.tsum).Pages.ByDate}}
+      {{ $tsum := dict "title" "Curso tsum" "url" "/tags/tsum/" "list" $list }}
+      {{ partial "amp/home/amp-section_home" (dict "context" . "section" $tsum) }}
+
+      {{ $animation := dict "title" "Animaciones" "url" "/tags/animaciones/" "list" .Site.Taxonomies.tags.animaciones }}
+      {{ if $animation.list }}
+        {{ partial "amp/home/amp-section_home" (dict "context" . "section" $animation) }}
+      {{ end }}
+
+      {{ $illustration := dict "title" "Ilustraciones" "url" "/tags/ilustraciones/" "list" .Site.Taxonomies.tags.ilustraciones }}
+      {{ if ge $illustration.list 10}}
+        {{ partial "amp/home/amp-section_home" (dict "context" . "section" $illustration) }}
+      {{ end }}
+
+      {{ $list := (.Site.Taxonomies.tags.elemental).Pages.ByDate}}
+      {{ $first := dict "title" "Primeros pasos" "url" "/tags/elemental/" "list" $list }}
+      {{ partial "amp/home/amp-section_home" (dict "context" . "section" $first) }}
+
+      {{ partial "amp/home/amp-section_tags" . }}
+
+    </div>
+{{ end }}

@@ -1,0 +1,80 @@
+.amp-header{
+    height: 50px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    background: $c_t_snowblue;
+    z-index: $z10000;
+}
+.amp-logo {
+    margin: 0 auto;
+    padding-left: 12px;
+    flex: 1 75%;
+}
+.amp-logo-text{
+    line-height: 50px;
+    font-size: 18px;
+    color: $c_rustyred;
+    font-family: $oswald;
+    letter-spacing: -1px;
+}
+.amp-header-content{
+    display: flex;
+    .fa{
+        line-height: 50px;
+        font-size: 18px;
+        color: $c_rustyred;
+    }
+    .amp-bars-menu {
+        padding-right: 12px;
+        border: 0;
+        cursor: pointer;
+    }
+}
+.amp-menu-content{
+    padding: 24px;
+}
+.amp-menu-title {
+    font-size: 22px;
+    color: $c_rustyred;
+    .amp-menu-title-icon{
+        color: $c_rustyred;
+    }
+}
+.amp-menu-tags{
+    padding-left: 24px;
+    list-style: none;
+    margin-bottom: 36px
+}
+.amp-menu-tags-item{
+    margin-bottom: 6px;
+}
+.amp-menu-tags-link{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: $oswald;
+}
+.amp-menu{
+    width: 100%;
+    background: $c_white;
+    .amp-menu-item{
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    .amp-menu-link {
+        font-size: 20px;
+        line-height: 32px;
+        color: $c_rustyred;
+        font-family: $oswald;
+    }
+    .amp-menu-close{
+        height: 50px;
+        padding: 0 24px;
+    }
+    .fa{
+        line-height: 50px;
+        font-size: 18px;
+        color: $c_rustyred;
+    }
+}

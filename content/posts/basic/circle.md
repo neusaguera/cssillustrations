@@ -12,7 +12,8 @@ categories: ["Basic"]
 
 En esta entrada aprenderemos a crear círculos y algunas de sus variantes (óvalo, huevo y gota).
 
-![formas geometricas círculo, ovalo, huego y gota](/geometric/circle-steps.png)
+{{< image src="/geometric/circle-steps.png" alt="formas geometricas círculo, ovalo, huevo y gota">}}
+
 ### círculo
 Para crear este objeto seguimos los mismos pasos que para crear un cuadrado. Una vez lo tenemos, le añadiremos la propiedad <b>border-radius</b> para que tenga forma circular. Esta propiedad define el radio de cada esquina (arriba izquierda, arriba derecha, abajo derecha, abajo izquierda).
 

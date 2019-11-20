@@ -1,0 +1,97 @@
+<!doctype html>
+<html ⚡>
+    {{ if eq .Params.layout "post" }}
+        {{- partial "amp/common/head-post.amp.html" (dict "context" . ) -}}
+    {{ else }}
+        {{- partial "amp/common/head.amp.html" . -}}
+    {{ end }}
+    <body>
+    {{- partial "amp/common/header.amp.html" . -}}
+        <div class="amp-content" id="content">
+        <main class="amp-post">
+            <div class="amp-post-info">
+                {{ if .IsTranslated }}
+                    {{ i18n "postAvailable" }}
+                    {{ range .Translations }}
+                        <a href="{{ .Permalink }}"><span class="amp-flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
+                    {{ end}}
+                {{ end }}
+                </p>
+            </div>
+
+        <article>
+            <div class="amp-post-header">
+                <div class="amp-container">
+
+                    <h1 class="amp-post-title">{{ .Title | markdownify }}</h1>
+
+                    <div class="amp-post-dates">
+                        {{ with .Params.Author }}
+                            <div class="amp-post-dates-title author">
+                                <span class="amp-post-date-text"> {{ . }}</span>
+                            </div>
+                        {{ end }}
+                        {{ with .Params.Date }}
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> {{ .Format "02-01-2006" }}</span>
+                            </div>
+                        {{ end }}
+                        {{ with .Params.Lastmod }}
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> {{ .Format "02-01-2006" }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                    {{- with .Params.tags }}
+
+                      <ul class="amp-post-tag-list">
+                            <i class="fa fa-tags"></i>
+                            {{- range . -}}
+                          <li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{.}}</a></a>
+                          </li>
+                            {{- end }}
+                        </ul>
+
+                    {{- end }}
+                    {{ partial "post/amp-share_buttons.html" . }}
+                </div>
+            </div>
+
+            <div class="amp-post-content">
+                <div class="amp-container">
+                    {{ .Content }}
+                </div>
+            </div>
+
+            {{- if .Params.toc }}
+                <hr />
+                <aside id="toc">
+                <div class="amp-toc-title">{{ i18n "tableOfContents" }}</div>
+                    {{ .TableOfContents }}
+                </aside>
+                <hr />
+            {{- end }}
+
+        </article>
+
+        <div class="amp-container">
+            <nav class="amp-nav-insection">
+                {{ $pages := where site.Pages "Params.categories" "intersect" .Params.categories }}
+
+                {{ with $pages.Prev . }}
+                    <a class="amp-nav-insection-link prev" href="{{.Permalink}}">
+                            <i class="fa fa-arrow-left"></i> {{ .Name}}
+                    </a>
+                {{ end }}
+
+                {{ with $pages.Next . }}
+                    <a class="amp-nav-insection-link next" href="{{.Permalink}}">
+                         {{ .Name}} <i class="fa fa-arrow-right"></i>
+                    </a>
+                {{ end }}
+            </nav>
+        </div>
+        {{- partial "amp/common/footer.amp.html" . -}}
+    </body>
+</html>

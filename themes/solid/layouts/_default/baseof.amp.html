@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+    {{ if eq .Params.layout "post" }}
+        {{- partial "amp/common/head-post.amp.html" (dict "context" . ) -}}
+    {{ else }}
+        {{- partial "amp/common/head.amp.html" . -}}
+    {{ end }}
+    <body>
+        {{- partial "amp/common/header.amp.html" . -}}
+        <div class="amp-content" id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "amp/common/footer.amp.html" . -}}
+    </body>
+</html>

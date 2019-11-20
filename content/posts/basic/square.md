@@ -13,8 +13,8 @@ Las ilustraciones que encontrarás en este site todas están hechas con formas g
 ## Cuadrado y sus variantes
 
 Vamos a empezar por la forma más básica, el cuadrado y sus variantes  (rectángulo, rombo y paralelogramo).
+{{< image src="/geometric/square-steps.png" alt="formas geometricas cuadrado, rectángulo, rombo y paralelogramo">}}
 
-![formas geometricas cuadrado, rectángulo, rombo y paralelogramo](/geometric/square-steps.png)
 ### Cuadrado
 Para crear un cuadrado sólo necesitamos tener un <b>div</b> al que le daremos como nombre de clase <b>square</b>. Las propiedades mínimas que debe tener este div son <b>height</b> y <b>width</b> con valores iguales, para darle color y que lo veamos le añadiremos <b>background</b> , <b>border</b> o ambas tú decides.
 

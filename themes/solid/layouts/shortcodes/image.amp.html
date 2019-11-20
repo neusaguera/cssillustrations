@@ -1,0 +1,19 @@
+<div class="amp-fixed-container">
+{{ if .IsNamedParams }}
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="{{.Get "src" }}"
+    alt="{{.Get "alt" }}"
+    width="360">
+</amp-img>
+{{ else }}
+<amp-img
+    layout="responsive"
+    src="{{.Get 0}}"
+    alt="{{.Get 1}}"
+    width="360"
+    height="270"
+></amp-img>
+{{ end }}
+</div>

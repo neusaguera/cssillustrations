@@ -12,7 +12,7 @@ categories: ["Basic"]
 
 En este post aprenderemos a crear triángulos y algunas variantes como estrellas y flechas.
 
-![formas geométricas triangulares](/geometric/triangle-steps.png)
+{{< image src="/geometric/triangle-steps.png" alt="formas geométricas triangulares">}}
 ### Triángulo
 Para crear un triángulo las propiedades más importantes son los bordes, necesitamos jugar con tres de los cuatro. Por ejemplo, si queremos crear un triangulo que señala hacia arriba, le daremos al borde opuesto, en este caso border-bottom, altura y color. A los dos bordes colindantes (izquierda y derecha), les daremos el ancho que queramos con color transparente. El ancho total del triángulo será la suma de los dos. Pruébalo, es mucho más fácil de lo que parece.
 

@@ -1,0 +1,43 @@
+.amp-footer{
+    background: $c_deepblue;
+    color: $c_white;
+    .amp-logo {
+       padding: 0;
+    }
+    .amp-logo-text{
+        font-size: 24px;
+        color: $c_snowblue;
+    }
+}
+.amp-footer-content{
+    padding: 24px ;
+    .amp-footer-social-item, .amp-footer-policy-link{
+      color: $c_white;
+      font-family: $oswald;
+    }
+}
+.amp-footer-contact-title{
+    margin-bottom: 12px;
+    color: $c_snowblue;
+}
+.amp-footer-social-list{
+    list-style: none;
+    margin-bottom: 24px;
+}
+.amp-footer-social-item{
+    &.amp-inline{
+        display: inline-flex;
+        padding-right: 12px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    i{
+        font-size: 22px;
+        line-height: 26px;
+        color: $c_snowblue;
+    }
+}
+.amp-footer-policy-item{
+    display: inline-flex;
+    padding-right: 18px;
+}

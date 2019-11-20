@@ -1,0 +1,41 @@
+<header class="amp-header">
+    <div class="amp-container">
+        <div class="amp-header-content">
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/amp">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="amp-bars-menu" on="tap:sidebar.toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+<div>
+    <amp-sidebar id="sidebar" class="amp-menu" layout="nodisplay" side="right" role="menu" tabindex="-1" style="" hidden="">
+        <button class="amp-menu-close" on="tap:sidebar.toggle">
+                <i class="fa fa-times"></i>
+        </button>
+        <div class="amp-menu-content">
+            <h4 class="amp-menu-title"><i class="fa fa-tags amp-menu-title-icon"></i> Etiquetas</h4>
+            <ul class="amp-menu-tags">
+                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="{{ .Permalink }}">{{ $name }} ({{$taxonomy.Count}})</a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+
+            <ul class="amp-menu-list">
+                {{- $currentPage := . -}}
+                {{ range .Site.Menus.main -}}
+                    <li class="amp-menu-item">
+                        <a class="amp-menu-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                    </li>
+                {{- end }}
+            </ul>
+        </div>
+    </amp-sidebar>
+</div>
+<div hidden=""></div>
