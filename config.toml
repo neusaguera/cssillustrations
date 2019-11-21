@@ -24,7 +24,7 @@ disableLiveReload = true
       weight    = -120
 
 [params]
-  defaultImage = "dino.webp"
+  defaultImage = "dino.jpg"
   disqusShortname = "neusageravalls"
   socialImage = "presentation.png"
   twitterImage = "presentationTwitter.png"

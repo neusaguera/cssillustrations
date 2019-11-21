@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HelloWorld
-img: helloworld/introduction.webp
+img: helloworld/introduction.jpg
 tags: ["Elemental"]
 date: "2019-03-08"
 weight: 299
@@ -51,7 +51,7 @@ Crea un archivo nuevo y guardalo como helloworld.html. Copia el siguiente códig
 > 3. <strong>&lt;head&gt;&lt;/head&gt;</strong>  Engloba los elementos que informan sobre el documento, título, estilos, meta, links, scripts...
 > 4. <strong>&lt;title&gt;&lt;/title&gt;</strong> Aquí pondremos el título de la web y es lo que aparecerá en la pastilla del navegador.
 
-> {{< image src="/helloworld/helloworld.webp" alt="Navegador con hello world">}}
+> {{< image src="/helloworld/helloworld.jpg" alt="Navegador con hello world">}}
 > 5. <strong>&lt;body&gt;&lt;/body&gt;</strong> Engloba el contenido HTML de toda la web, texto, imagenes, tablas...&lt;
 
 ### Paso 3: Añadir CSS

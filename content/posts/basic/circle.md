@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formas circulares
-img: geometric/circle.webp
+img: geometric/circle.jpg
 tags: ["Elemental"]
 date: "2019-11-10"
 weight: 297
@@ -12,7 +12,7 @@ categories: ["Basic"]
 
 En esta entrada aprenderemos a crear círculos y algunas de sus variantes (óvalo, huevo y gota).
 
-{{< image src="/geometric/circle-steps.webp" alt="formas geometricas círculo, ovalo, huevo y gota">}}
+{{< image src="/geometric/circle-steps.jpg" alt="formas geometricas círculo, ovalo, huevo y gota">}}
 
 ### círculo
 Para crear este objeto seguimos los mismos pasos que para crear un cuadrado. Una vez lo tenemos, le añadiremos la propiedad <b>border-radius</b> para que tenga forma circular. Esta propiedad define el radio de cada esquina (arriba izquierda, arriba derecha, abajo derecha, abajo izquierda).

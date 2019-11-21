@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nivel 1. Mickey & Minnie en CSS
-img: mickey_minnie/mickeyminnie.webp
+img: mickey_minnie/mickeyminnie.jpg
 tags: ["Tsum", "Ilustraciones"]
 date: "2019-08-28"
 lastmod: "2019-10-31"
@@ -10,7 +10,7 @@ weight: 198
 categories: ["Tsum"]
 ---
 
-{{< image src="/mickey_minnie/stepsMinnie.webp" alt="Pasos de Minnie">}}
+{{< image src="/mickey_minnie/stepsMinnie.jpg" alt="Pasos de Minnie">}}
 
 En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillos pasos. No importa tu nivel de CSS, si estás empezando encontrarás explicaciones de las propiedades durante todo el curso, ¿Qué veremos con Mickey y Minnie?
 
@@ -27,7 +27,7 @@ Aunque parezcan muchas cosas no te preocupes y vamos a ponernos con el código. 
 
 Antes de empezar con el HTML, estudio la imagen que quiero crear y la desgloso en mi mente. Para que te sea más fácil, te aconsejo que cojas papel y lápiz, dibuja la forma más básica del Tsum, en este caso la forma de Mickey. No hace falta que seas un gran dibujante solo son las formas. Algo parecido a esto:
 
-{{< image src="/mickey_minnie/basicmickey.webp" alt="formas básicas Mickey">}}
+{{< image src="/mickey_minnie/basicmickey.jpg" alt="formas básicas Mickey">}}
 
 Una vez tenemos el dibujo, crearemos dos ficheros <b> mickey.html </b>  y <b> mickey.css </b>
 
@@ -63,7 +63,7 @@ Con las pautas que te he dado te toca crear el HTML, abajo te dejo una posible s
 
 Ahora vamos a por el CSS. La solución del CSS la he dividido en dos partes, en la primera nos centraremos en posicionar los elementos y en la segunda le daremos forma y color. Intenta hacer algo parecido a esto:
 
-{{< image src="/mickey_minnie/mickeybody.webp" alt="mickey simple body">}}
+{{< image src="/mickey_minnie/mickeybody.jpg" alt="mickey simple body">}}
 
 ### mickey.css
 Como hemos comentado en esta primera parte solo vamos a centranos en el posicionamiento de los elementos. El resultado de este código serán unos cuadrados de colores centrados.
@@ -135,7 +135,7 @@ Como hemos comentado en esta primera parte solo vamos a centranos en el posicion
 >
 > Con la siguiente imagen voy a intentar explicarte el comportamiento de <b> transform:translateX() </b>.
 >
-{{< image src="/transformtranslate.webp" alt="transform translate behavior">}}
+{{< image src="/transformtranslate.jpg" alt="transform translate behavior">}}
 >
 >
 >No hay una única manera para centrar los elementos y quizá has utilizado la siguiente solución o la has visto aplicar en algún sitio.
@@ -228,7 +228,7 @@ Ya tenemos los cuadrados posicionados vamos a darles forma y color.
 
 Ya tenemos la forma básica de Mickey, ahora vamos a por la cara. Intenta modificar el HTML y CSS necesario para crear algo parecido a esto:
 
-{{< image src="/mickey_minnie/mickeyface.webp" alt="mickey face">}}
+{{< image src="/mickey_minnie/mickeyface.jpg" alt="mickey face">}}
 
 No parece muy difícil, ¿No?. Una pequeña ayuda, he añadido 3 divs.
 
@@ -300,7 +300,7 @@ Recuerda que no hay una única solución, hazlo a tu manera y si tienes alguna d
 
 Nos falta los ojos y nariz para que se parezca al Tsum de Mickey.
 
-{{< image src="/mickey_minnie/mickeyeyes.webp" alt="Mickey con ojos y nariz">}}
+{{< image src="/mickey_minnie/mickeyeyes.jpg" alt="Mickey con ojos y nariz">}}
 
 ### mickey.html
 
@@ -371,7 +371,7 @@ Nos falta los ojos y nariz para que se parezca al Tsum de Mickey.
 
 WoW, Ya tenemos a Mickey, vamos a por Minnie! El siguiente paso es transformar a Mickey en Minnie. Para que tengas a los dos por separado, crea dos ficheros llamados <b> minnie.html</b>   y <b> minnie.css</b>, copia el código que tienes de Mickey y cambia todas las palabras 'mickey' por 'minnie' (más adelante veremos como aprovechar código). ¿Tienes los ficheros creados? Vamos a añadirle pestañas y coloretes. ¿Lo intentas tú primero?
 
-{{< image src="/mickey_minnie/minnieblushers.webp" alt="Minnie con pestañas y coloretes">}}
+{{< image src="/mickey_minnie/minnieblushers.jpg" alt="Minnie con pestañas y coloretes">}}
 
 ### minnie.html
 {{< highlight HTML >}}
@@ -462,7 +462,7 @@ transform: rotate(45deg);
 ## Paso 5: El lazo de Minnie.
 Ya tenemos algo que se parece a Minnie, una Minnie muy cabreada porque no tiene su lazo... ¿Alguna vez la has visto sin su lazo? ella lo necesita así que vamos a crearlo. Venga utiliza la imaginación ¡tú puedes!
 
-{{< image src="/mickey_minnie/minniebow.webp" alt="lazo de Minnie">}}
+{{< image src="/mickey_minnie/minniebow.jpg" alt="lazo de Minnie">}}
 
 ### minnie.html
 {{< highlight HTML>}}
