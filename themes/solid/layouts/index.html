@@ -3,10 +3,10 @@
   {{.Content}}
     <div class="container">
 
-      {{ $list := (where .Site.RegularPages.ByDate "Params.layout" "post") }}
+      {{ $list := (where .Site.RegularPages.ByDate "Params.layout" "post").Reverse }}
       {{ $news := dict "title" "Últimas publicaciones" "list" $list }}
       {{ $countPost := len $news.list }}
-      {{ if ge $countPost 10}}
+      {{ if ge $countPost 9}}
         {{ partial "home/section_home" (dict "context" . "section" $news) }}
       {{ end }}
 
@@ -15,7 +15,7 @@
       {{ partial "home/section_home" (dict "context" . "section" $tsum) }}
 
       {{ $animation := dict "title" "Animaciones" "url" "/tags/animaciones/" "list" .Site.Taxonomies.tags.animaciones }}
-      {{ if $animation.list }}
+      {{ if ge $animation.list 3 }}
         {{ partial "home/section_home" (dict "context" . "section" $animation) }}
       {{ end }}
 

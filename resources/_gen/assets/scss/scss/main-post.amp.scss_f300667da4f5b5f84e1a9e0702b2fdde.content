@@ -232,7 +232,8 @@ h3 {
     position: relative;
     margin-bottom: 24px; }
     .amp-post .highlight pre {
-      height: 85%; }
+      height: 85%;
+      max-height: 65vh; }
   .amp-post .copy-code {
     top: 6px;
     position: absolute;

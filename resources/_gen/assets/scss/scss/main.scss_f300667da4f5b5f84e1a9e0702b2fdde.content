@@ -5019,6 +5019,8 @@ readers do not read off random characters that represent icons */
       font-style: normal;
       color: #D52941;
       margin-bottom: 12px; }
+    .post blockquote img {
+      margin: 24px 0; }
   .post pre {
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -5042,7 +5044,8 @@ readers do not read off random characters that represent icons */
     position: relative;
     margin-bottom: 24px; }
     .post .highlight pre {
-      height: 85%; }
+      height: 85%;
+      max-height: 65vh; }
   .post .copy-code {
     top: 6px;
     position: absolute;
@@ -5579,7 +5582,7 @@ readers do not read off random characters that represent icons */
   height: 300px;
   overflow: hidden;
   max-width: 375px;
-  margin: 0 auto; }
+  margin: 0 auto 32px auto; }
 
 .dino {
   position: absolute;

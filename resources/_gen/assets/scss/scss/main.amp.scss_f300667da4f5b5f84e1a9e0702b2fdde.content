@@ -845,7 +845,7 @@ h3 {
   height: 300px;
   overflow: hidden;
   max-width: 375px;
-  margin: 0 auto; }
+  margin: 0 auto 32px auto; }
 
 .dino {
   position: absolute;

@@ -30,6 +30,9 @@
             color: $c_rustyred;
             margin-bottom: 12px;
         }
+        img{
+            margin: 24px 0;
+        }
     }
     pre {
         white-space: pre-wrap;
@@ -58,6 +61,7 @@
         margin-bottom: 24px;
         pre{
             height: 85%;
+            max-height: 65vh;
         }
     }
     .copy-code {
