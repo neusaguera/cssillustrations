@@ -59,10 +59,6 @@
         font-style: italic;
         position: relative;
         margin-bottom: 24px;
-        pre{
-            height: 85%;
-            max-height: 65vh;
-        }
     }
     .copy-code {
         top: 6px;
@@ -75,6 +71,7 @@
         font-size: 12px;
         text-transform: uppercase;
         font-weight: bold;
+        z-index: 1;
     }
     h2{
         margin: 24px 0 12px 0;

@@ -4499,7 +4499,7 @@ readers do not read off random characters that represent icons */
   right: 0;
   width: 100%;
   position: fixed;
-  background: rgba(235, 242, 255, 0.8);
+  background: rgba(235, 242, 255, 0.95);
   z-index: 10000; }
 
 .logo {
@@ -5043,9 +5043,6 @@ readers do not read off random characters that represent icons */
     font-style: italic;
     position: relative;
     margin-bottom: 24px; }
-    .post .highlight pre {
-      height: 85%;
-      max-height: 65vh; }
   .post .copy-code {
     top: 6px;
     position: absolute;
@@ -5056,7 +5053,8 @@ readers do not read off random characters that represent icons */
     width: 75px;
     font-size: 12px;
     text-transform: uppercase;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 1; }
   .post h2 {
     margin: 24px 0 12px 0; }
   .post .post-tag-list {

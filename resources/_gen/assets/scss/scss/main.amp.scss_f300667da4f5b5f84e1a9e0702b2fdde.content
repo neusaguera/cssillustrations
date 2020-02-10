@@ -77,7 +77,7 @@ h3 {
   right: 0;
   width: 100%;
   position: fixed;
-  background: rgba(235, 242, 255, 0.8);
+  background: rgba(235, 242, 255, 0.95);
   z-index: 10000; }
 
 .amp-logo {

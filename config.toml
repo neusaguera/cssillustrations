@@ -39,3 +39,6 @@ disableLiveReload = true
 [outputs]
   home = ["HTML", "AMP"]
   page = ["HTML", "AMP"]
+
+[markup]
+  defaultMarkdownHandler = "blackfriday"
