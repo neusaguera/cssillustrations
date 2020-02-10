@@ -283,7 +283,7 @@ Para crear el efecto de las ruedas de oruga que tiene wall-e he utilizado el deg
 >#### Degradado horizontal y repeticiones {#gradientRepeat}
 >En el primer apartado de este nivel hemos tratado los degradados circulares, ahora con la ayuda de la propiedad repeating y el degrado horizontal podemos crear una figura como las ruedas oruga de wall-e.
 >
->to bottom: le estamos diciendo la dirección que tendrá el degradado en este caso de arriba a bajo.
+><b>to bottom</b>: le estamos diciendo la dirección que tendrá el degradado en este caso de arriba a bajo.
 >
 >Para este ejemplo he dividido el primer 25% de la figura y le he dado 6 tonos de colores (5 grises y negro) para crear el efecto de ranura. Con la propiedad repetir (repeating-linear-gradient), este patrón se repetira 4 veces hasta rellenar la figura.
 
