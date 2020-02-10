@@ -7,7 +7,6 @@ date: "2019-11-28"
 author: "Neus Agüera"
 weight: 195
 categories: ["Tsum"]
-draft: true
 ---
 
 En este nivel nos ayudará uno de los personajes que más me gusta de Disney, Wall-e. Con él aprenderemos como funcionan los fondos degradados, crearemos patrones con degradados, utilizaremos sombras para los elementos. ¡Agárrate que vienen curvas!
