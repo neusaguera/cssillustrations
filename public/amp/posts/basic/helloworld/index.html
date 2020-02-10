@@ -1,0 +1,686 @@
+<!doctype html>
+<html ⚡>
+    <head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://cssillustrations.com/amp/posts/basic/helloworld/" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="HelloWorld" />
+<meta name="description" property="og:description" content="¿Quieres aprender las primeras nociones de HTML &amp;amp; CSS? Sigue leyendo e intentaré ayudarte. Primero empezaremos con una breve descripción de ambos …" />
+<meta property="og:url" content="https://cssillustrations.com/amp/posts/basic/helloworld/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/helloworld/introduction.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/helloworld/introduction.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/helloworld/introduction.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2019-03-08 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2019-03-08 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon" type="image/png" href="/icoCI.png">
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+
+
+<style amp-custom> /* Standard Colors */
+/* Theme Colors */
+/*Transparent Colors */
+/*** avatar colors */
+/*** angry-cat colors ***/
+/* screens */
+/* fonts */
+/* z-index*/
+* {
+  color: #44647A;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: none; }
+
+button {
+  border: 0;
+  background: none; }
+
+body {
+  overflow-x: hidden; }
+
+figure {
+  margin: 0; }
+
+p {
+  font-family: "Roboto Slab", serif; }
+
+.amp-container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto; }
+
+.amp-content {
+  margin-top: 60px;
+  min-height: 70vh; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.show {
+  display: none; }
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation; }
+
+.visible-md {
+  display: none; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 32px;
+  line-height: 36px; }
+
+h2 {
+  font-size: 20px;
+  line-height: 28px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400; }
+
+.amp-header {
+  height: 50px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(235, 242, 255, 0.95);
+  z-index: 10000; }
+
+.amp-logo {
+  margin: 0 auto;
+  padding-left: 12px;
+  flex: 1 75%; }
+
+.amp-logo-text {
+  line-height: 50px;
+  font-size: 18px;
+  color: #D52941;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -1px; }
+
+.amp-header-content {
+  display: flex; }
+  .amp-header-content .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+  .amp-header-content .amp-bars-menu {
+    padding-right: 12px;
+    border: 0;
+    cursor: pointer; }
+
+.amp-menu-content {
+  padding: 24px; }
+
+.amp-menu-title {
+  font-size: 22px;
+  color: #D52941; }
+  .amp-menu-title .amp-menu-title-icon {
+    color: #D52941; }
+
+.amp-menu-tags {
+  padding-left: 24px;
+  list-style: none;
+  margin-bottom: 36px; }
+
+.amp-menu-tags-item {
+  margin-bottom: 6px; }
+
+.amp-menu-tags-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+.amp-menu {
+  width: 100%;
+  background: #fff; }
+  .amp-menu .amp-menu-item {
+    list-style: none;
+    margin-bottom: 12px; }
+  .amp-menu .amp-menu-link {
+    font-size: 20px;
+    line-height: 32px;
+    color: #D52941;
+    font-family: "Oswald", sans-serif; }
+  .amp-menu .amp-menu-close {
+    height: 50px;
+    padding: 0 24px; }
+  .amp-menu .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+
+.amp-footer {
+  background: #44647A;
+  color: #fff; }
+  .amp-footer .amp-logo {
+    padding: 0; }
+  .amp-footer .amp-logo-text {
+    font-size: 24px;
+    color: #EBF2FF; }
+
+.amp-footer-content {
+  padding: 24px; }
+  .amp-footer-content .amp-footer-social-item, .amp-footer-content .amp-footer-policy-link {
+    color: #fff;
+    font-family: "Oswald", sans-serif; }
+
+.amp-footer-contact-title {
+  margin-bottom: 12px;
+  color: #EBF2FF; }
+
+.amp-footer-social-list {
+  list-style: none;
+  margin-bottom: 24px; }
+
+.amp-footer-social-item.amp-inline {
+  display: inline-flex;
+  padding-right: 12px;
+  font-size: 20px;
+  line-height: 24px; }
+
+.amp-footer-social-item i {
+  font-size: 22px;
+  line-height: 26px;
+  color: #EBF2FF; }
+
+.amp-footer-policy-item {
+  display: inline-flex;
+  padding-right: 18px; }
+
+.amp-post {
+  width: 100%;
+  margin: -10px auto 0; }
+  .amp-post article {
+    margin-bottom: 36px; }
+  .amp-post p, .amp-post li {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 12px; }
+  .amp-post a {
+    color: #D52941;
+    font-weight: 300;
+    font-size: 14px; }
+  .amp-post img {
+    margin: 0 auto;
+    display: block;
+    max-width: 320px; }
+  .amp-post blockquote {
+    margin: 12px 12px 42px 12px;
+    padding: 12px;
+    border-left: 2px solid #D52941; }
+    .amp-post blockquote h4, .amp-post blockquote h3, .amp-post blockquote h2, .amp-post blockquote h1 {
+      font-style: normal;
+      color: #D52941;
+      margin-bottom: 12px; }
+  .amp-post pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: auto; }
+  .amp-post pre code {
+    margin: 0;
+    padding: 0;
+    font-feature-settings: normal;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px; }
+  .amp-post ul, .amp-post ol {
+    margin-left: 20px;
+    padding: 0; }
+  .amp-post .highlight {
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 24px; }
+  .amp-post .copy-code {
+    top: 6px;
+    position: absolute;
+    right: 6px;
+    background: #eff4fe;
+    padding: 6px;
+    border-radius: 3px;
+    width: 75px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .amp-post h2 {
+    margin: 24px 0 12px 0; }
+  .amp-post .amp-post-tag-list {
+    margin: 24px 0;
+    display: inline-flex;
+    list-style: none; }
+    .amp-post .amp-post-tag-list i, .amp-post .amp-post-tag-list a {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-right: 6px; }
+  .amp-post .amp-post-tag-item {
+    background: none; }
+  .amp-post .amp-post-tag-link {
+    font-weight: 500;
+    text-decoration: underline; }
+
+.amp-post-title {
+  font-size: 30px;
+  line-height: 34px;
+  margin: 24px 0;
+  font-weight: 500;
+  color: #fff; }
+
+.amp-post-header {
+  background: #44647A;
+  min-height: 250px;
+  margin-bottom: 24px;
+  padding: 12px; }
+
+.amp-post-dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .amp-post-dates .amp-post-dates-title {
+    padding-right: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    flex: 1; }
+    .amp-post-dates .amp-post-dates-title.author {
+      flex: inherit;
+      width: 100%;
+      margin-bottom: 12px; }
+    .amp-post-dates .amp-post-dates-title i {
+      color: #fff; }
+    .amp-post-dates .amp-post-dates-title .amp-post-date-text {
+      color: #fff;
+      font-family: "Oswald", sans-serif; }
+
+.amp-post-content {
+  padding: 0 12px; }
+
+.amp-fixed-container {
+  position: relative;
+  width: 100%;
+  height: 270px; }
+  .amp-fixed-container .amp-contain img {
+    object-fit: contain; }
+
+.amp-nav-insection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 36px; }
+  .amp-nav-insection i {
+    color: #D52941; }
+  .amp-nav-insection .amp-nav-insection-link {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", sans-serif;
+    transition: all .2s ease-in-out; }
+    .amp-nav-insection .amp-nav-insection-link:hover {
+      text-decoration: none;
+      transform: scale(0.9); }
+
+.amp-share-buttons-link {
+  display: inline-flex;
+  padding-right: 12px; }
+  .amp-share-buttons-link i {
+    color: #fff;
+    font-size: 32px; }
+
+.amp-share-buttons-list {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0; }
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+</head>
+    <body><header class="amp-header">
+    <div class="amp-container">
+        <div class="amp-header-content">
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/amp">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="amp-bars-menu" on="tap:sidebar.toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+<div>
+    <amp-sidebar id="sidebar" class="amp-menu" layout="nodisplay" side="right" role="menu" tabindex="-1" style="" hidden="">
+        <button class="amp-menu-close" on="tap:sidebar.toggle">
+                <i class="fa fa-times"></i>
+        </button>
+        <div class="amp-menu-content">
+            <h4 class="amp-menu-title"><i class="fa fa-tags amp-menu-title-icon"></i> Etiquetas</h4>
+            <ul class="amp-menu-tags">
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (4)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (5)</a>
+                        </li>
+                    
+                
+            </ul>
+
+            <ul class="amp-menu-list"><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                    </li>
+            </ul>
+        </div>
+    </amp-sidebar>
+</div>
+<div hidden=""></div><div class="amp-content" id="content">
+        <main class="amp-post">
+            <div class="amp-post-info">
+                
+                </p>
+            </div>
+
+        <article>
+            <div class="amp-post-header">
+                <div class="amp-container">
+
+                    <h1 class="amp-post-title">HelloWorld</h1>
+
+                    <div class="amp-post-dates">
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 08-03-2019</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 08-03-2019</span>
+                            </div>
+                        
+                    </div>
+
+                      <ul class="amp-post-tag-list">
+                            <i class="fa fa-tags"></i><li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/elemental">Elemental</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <div class="share-buttons-list">
+        <amp-social-share
+        type="linkedin"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="twitter"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="whatsapp"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="email"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+
+            <div class="amp-post-content">
+                <div class="amp-container">
+                    
+
+<p>¿Quieres aprender las primeras nociones de HTML &amp; CSS? Sigue leyendo e intentaré ayudarte.
+Primero empezaremos con una breve descripción de ambos conceptos.</p>
+
+<h4 id="definición-de-html-según-wikipedia">Definición de HTML según wikipedia</h4>
+
+<blockquote>
+<p><em>HTML, siglas en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web.</em></p>
+
+<p><a href="https://es.wikipedia.org/wiki/HTML" target="_blank">Leer más en wikipedia</a></p>
+</blockquote>
+
+<h4 id="definición-de-css-según-wikipedia">Definición de CSS según wikipedia</h4>
+
+<blockquote>
+<p><em>CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</em></p>
+
+<p><a href="https://es.wikipedia.org/wiki/CSS" target="_blank">Leer más en wikipedia</a>.</p>
+</blockquote>
+
+<p>Con las definiciones que nos proporciona wikipedia podríamos decir que HTML y CSS son los mejores amigos entre si. Con HTML creamos de manera estática, la estructura y el contenido de la web. Con CSS le daremos forma y color para que el contenido tenga sentido.</p>
+
+<p>Sin enrollarme más que siempre me ha parecido que las partes teóricas son muy aburridas vamos a crear nuestro primer &lsquo;Hello World&rsquo; en HTML &amp; CSS.</p>
+
+<h3 id="paso-1-qué-necesitamos-para-empezar-a-crear-webs-estáticas">Paso 1: ¿Qué necesitamos para empezar a crear webs estáticas?</h3>
+
+<p>Si vamos a lo más rudimentario podemos decir que solo necesitas un bloc de notas para crear tu primer hello world, pero te aconsejo que utilices un editor de código que te ayude a ver el código con colores y estructurado. Yo utilizo Visual studio Code, es una herramienta gratuita y fácil de utilizar, también hay otros como notepad++, sublime&hellip; Escoge el que más te guste, ábrelo y empecemos.</p>
+
+<h3 id="paso-2-estructura-mínima-html">Paso 2: Estructura mínima HTML</h3>
+
+<p>Crea un archivo nuevo y guardalo como helloworld.html. Copia el siguiente código, guarda y abre el fichero desde tu navegador y WoW ya tenemos nuestro primer Hello World!</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Título Helo World&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        Hello world!
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<blockquote>
+<h4 id="notas">Notas</h4>
+
+<ol>
+<li><strong>&lt;!Doctype html&gt;</strong> Estará siempre en la primera linea, sirve para que el navegador conozca que tipo de documento está recibiendo.</li>
+<li><strong>&lt;html&gt;&lt;/html&gt;</strong> Estos tags son el inicio y cierre de nuestro código, el resto de código debe estar entre estos dos tags.</li>
+<li><strong>&lt;head&gt;&lt;/head&gt;</strong>  Engloba los elementos que informan sobre el documento, título, estilos, meta, links, scripts&hellip;</li>
+<li><strong>&lt;title&gt;&lt;/title&gt;</strong> Aquí pondremos el título de la web y es lo que aparecerá en la pastilla del navegador.</li>
+</ol>
+
+<p><div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/helloworld/helloworld.jpg"
+    alt="Navegador con hello world"
+    width="360">
+</amp-img>
+
+</div>
+5. <strong>&lt;body&gt;&lt;/body&gt;</strong> Engloba el contenido HTML de toda la web, texto, imagenes, tablas&hellip;&lt;</p>
+</blockquote>
+
+<h3 id="paso-3-añadir-css">Paso 3: Añadir CSS</h3>
+
+<p>Tenemos tres maneras de añadir CSS:  Inline, Internal, External . Para mi la única manera en que deberías añadir el CSS es de forma externa, pero te voy a mostrar como hacerlo de las tres maneras.</p>
+
+<h4 id="css-inline">CSS Inline</h4>
+
+<p>El css inline es aquel que se añade en el atributo style del elemento HTML. Esta manera de añadir CSS no te la recomiendo por los siguientes motivos:
+1. Mezclas HTML con CSS y eso complica el seguimiento del código.
+2. No es aprovechable, esos estilos solo se aplican al elemento, así que si queremos varios elementos con el mismo estilo deberíamos añadir el atributo style en cada tag.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Título Helo World&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background: black; color: white&#34;</span>&gt;
+        Hello world!
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<blockquote>
+<p>En el tag body he añadido la palabra style y entre comillas le he cambiado el color de fondo a negro y el color de la fuente a blanco.</p>
+</blockquote>
+
+<h4 id="css-internal">CSS Internal</h4>
+
+<p>El CSS internal es aquel que añadimos en el Head dentro del tag Style. ¿Recomendable? No! Como en el caso anterior estamos mezclando el codigo HTML &amp; CSS que siempre dificulta la lectura del código. Ten en cuenta que el CSS tiende a a crecer mucho y nos quedaría un archivo infinito.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Título Helo World&lt;/<span style="color:#f92672">title</span>&gt;
+        &lt;<span style="color:#f92672">style</span>&gt;
+            <span style="color:#f92672">body</span>{
+                <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+                <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+            }
+        &lt;/<span style="color:#f92672">style</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        Hello world!
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<h4 id="css-external">CSS External</h4>
+
+<p>Es la opción más recomendable, fácil de ordenar, clara y sin mezclar ambos mundos. Consiste en tener uno o varios ficheros .css donde tendremos todo el código, el qual referenciaremos en el head.</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">//Fichero helloworld.html
+<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Título Helo World&lt;/<span style="color:#f92672">title</span>&gt;
+        &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        Hello world!
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS"><span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#f92672">Fichero</span> <span style="color:#f92672">style</span>.<span style="color:#a6e22e">css</span>
+<span style="color:#f92672">body</span>{
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+}</code></pre></div></p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="amp-container">
+            <nav class="amp-nav-insection">
+                
+
+                
+
+                
+                    <a class="amp-nav-insection-link next" href="https://cssillustrations.com/amp/posts/basic/square/">
+                         Formas cuadradas <i class="fa fa-arrow-right"></i>
+                    </a>
+                
+            </nav>
+        </div><footer class="amp-footer">
+    <div class="amp-container">
+        <div class="amp-footer-content">
+            <div class="amp-footer-contact">
+                <h3 class="amp-footer-contact-title">Datos de contacto</h3>
+                <ul class="amp-footer-social-list">
+                    <li class="amp-footer-social-item">Neus Agüera Valls</li>
+                    <li class="amp-footer-social-item">neus@cssillustrations.com</li>
+                    <li class="amp-footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="amp-footer-social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="amp-footer-policy-list">
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></body>
+</html>

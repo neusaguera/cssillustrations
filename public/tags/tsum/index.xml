@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tsum on CSS ILLUSTRATIONS</title>
+    <link>https://cssillustrations.com/tags/tsum/</link>
+    <description>Recent content in Tsum on CSS ILLUSTRATIONS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cssillustrations.com/tags/tsum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nivel 4. Wall-e</title>
+      <link>https://cssillustrations.com/posts/tsum/walle/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/walle/</guid>
+      <description>En este nivel nos ayudará uno de los personajes que más me gusta de Disney, Wall-e. Con él aprenderemos como funcionan los fondos degradados, crearemos patrones con degradados, utilizaremos sombras para los elementos. ¡Agárrate que vienen curvas!
+ Degradados circulares Sombras en los elementos  Degradado horizontal y repeticiones  Paso 1: Las formas básicas. Como en los anteriores niveles empezaremos por crear dos ficheros walle.html y walle.css, una vez tenemos los ficheros creamos algo parecido a esto:</description>
+    </item>
+    
+    <item>
+      <title>Nivel 3. Winnie de pooh</title>
+      <link>https://cssillustrations.com/posts/tsum/winniedepooh/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/winniedepooh/</guid>
+      <description>Empezamos el tercer apartado del curso con la compañía de uno de los ositos más famosos de Disney, Winnie de pooh. ¿Qué veremos en este nivel? Este será un nivel corto pero donde quiero mostrarte dos trucos que facilitan mucho mi trabajo.
+ Modo Inspector Ordenar CSS  Paso 1: Las formas básicas. Seguro que no necesitas que te dé directrices de como crear las formas básicas de Winnie, así que te dejo el código como siempre y en la nota hablaremos del modo inspector, algo que si aún no conoces, te encantará.</description>
+    </item>
+    
+    <item>
+      <title>Nivel 2. Daisy &amp; Donald</title>
+      <link>https://cssillustrations.com/posts/tsum/daisyanddonald/</link>
+      <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/daisyanddonald/</guid>
+      <description>¿Qué te pareció el primer nivel con Mickey y Minnie? Fácil, ¿verdad?. En este segundo nivel crearemos los Tsums de Daisy y Donald. ¿Qué veremos?
+ Definir variables sin Sass o Less Colores :before &amp;amp; :after Clases con propiedades iguales Vendors  Paso 1: Las formas básicas. Esta vez empezaremos con Daisy, como en el primer nivel antes de empezar a crear nuestro HTML, nos fijaremos en el tsum de Daisy y dibujaremos su forma básica, ya sea en papel, photoshop o en tu mente, ¿Lo tienes?</description>
+    </item>
+    
+    <item>
+      <title>Nivel 1. Mickey &amp; Minnie en CSS</title>
+      <link>https://cssillustrations.com/posts/tsum/mickeyandminnie/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/mickeyandminnie/</guid>
+      <description>En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillos pasos. No importa tu nivel de CSS, si estás empezando encontrarás explicaciones de las propiedades durante todo el curso, ¿Qué veremos con Mickey y Minnie?
+ Centrar elementos en posición absoluta. Comportamiento de dos clases en un mismo elemento ¿Qué clase prevalece? Clases heredadas Rotación de elementos sobre su eje Z-orden (z-index)  Aunque parezcan muchas cosas no te preocupes y vamos a ponernos con el código.</description>
+    </item>
+    
+    <item>
+      <title>Piloto. Tsums en CSS</title>
+      <link>https://cssillustrations.com/posts/tsum/introductiontsums/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/introductiontsums/</guid>
+      <description>Dibujar personajes, vistas y crear animaciones con HTML y CSS es uno de mis hobbies. Me gusta crear estos dibujos desde sus formas geométricas, sin utilizar imágenes, svg o JavaScript. Con paciencia y la magia del CSS podemos hacer cosas maravillosas. Si eres un amante del CSS o quieres aprender más sobre este lenguaje ¡Quédate!
+Para este primer curso voy a utilizar los personajes del juego TsumTsum de Disney, es decir, los cabezones.</description>
+    </item>
+    
+  </channel>
+</rss>

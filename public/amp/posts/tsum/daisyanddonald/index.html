@@ -1,0 +1,1248 @@
+<!doctype html>
+<html ⚡>
+    <head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://cssillustrations.com/amp/posts/tsum/daisyanddonald/" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Nivel 2. Daisy &amp; Donald" />
+<meta name="description" property="og:description" content="¿Qué te pareció el primer nivel con Mickey y Minnie? Fácil, ¿verdad?. En este segundo nivel crearemos los Tsums de Daisy y Donald. ¿Qué veremos? …" />
+<meta property="og:url" content="https://cssillustrations.com/amp/posts/tsum/daisyanddonald/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/daisy_donald/daisydonald.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/daisy_donald/daisydonald.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/daisy_donald/daisydonald.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2019-10-02 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2019-11-06 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon" type="image/png" href="/icoCI.png">
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+
+
+<style amp-custom> /* Standard Colors */
+/* Theme Colors */
+/*Transparent Colors */
+/*** avatar colors */
+/*** angry-cat colors ***/
+/* screens */
+/* fonts */
+/* z-index*/
+* {
+  color: #44647A;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: none; }
+
+button {
+  border: 0;
+  background: none; }
+
+body {
+  overflow-x: hidden; }
+
+figure {
+  margin: 0; }
+
+p {
+  font-family: "Roboto Slab", serif; }
+
+.amp-container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto; }
+
+.amp-content {
+  margin-top: 60px;
+  min-height: 70vh; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.show {
+  display: none; }
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation; }
+
+.visible-md {
+  display: none; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 32px;
+  line-height: 36px; }
+
+h2 {
+  font-size: 20px;
+  line-height: 28px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400; }
+
+.amp-header {
+  height: 50px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(235, 242, 255, 0.95);
+  z-index: 10000; }
+
+.amp-logo {
+  margin: 0 auto;
+  padding-left: 12px;
+  flex: 1 75%; }
+
+.amp-logo-text {
+  line-height: 50px;
+  font-size: 18px;
+  color: #D52941;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -1px; }
+
+.amp-header-content {
+  display: flex; }
+  .amp-header-content .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+  .amp-header-content .amp-bars-menu {
+    padding-right: 12px;
+    border: 0;
+    cursor: pointer; }
+
+.amp-menu-content {
+  padding: 24px; }
+
+.amp-menu-title {
+  font-size: 22px;
+  color: #D52941; }
+  .amp-menu-title .amp-menu-title-icon {
+    color: #D52941; }
+
+.amp-menu-tags {
+  padding-left: 24px;
+  list-style: none;
+  margin-bottom: 36px; }
+
+.amp-menu-tags-item {
+  margin-bottom: 6px; }
+
+.amp-menu-tags-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+.amp-menu {
+  width: 100%;
+  background: #fff; }
+  .amp-menu .amp-menu-item {
+    list-style: none;
+    margin-bottom: 12px; }
+  .amp-menu .amp-menu-link {
+    font-size: 20px;
+    line-height: 32px;
+    color: #D52941;
+    font-family: "Oswald", sans-serif; }
+  .amp-menu .amp-menu-close {
+    height: 50px;
+    padding: 0 24px; }
+  .amp-menu .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+
+.amp-footer {
+  background: #44647A;
+  color: #fff; }
+  .amp-footer .amp-logo {
+    padding: 0; }
+  .amp-footer .amp-logo-text {
+    font-size: 24px;
+    color: #EBF2FF; }
+
+.amp-footer-content {
+  padding: 24px; }
+  .amp-footer-content .amp-footer-social-item, .amp-footer-content .amp-footer-policy-link {
+    color: #fff;
+    font-family: "Oswald", sans-serif; }
+
+.amp-footer-contact-title {
+  margin-bottom: 12px;
+  color: #EBF2FF; }
+
+.amp-footer-social-list {
+  list-style: none;
+  margin-bottom: 24px; }
+
+.amp-footer-social-item.amp-inline {
+  display: inline-flex;
+  padding-right: 12px;
+  font-size: 20px;
+  line-height: 24px; }
+
+.amp-footer-social-item i {
+  font-size: 22px;
+  line-height: 26px;
+  color: #EBF2FF; }
+
+.amp-footer-policy-item {
+  display: inline-flex;
+  padding-right: 18px; }
+
+.amp-post {
+  width: 100%;
+  margin: -10px auto 0; }
+  .amp-post article {
+    margin-bottom: 36px; }
+  .amp-post p, .amp-post li {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 12px; }
+  .amp-post a {
+    color: #D52941;
+    font-weight: 300;
+    font-size: 14px; }
+  .amp-post img {
+    margin: 0 auto;
+    display: block;
+    max-width: 320px; }
+  .amp-post blockquote {
+    margin: 12px 12px 42px 12px;
+    padding: 12px;
+    border-left: 2px solid #D52941; }
+    .amp-post blockquote h4, .amp-post blockquote h3, .amp-post blockquote h2, .amp-post blockquote h1 {
+      font-style: normal;
+      color: #D52941;
+      margin-bottom: 12px; }
+  .amp-post pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: auto; }
+  .amp-post pre code {
+    margin: 0;
+    padding: 0;
+    font-feature-settings: normal;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px; }
+  .amp-post ul, .amp-post ol {
+    margin-left: 20px;
+    padding: 0; }
+  .amp-post .highlight {
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 24px; }
+  .amp-post .copy-code {
+    top: 6px;
+    position: absolute;
+    right: 6px;
+    background: #eff4fe;
+    padding: 6px;
+    border-radius: 3px;
+    width: 75px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .amp-post h2 {
+    margin: 24px 0 12px 0; }
+  .amp-post .amp-post-tag-list {
+    margin: 24px 0;
+    display: inline-flex;
+    list-style: none; }
+    .amp-post .amp-post-tag-list i, .amp-post .amp-post-tag-list a {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-right: 6px; }
+  .amp-post .amp-post-tag-item {
+    background: none; }
+  .amp-post .amp-post-tag-link {
+    font-weight: 500;
+    text-decoration: underline; }
+
+.amp-post-title {
+  font-size: 30px;
+  line-height: 34px;
+  margin: 24px 0;
+  font-weight: 500;
+  color: #fff; }
+
+.amp-post-header {
+  background: #44647A;
+  min-height: 250px;
+  margin-bottom: 24px;
+  padding: 12px; }
+
+.amp-post-dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .amp-post-dates .amp-post-dates-title {
+    padding-right: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    flex: 1; }
+    .amp-post-dates .amp-post-dates-title.author {
+      flex: inherit;
+      width: 100%;
+      margin-bottom: 12px; }
+    .amp-post-dates .amp-post-dates-title i {
+      color: #fff; }
+    .amp-post-dates .amp-post-dates-title .amp-post-date-text {
+      color: #fff;
+      font-family: "Oswald", sans-serif; }
+
+.amp-post-content {
+  padding: 0 12px; }
+
+.amp-fixed-container {
+  position: relative;
+  width: 100%;
+  height: 270px; }
+  .amp-fixed-container .amp-contain img {
+    object-fit: contain; }
+
+.amp-nav-insection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 36px; }
+  .amp-nav-insection i {
+    color: #D52941; }
+  .amp-nav-insection .amp-nav-insection-link {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", sans-serif;
+    transition: all .2s ease-in-out; }
+    .amp-nav-insection .amp-nav-insection-link:hover {
+      text-decoration: none;
+      transform: scale(0.9); }
+
+.amp-share-buttons-link {
+  display: inline-flex;
+  padding-right: 12px; }
+  .amp-share-buttons-link i {
+    color: #fff;
+    font-size: 32px; }
+
+.amp-share-buttons-list {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0; }
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+</head>
+    <body><header class="amp-header">
+    <div class="amp-container">
+        <div class="amp-header-content">
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/amp">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="amp-bars-menu" on="tap:sidebar.toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+<div>
+    <amp-sidebar id="sidebar" class="amp-menu" layout="nodisplay" side="right" role="menu" tabindex="-1" style="" hidden="">
+        <button class="amp-menu-close" on="tap:sidebar.toggle">
+                <i class="fa fa-times"></i>
+        </button>
+        <div class="amp-menu-content">
+            <h4 class="amp-menu-title"><i class="fa fa-tags amp-menu-title-icon"></i> Etiquetas</h4>
+            <ul class="amp-menu-tags">
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (4)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (5)</a>
+                        </li>
+                    
+                
+            </ul>
+
+            <ul class="amp-menu-list"><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                    </li>
+            </ul>
+        </div>
+    </amp-sidebar>
+</div>
+<div hidden=""></div><div class="amp-content" id="content">
+        <main class="amp-post">
+            <div class="amp-post-info">
+                
+                </p>
+            </div>
+
+        <article>
+            <div class="amp-post-header">
+                <div class="amp-container">
+
+                    <h1 class="amp-post-title">Nivel 2. Daisy &amp; Donald</h1>
+
+                    <div class="amp-post-dates">
+                        
+                            <div class="amp-post-dates-title author">
+                                <span class="amp-post-date-text"> Neus Agüera</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 02-10-2019</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 06-11-2019</span>
+                            </div>
+                        
+                    </div>
+
+                      <ul class="amp-post-tag-list">
+                            <i class="fa fa-tags"></i><li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/tsum">Tsum</a></a>
+                          </li><li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/ilustraciones">Ilustraciones</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <div class="share-buttons-list">
+        <amp-social-share
+        type="linkedin"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="twitter"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="whatsapp"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="email"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+
+            <div class="amp-post-content">
+                <div class="amp-container">
+                    
+
+<p>¿Qué te pareció el primer nivel con Mickey y Minnie? Fácil, ¿verdad?. En este segundo nivel crearemos los Tsums de Daisy y Donald. ¿Qué veremos?</p>
+
+<ul>
+<li><a href="#variables">Definir variables sin Sass o Less</a></li>
+<li><a href="#colors">Colores</a></li>
+<li><a href="#before">:before &amp; :after</a></li>
+<li><a href="#similar">Clases con propiedades iguales</a></li>
+<li><a href="#vendors">Vendors</a></li>
+</ul>
+
+<h2 id="paso-1-las-formas-básicas">Paso 1: Las formas básicas.</h2>
+
+<p>Esta vez empezaremos con Daisy, como en el primer nivel antes de empezar a crear nuestro HTML, nos fijaremos en el tsum de Daisy y dibujaremos su forma básica, ya sea en papel, photoshop o en tu mente, ¿Lo tienes?</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/daisy_donald/basicdaisy.jpg"
+    alt="formas básicas Daisy"
+    width="360">
+</amp-img>
+
+</div>
+
+<p>Ahora que tenemos el dibujo creamos dos ficheros   <b>daisy.html</b> y <b>daisy.css</b>.</p>
+
+<p>Nos han salido 3 círculos (manos y cabeza). Cada círculo lo convertiremos en un <b>div</b> y le añadiremos una clase, recuerda que los nombres de las clases deben ser claros para que sea más fácil trabajar con el código.</p>
+
+<h3 id="daisy-html">daisy.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;character daisy&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-head&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-hand&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-hand right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="daisy-css">daisy.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span> {
+  --main-daisy-color: <span style="color:#66d9ef">white</span>;
+}
+
+.<span style="color:#a6e22e">character</span> {
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+}
+
+.<span style="color:#a6e22e">daisy-head</span> {
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">140</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>daisy<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+}
+
+.<span style="color:#a6e22e">daisy-hand</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>daisy<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+}
+
+.<span style="color:#a6e22e">daisy-hand</span>.<span style="color:#a6e22e">right</span> {
+   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="variables">Variables</h4>
+
+<p> Aunque el curso acaba de empezar hemos de adquirir buenas prácticas desde el inicio. El uso de variables es una de las más importantes para tener un código CSS que sea mantenible en el tiempo.
+Para declarar las variables sin los pre-procesadores Less o Sass necesitamos añadirlas en un scope global como pueden ser:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">    <span style="color:#f92672">body</span>{
+        <span style="color:#75715e">/*variables*/</span>
+    }
+    <span style="color:#f92672">*</span>{
+        <span style="color:#75715e">/*variables*/</span>
+    }
+    :<span style="color:#a6e22e">root</span>{
+        <span style="color:#75715e">/*variables*/</span>
+    }</code></pre></div></p>
+
+<p>En la declaración de las variables ponemos dos guiones y el nombre de la variable. Si el nombre está compuesto por dos palabras las separamos con un guion para que resulte fácil de leer.
+Par llamar a las variables en las propiedades debemos poner la variable entre <b> var() </b>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">    :<span style="color:#a6e22e">root</span>{
+        <span style="color:#75715e">/*Declaración variable*/</span>
+        --main-daisy-color: <span style="color:#66d9ef">white</span>;
+    }
+    .<span style="color:#a6e22e">daisy-hand</span> {
+        <span style="color:#75715e">/*llamada variable*/</span>
+        <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>daisy<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    }</code></pre></div></p>
+
+<p>¿Cuándo utilizar las variables? Normalmente tenemos unos valores definidos a la hora de picar CSS como pueden ser los colores, tamaños de pantalla, paddings, fuentes&hellip; Nos encontraremos más de una vez que mientras estamos trabajando nos pidan cambiar uno de estos valores, si hemos creado variables solo tendremos que hacer un cambio.
+En nuestro código prueba cambiar el color principal de daisy para ver como funciona.</p>
+</blockquote>
+
+<h2 id="paso-2-la-cara-de-daisy">Paso 2: La cara de Daisy.</h2>
+
+<p>Ya tenemos la forma básica de Daisy, ahora vamos a por la cara, ojos, pico y coloretes. Intenta crear el código necesario para tener algo parecido a esto:</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/daisy_donald/facedaisy.jpg"
+    alt="Creando la cara de Daisy"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="daisy-html-1">daisy.html</h3>
+
+<p>Añade dentro de  <b>daisy-head</b> estos divs</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">    ...
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-eye&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-lash&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-lash two&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-lash three&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-eye right&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-lash&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-lash two&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-lash three&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-peak&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-blush&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-blush right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    ...</code></pre></div>
+
+<h3 id="daisy-css-1">daisy.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span> {
+  --main-daisy-color: <span style="color:#66d9ef">white</span>;
+  --blush-daisy-color: <span style="color:#ae81ff">#ff9ea2</span>;
+  --peak-daisy-color: <span style="color:#ae81ff">#f4cd00</span>;
+  --dark-daisy-color: <span style="color:#66d9ef">black</span>;
+}
+
+<span style="color:#f92672">.</span><span style="color:#f92672">.</span><span style="color:#f92672">.</span>
+
+.<span style="color:#a6e22e">daisy-blush</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">13</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">56</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>blush<span style="color:#f92672">-</span>daisy<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">daisy-blush</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">71</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">daisy-peak</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">31</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">62</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">53</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>peak<span style="color:#f92672">-</span>daisy<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+}
+
+.<span style="color:#a6e22e">daisy-eye</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>daisy<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">daisy-eye</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">daisy-lash</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">-1</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-3</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">7</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>daisy<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-45</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">daisy-lash</span>.<span style="color:#a6e22e">two</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-5</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">daisy-lash</span>.<span style="color:#a6e22e">three</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">daisy-lash</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-5</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">daisy-lash</span>.<span style="color:#a6e22e">two</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-5</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">daisy-lash</span>.<span style="color:#a6e22e">three</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+}</code></pre></div>
+
+<p>Recuerda que no hay una única solución, intenta hacerlo a tu manera y si tienes alguna duda escríbeme e intentaré ayudarte.</p>
+
+<blockquote>
+<h4 id="colors">Colores</h4>
+
+<p>En CSS hay diferentes maneras de escribir los colores RGB, RGBA, HEX, nombre&hellip; Aquí te dejo un ejemplo del color fucsia.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">    <span style="color:#f92672">Fuchsia</span> <span style="color:#f92672">hex</span><span style="color:#f92672">:</span> <span style="color:#f92672">FF00FF</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">Fuchsia</span> <span style="color:#f92672">hex</span> <span style="color:#f92672">abreviado</span><span style="color:#f92672">:</span> <span style="color:#f92672">F0F</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">Fuchsia</span> <span style="color:#f92672">rgb</span><span style="color:#f92672">:</span> <span style="color:#f92672">rgb</span><span style="color:#f92672">(</span><span style="color:#f92672">255</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">255</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">Fuchsia</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">:</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">255</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">255</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">Fuchsia</span> <span style="color:#f92672">name</span><span style="color:#f92672">:</span> <span style="color:#f92672">fuchsia</span><span style="color:#f92672">:</span></code></pre></div></p>
+
+<p>En RGBA el último dígito define la opacidad del color, siendo 0 transparente y 1 opaco.</p>
+
+<p>Sigamos con las buenas prácticas, cuando declaramos los colores deberíamos usar el mismo tipo. En mi código puedes ver que los he declarado de forma distinta, ¿Lo corriges?</p>
+</blockquote>
+
+<h2 id="paso-3-el-lazo-de-daisy">Paso 3: El lazo de Daisy.</h2>
+
+<p>Ahora vamos a añadirle el lazo. Puedes mirar como hicimos con el lazo de Minnie pero en este paso yo lo he creado con <b>:before</b> y <b>:after</b>.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/daisy_donald/bowdaisy.jpg"
+    alt="Daisy con lazo"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="daisy-html-2">daisy.html</h3>
+
+<p>Añade entre <b>character</b> y <b>daisy-head</b> el siguiente código:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-bow&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-petal&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-knot&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daisy-petal right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="daisy-css-2">daisy.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span> {
+  --main-daisy-color: <span style="color:#66d9ef">white</span>;
+  --blush-daisy-color: <span style="color:#ae81ff">#ff9ea2</span>;
+  --peak-daisy-color: <span style="color:#ae81ff">#f4cd00</span>;
+  --dark-daisy-color: <span style="color:#66d9ef">black</span>;
+  --petal-daisy-color: <span style="color:#ae81ff">#ffcad6</span>;
+  --dark-petal-daisy: <span style="color:#ae81ff">#ff8ab2</span>;
+}
+
+
+.<span style="color:#a6e22e">daisy-bow</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">61</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">87</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+}
+.<span style="color:#a6e22e">daisy-petal</span>:<span style="color:#a6e22e">before</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">daisy-petal</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">31</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>petal<span style="color:#f92672">-</span>daisy);
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>petal<span style="color:#f92672">-</span>daisy<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">44</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">daisy-petal</span>:<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+}
+.<span style="color:#a6e22e">daisy-petal</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">33</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-24</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">daisy-petal</span>.<span style="color:#a6e22e">right</span>:<span style="color:#a6e22e">before</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">daisy-petal</span>.<span style="color:#a6e22e">right</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">inherit</span>;
+    <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-44</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-44</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-44</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">daisy-petal</span>.<span style="color:#a6e22e">right</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">daisy-knot</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">37</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">34</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">-moz-</span><span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>petal<span style="color:#f92672">-</span>daisy);
+
+}</code></pre></div>
+
+<blockquote>
+<h4 id="before">:before &amp; :after</h4>
+
+<p>Són dos pseudo elementos y se usan para añadir contenido antes o después respectivamente del contenido que tiene el elemento. Necesitan la propiedad <b>content</b> para mostrarse, cuando se utilizan para crear una ilustración dejamos las comillas vacías y le añadimos la propiedad <b>display</b>.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box&#34;</span>&gt;
+  Esto es una caja
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">box</span>{
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">red</span>;
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">box</span>:<span style="color:#a6e22e">before</span>{
+  <span style="color:#66d9ef">content</span>:<span style="color:#e6db74">&#39;&lt;!&#39;</span>;
+  <span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">bold</span>;
+}
+.<span style="color:#a6e22e">box</span>:<span style="color:#a6e22e">after</span>{
+  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">blue</span>;
+}</code></pre></div></p>
+</blockquote>
+
+<h2 id="paso-4-donald">Paso 4: Donald.</h2>
+
+<p>Ya tenemos a Daisy y ahora vamos a por Donald, como siempre para un nuevo tsum crearemos dos ficheros <b> donald.html </b> y <b>donald.css</b>. El código básico de Donald es el mismo de Daisy sin pestañas ni lazo.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/daisy_donald/facedonald.jpg"
+    alt="La cara de Donald"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="donald-html">donald.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;character donald&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-head&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-eye&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-eye right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-peak&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-blush&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-blush right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-hand&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-hand right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="donald-css">donald.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span> {
+  --main-donald-color: <span style="color:#ae81ff">#ffffff</span>;
+  --blush-donald-color: <span style="color:#ae81ff">#ff9ea2</span>;
+  --peak-donald-color: <span style="color:#ae81ff">#f4cd00</span>;
+  --dark-donald-color: <span style="color:#ae81ff">#000000</span>;
+}
+
+.<span style="color:#a6e22e">character</span> {
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+}
+
+.<span style="color:#a6e22e">donald-head</span> {
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">140</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+}
+
+.<span style="color:#a6e22e">donald-hand</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+}
+
+.<span style="color:#a6e22e">donald-hand</span>.<span style="color:#a6e22e">right</span> {
+   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}
+
+.<span style="color:#a6e22e">donald-blush</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">13</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">56</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>blush<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">donald-blush</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">71</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">donald-peak</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">31</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">62</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">53</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>peak<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+}
+
+.<span style="color:#a6e22e">donald-eye</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">donald-eye</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div>
+
+<h2 id="paso-5-el-gorro-de-donald">Paso 5: El gorro de Donald.</h2>
+
+<p>El gorro de Donald lo dividimos en dos partes la copa y el ribete. Para la copa creamos un div rectangular al que le redondeamos los bordes. Para el ribete otro div rectangular redondeado y utilizaremos los pseudo elementos <b>:before</b> y <b>:after</b> para la cinta colgante.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/daisy_donald/hatdonald.jpg"
+    alt="Daisy con lazo"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="donald-html-1">donald.html</h3>
+
+<p>Añadiremos los divs del gorro entre <b> character </b> y <b> donald-head</b>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-hat&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-ribbon&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div></p>
+
+<h3 id="donald-css-1">donald.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span> {
+  --main-donald-color: <span style="color:#ae81ff">#ffffff</span>;
+  --blush-donald-color: <span style="color:#ae81ff">#ff9ea2</span>;
+  --peak-donald-color: <span style="color:#ae81ff">#f4cd00</span>;
+  --dark-donald-color: <span style="color:#ae81ff">#000000</span>;
+  --hat-donald: <span style="color:#ae81ff">#477697</span>;
+}
+.<span style="color:#a6e22e">donald-hat</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">61</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">44</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">27</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>hat<span style="color:#f92672">-</span>donald);
+}
+.<span style="color:#a6e22e">donald-ribbon</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">46</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">13</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">73</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">44</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+}
+
+.<span style="color:#a6e22e">donald-ribbon</span>:<span style="color:#a6e22e">before</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">donald-ribbon</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">73</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-52</span><span style="color:#66d9ef">deg</span>);
+}
+
+.<span style="color:#a6e22e">donald-ribbon</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">94</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-81</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="similar">Clases con propiedades iguales</h4>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">donald-ribbon</span>:<span style="color:#a6e22e">before</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">donald-ribbon</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">73</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-52</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">donald-ribbon</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">94</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-81</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>donald<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);;
+}</code></pre></div>
+
+<p> ¿Te ha llamado la atención? En esta parte del código añado las mismas propiedades a dos clases a la vez. Cuando tenemos un ejemplo como el anterior donde necesitamos dos clases pero estas tienen propiedades iguales las declaramos juntas y nos ahorramos tener el mismo código dos veces. Si tienen alguna propiedad distinta volvemos a declararla debajo y le añadimos los valores necesarios.</p>
+</blockquote>
+
+<h2 id="paso-6-la-pajarita-de-donald">Paso 6: La pajarita de Donald.</h2>
+
+<p>Lo único que nos queda para acabar es crear una pajarita para Donald.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/daisy_donald/bowtiedonald.jpg"
+    alt="La cara de Donald"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="donald-html-2">donald.html</h3>
+
+<p>Añadiremos los divs entre <b> donald-head </b> y <b> donald-hand</b>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-bowtie&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-petal&#34;</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-knot&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;donald-petal right&#34;</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div></p>
+
+<h3 id="donald-css-2">donald.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span> {
+  --main-donald-color: <span style="color:#ae81ff">#ffffff</span>;
+  --blush-donald-color: <span style="color:#ae81ff">#ff9ea2</span>;
+  --peak-donald-color: <span style="color:#ae81ff">#f4cd00</span>;
+  --dark-donald-color: <span style="color:#ae81ff">#000000</span>;
+  --hat-donald: <span style="color:#ae81ff">#477697</span>;
+  --bowtie-donald: <span style="color:#ae81ff">#ff4253</span>;
+  --dark-bowtie-donald: <span style="color:#ae81ff">#931131</span>;
+}
+
+.<span style="color:#a6e22e">donald-bowtie</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">61</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">57</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">79</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">1</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+}
+
+.<span style="color:#a6e22e">donald-petal</span> {
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">31</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">33</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-24</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>bowtie<span style="color:#f92672">-</span>donald);
+    <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>bowtie<span style="color:#f92672">-</span>donald);
+}
+
+.<span style="color:#a6e22e">donald-petal</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">inherit</span>;
+    <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+}
+
+.<span style="color:#a6e22e">donald-knot</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">37</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">34</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>bowtie<span style="color:#f92672">-</span>donald);
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>bowtie<span style="color:#f92672">-</span>donald);
+}</code></pre></div>
+
+<blockquote>
+<h4 id="vendors">Vendors</h4>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">donald-petal</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">inherit</span>;
+    <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+}</code></pre></div>
+
+<p>En el código anterior se repiten propiedades con prefijos (vendors). Cada navegador tiene sus especificaciones y particularidades, sobretodo cuando queremos dar compatibilidad a navegadores con versiones jurásicas.</p>
+
+<p>Si utilizas Visual Studio Code puedes instalar la extensión css-auto-prefix, detecta las propiedades que necesitan vendors y se las añade. Para este proyecto lo he estado probando y funciona muy bien siempre que no uses preprocesadores, entonces se vuelve un poco loco.</p>
+
+<p>¿Cómo sé que propiedades necesitan prefijo? yo cuando tengo dudas con alguna propiedad o me da problemas en un navegador suelo mirar en las siguientes páginas: <a href="https://caniuse.com/" target="_blank">caniuse.com</a> y <a href="http://shouldiprefix.com/" target="_blank">shouldiprefix.com</a></p>
+</blockquote>
+
+<h2 id="paso-6-intenta-mejorar-daisy-donald">Paso 6: Intenta mejorar Daisy &amp; Donald</h2>
+
+<p>Ahora sí, ya tenemos a Daisy y Donald aunque siempre se pueden mejorar. ¿Lo intentas? aquí te dejo un par de enlaces en Codepen para que veas mis Tsums finales. Juega un rato, mejora y enséñame el resultado.</p>
+
+<p><a href="https://codepen.io/neusaguera/pen/zYYWWVB" target="_blank"> Codepen Daisy </a> - <a href="https://codepen.io/neusaguera/pen/QWWmVdL" target="_blank"> Codepen Donald </a></p>
+
+<p>Nos leemos en el próximo nivel.</p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="amp-container">
+            <nav class="amp-nav-insection">
+                
+
+                
+                    <a class="amp-nav-insection-link prev" href="https://cssillustrations.com/amp/posts/tsum/mickeyandminnie/">
+                            <i class="fa fa-arrow-left"></i> Nivel 1. Mickey &amp; Minnie en CSS
+                    </a>
+                
+
+                
+                    <a class="amp-nav-insection-link next" href="https://cssillustrations.com/amp/posts/tsum/winniedepooh/">
+                         Nivel 3. Winnie de pooh <i class="fa fa-arrow-right"></i>
+                    </a>
+                
+            </nav>
+        </div><footer class="amp-footer">
+    <div class="amp-container">
+        <div class="amp-footer-content">
+            <div class="amp-footer-contact">
+                <h3 class="amp-footer-contact-title">Datos de contacto</h3>
+                <ul class="amp-footer-social-list">
+                    <li class="amp-footer-social-item">Neus Agüera Valls</li>
+                    <li class="amp-footer-social-item">neus@cssillustrations.com</li>
+                    <li class="amp-footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="amp-footer-social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="amp-footer-policy-list">
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></body>
+</html>
