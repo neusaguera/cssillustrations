@@ -1,0 +1,1200 @@
+<!doctype html>
+<html ⚡>
+    <head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://cssillustrations.com/amp/posts/tsum/mickeyandminnie/" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Nivel 1. Mickey &amp; Minnie en CSS" />
+<meta name="description" property="og:description" content="En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillos pasos. No importa tu nivel de CSS, si estás empezando encontrarás …" />
+<meta property="og:url" content="https://cssillustrations.com/amp/posts/tsum/mickeyandminnie/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/mickey_minnie/mickeyminnie.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/mickey_minnie/mickeyminnie.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/mickey_minnie/mickeyminnie.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2019-08-28 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2019-10-31 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon" type="image/png" href="/icoCI.png">
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+
+
+<style amp-custom> /* Standard Colors */
+/* Theme Colors */
+/*Transparent Colors */
+/*** avatar colors */
+/*** angry-cat colors ***/
+/* screens */
+/* fonts */
+/* z-index*/
+* {
+  color: #44647A;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: none; }
+
+button {
+  border: 0;
+  background: none; }
+
+body {
+  overflow-x: hidden; }
+
+figure {
+  margin: 0; }
+
+p {
+  font-family: "Roboto Slab", serif; }
+
+.amp-container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto; }
+
+.amp-content {
+  margin-top: 60px;
+  min-height: 70vh; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.show {
+  display: none; }
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation; }
+
+.visible-md {
+  display: none; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 32px;
+  line-height: 36px; }
+
+h2 {
+  font-size: 20px;
+  line-height: 28px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400; }
+
+.amp-header {
+  height: 50px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(235, 242, 255, 0.95);
+  z-index: 10000; }
+
+.amp-logo {
+  margin: 0 auto;
+  padding-left: 12px;
+  flex: 1 75%; }
+
+.amp-logo-text {
+  line-height: 50px;
+  font-size: 18px;
+  color: #D52941;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -1px; }
+
+.amp-header-content {
+  display: flex; }
+  .amp-header-content .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+  .amp-header-content .amp-bars-menu {
+    padding-right: 12px;
+    border: 0;
+    cursor: pointer; }
+
+.amp-menu-content {
+  padding: 24px; }
+
+.amp-menu-title {
+  font-size: 22px;
+  color: #D52941; }
+  .amp-menu-title .amp-menu-title-icon {
+    color: #D52941; }
+
+.amp-menu-tags {
+  padding-left: 24px;
+  list-style: none;
+  margin-bottom: 36px; }
+
+.amp-menu-tags-item {
+  margin-bottom: 6px; }
+
+.amp-menu-tags-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+.amp-menu {
+  width: 100%;
+  background: #fff; }
+  .amp-menu .amp-menu-item {
+    list-style: none;
+    margin-bottom: 12px; }
+  .amp-menu .amp-menu-link {
+    font-size: 20px;
+    line-height: 32px;
+    color: #D52941;
+    font-family: "Oswald", sans-serif; }
+  .amp-menu .amp-menu-close {
+    height: 50px;
+    padding: 0 24px; }
+  .amp-menu .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+
+.amp-footer {
+  background: #44647A;
+  color: #fff; }
+  .amp-footer .amp-logo {
+    padding: 0; }
+  .amp-footer .amp-logo-text {
+    font-size: 24px;
+    color: #EBF2FF; }
+
+.amp-footer-content {
+  padding: 24px; }
+  .amp-footer-content .amp-footer-social-item, .amp-footer-content .amp-footer-policy-link {
+    color: #fff;
+    font-family: "Oswald", sans-serif; }
+
+.amp-footer-contact-title {
+  margin-bottom: 12px;
+  color: #EBF2FF; }
+
+.amp-footer-social-list {
+  list-style: none;
+  margin-bottom: 24px; }
+
+.amp-footer-social-item.amp-inline {
+  display: inline-flex;
+  padding-right: 12px;
+  font-size: 20px;
+  line-height: 24px; }
+
+.amp-footer-social-item i {
+  font-size: 22px;
+  line-height: 26px;
+  color: #EBF2FF; }
+
+.amp-footer-policy-item {
+  display: inline-flex;
+  padding-right: 18px; }
+
+.amp-post {
+  width: 100%;
+  margin: -10px auto 0; }
+  .amp-post article {
+    margin-bottom: 36px; }
+  .amp-post p, .amp-post li {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 12px; }
+  .amp-post a {
+    color: #D52941;
+    font-weight: 300;
+    font-size: 14px; }
+  .amp-post img {
+    margin: 0 auto;
+    display: block;
+    max-width: 320px; }
+  .amp-post blockquote {
+    margin: 12px 12px 42px 12px;
+    padding: 12px;
+    border-left: 2px solid #D52941; }
+    .amp-post blockquote h4, .amp-post blockquote h3, .amp-post blockquote h2, .amp-post blockquote h1 {
+      font-style: normal;
+      color: #D52941;
+      margin-bottom: 12px; }
+  .amp-post pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: auto; }
+  .amp-post pre code {
+    margin: 0;
+    padding: 0;
+    font-feature-settings: normal;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px; }
+  .amp-post ul, .amp-post ol {
+    margin-left: 20px;
+    padding: 0; }
+  .amp-post .highlight {
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 24px; }
+  .amp-post .copy-code {
+    top: 6px;
+    position: absolute;
+    right: 6px;
+    background: #eff4fe;
+    padding: 6px;
+    border-radius: 3px;
+    width: 75px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .amp-post h2 {
+    margin: 24px 0 12px 0; }
+  .amp-post .amp-post-tag-list {
+    margin: 24px 0;
+    display: inline-flex;
+    list-style: none; }
+    .amp-post .amp-post-tag-list i, .amp-post .amp-post-tag-list a {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-right: 6px; }
+  .amp-post .amp-post-tag-item {
+    background: none; }
+  .amp-post .amp-post-tag-link {
+    font-weight: 500;
+    text-decoration: underline; }
+
+.amp-post-title {
+  font-size: 30px;
+  line-height: 34px;
+  margin: 24px 0;
+  font-weight: 500;
+  color: #fff; }
+
+.amp-post-header {
+  background: #44647A;
+  min-height: 250px;
+  margin-bottom: 24px;
+  padding: 12px; }
+
+.amp-post-dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .amp-post-dates .amp-post-dates-title {
+    padding-right: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    flex: 1; }
+    .amp-post-dates .amp-post-dates-title.author {
+      flex: inherit;
+      width: 100%;
+      margin-bottom: 12px; }
+    .amp-post-dates .amp-post-dates-title i {
+      color: #fff; }
+    .amp-post-dates .amp-post-dates-title .amp-post-date-text {
+      color: #fff;
+      font-family: "Oswald", sans-serif; }
+
+.amp-post-content {
+  padding: 0 12px; }
+
+.amp-fixed-container {
+  position: relative;
+  width: 100%;
+  height: 270px; }
+  .amp-fixed-container .amp-contain img {
+    object-fit: contain; }
+
+.amp-nav-insection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 36px; }
+  .amp-nav-insection i {
+    color: #D52941; }
+  .amp-nav-insection .amp-nav-insection-link {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", sans-serif;
+    transition: all .2s ease-in-out; }
+    .amp-nav-insection .amp-nav-insection-link:hover {
+      text-decoration: none;
+      transform: scale(0.9); }
+
+.amp-share-buttons-link {
+  display: inline-flex;
+  padding-right: 12px; }
+  .amp-share-buttons-link i {
+    color: #fff;
+    font-size: 32px; }
+
+.amp-share-buttons-list {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0; }
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+</head>
+    <body><header class="amp-header">
+    <div class="amp-container">
+        <div class="amp-header-content">
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/amp">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="amp-bars-menu" on="tap:sidebar.toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+<div>
+    <amp-sidebar id="sidebar" class="amp-menu" layout="nodisplay" side="right" role="menu" tabindex="-1" style="" hidden="">
+        <button class="amp-menu-close" on="tap:sidebar.toggle">
+                <i class="fa fa-times"></i>
+        </button>
+        <div class="amp-menu-content">
+            <h4 class="amp-menu-title"><i class="fa fa-tags amp-menu-title-icon"></i> Etiquetas</h4>
+            <ul class="amp-menu-tags">
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (3)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (4)</a>
+                        </li>
+                    
+                
+            </ul>
+
+            <ul class="amp-menu-list"><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                    </li>
+            </ul>
+        </div>
+    </amp-sidebar>
+</div>
+<div hidden=""></div><div class="amp-content" id="content">
+        <main class="amp-post">
+            <div class="amp-post-info">
+                
+                </p>
+            </div>
+
+        <article>
+            <div class="amp-post-header">
+                <div class="amp-container">
+
+                    <h1 class="amp-post-title">Nivel 1. Mickey &amp; Minnie en CSS</h1>
+
+                    <div class="amp-post-dates">
+                        
+                            <div class="amp-post-dates-title author">
+                                <span class="amp-post-date-text"> Neus Agüera</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 28-08-2019</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 31-10-2019</span>
+                            </div>
+                        
+                    </div>
+
+                      <ul class="amp-post-tag-list">
+                            <i class="fa fa-tags"></i><li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/tsum">Tsum</a></a>
+                          </li><li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/ilustraciones">Ilustraciones</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <div class="share-buttons-list">
+        <amp-social-share
+        type="linkedin"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="twitter"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="whatsapp"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="email"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+
+            <div class="amp-post-content">
+                <div class="amp-container">
+                    
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mickey_minnie/stepsMinnie.jpg"
+    alt="Pasos de Minnie"
+    width="360">
+</amp-img>
+
+</div>
+
+<p>En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillos pasos. No importa tu nivel de CSS, si estás empezando encontrarás explicaciones de las propiedades durante todo el curso, ¿Qué veremos con Mickey y Minnie?</p>
+
+<ul>
+<li><a href="#absolutePosition">Centrar elementos en posición absoluta.</a></li>
+<li><a href="#twoClasses">Comportamiento de dos clases en un mismo elemento</a></li>
+<li><a href="#classBehavior">¿Qué clase prevalece?</a></li>
+<li><a href="#inheritClass">Clases heredadas</a></li>
+<li><a href="#rotate">Rotación de elementos sobre su eje</a></li>
+<li><a href="#zindex">Z-orden (z-index)</a></li>
+</ul>
+
+<p>Aunque parezcan muchas cosas no te preocupes y vamos a ponernos con el código. Let&rsquo;s go!</p>
+
+<h2 id="paso-1-las-formas-básicas">Paso 1: Las formas básicas.</h2>
+
+<p>Antes de empezar con el HTML, estudio la imagen que quiero crear y la desgloso en mi mente. Para que te sea más fácil, te aconsejo que cojas papel y lápiz, dibuja la forma más básica del Tsum, en este caso la forma de Mickey. No hace falta que seas un gran dibujante solo son las formas. Algo parecido a esto:</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mickey_minnie/basicmickey.jpg"
+    alt="formas básicas Mickey"
+    width="360">
+</amp-img>
+
+</div>
+
+<p>Una vez tenemos el dibujo, crearemos dos ficheros <b> mickey.html </b>  y <b> mickey.css </b></p>
+
+<p>Nos han salido 5 círculos (orejas, manos y cabeza). En el fichero   <b> mickey.html </b>    cada círculo lo convertiremos en un  div   y le añadiremos una clase con un nombre fácil de identificar. Hemos de pensar en nuestro yo del futuro o en el posible compañero que luego tenga que modificar el código. Por experiencia, mirar tu código y que no lo entiendas, da mucha rabia.</p>
+
+<p>Imagina que para este código utilizáramos las siguientes clases:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rdn-uno&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rdn-dos&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rdn-tres&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rdn-cuatro&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rdn-cinco&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<p>Posiblemente hoy te acuerdes de cada <b> rdn  </b> a que pertenece, pero guarda el código y ábrelo dentro de un mes, imposible acordarse a que parte del Tsum pertenecía cada <b> div </b>, ¿verdad?.</p>
+
+<p>Con las pautas que te he dado te toca crear el HTML, abajo te dejo una posible solución.</p>
+
+<h3 id="mickey-html">mickey.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;character&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-head&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-ear&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-ear right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-hand&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-hand right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<blockquote>
+<h4 id="notas">Notas</h4>
+
+<p>Como puedes ver he englobado los 5  <b>divs</b> que comenté anteriormente dentro de otro llamado  <b>character</b>. Esta clase la utilizaremos para todos los Tsums que crearemos en este curso.</p>
+</blockquote>
+
+<p>Ahora vamos a por el CSS. La solución del CSS la he dividido en dos partes, en la primera nos centraremos en posicionar los elementos y en la segunda le daremos forma y color. Intenta hacer algo parecido a esto:</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mickey_minnie/mickeybody.jpg"
+    alt="mickey simple body"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="mickey-css">mickey.css</h3>
+
+<p>Como hemos comentado en esta primera parte solo vamos a centranos en el posicionamiento de los elementos. El resultado de este código serán unos cuadrados de colores centrados.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">character</span> {
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+}
+
+.<span style="color:#a6e22e">mickey-head</span> {
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">140</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">130</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#f2f</span>;
+}
+
+.<span style="color:#a6e22e">mickey-ear</span> {
+   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">70</span><span style="color:#66d9ef">px</span>;
+   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">70</span><span style="color:#66d9ef">px</span>;
+   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+   <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">14</span><span style="color:#66d9ef">%</span>;
+
+   <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#ff2</span>;
+}
+
+.<span style="color:#a6e22e">mickey-ear</span>.<span style="color:#a6e22e">right</span> {
+   <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">inherit</span>;
+   <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+}
+
+.<span style="color:#a6e22e">mickey-hand</span> {
+   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+   <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">-1</span>;
+   <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#2ff</span>;
+}
+
+.<span style="color:#a6e22e">mickey-hand</span>.<span style="color:#a6e22e">right</span> {
+   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="absolutePosition">Centrar elementos en posición absoluta.</h4>
+
+<p>Para centrar la cabeza horizontalmente he utilizado el siguiente código:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">mickey-head</span> {
+   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+   <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">140</span><span style="color:#66d9ef">px</span>;
+   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">130</span><span style="color:#66d9ef">px</span>;
+}</code></pre></div>
+
+<p>Con la siguiente imagen voy a intentar explicarte el comportamiento de <b> transform:translateX() </b>.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/transformtranslate.jpg"
+    alt="transform translate behavior"
+    width="360">
+</amp-img>
+
+</div>
+
+<p>No hay una única manera para centrar los elementos y quizá has utilizado la siguiente solución o la has visto aplicar en algún sitio.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">mickey-head</span> {
+   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+   <span style="color:#66d9ef">left</span>: calc(<span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">70</span><span style="color:#66d9ef">px</span>);
+   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">140</span><span style="color:#66d9ef">px</span>;
+   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">130</span><span style="color:#66d9ef">px</span>;
+}</code></pre></div>
+
+<p>Al atributo <b> left</b> le decimos que calcule el 50% menos la mitad del ancho del elemento. Esta solución es valida pero tenemos que tener en cuenta que si en un futuro hemos de cambiar el ancho también tendremos que acordarnos que cambiar el <b> left</b>. Son cosas que intento evitar siempre que puedo.</p>
+</blockquote>
+
+<p>Ya tenemos los cuadrados posicionados vamos a darles forma y color.</p>
+
+<h3 id="mickey-css-1">mickey.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">mickey-head</span> {
+   <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+   <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+}
+
+.<span style="color:#a6e22e">mickey-ear</span> {
+   <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+   <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+}
+
+.<span style="color:#a6e22e">mickey-hand</span> {
+   <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+   <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+   <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">white</span>;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="classBehavior">¿Qué clase prevalece?</h4>
+
+<p>Cuando el browser se encuentra con propiedades repetidas prevalece la que está debajo, siempre y cuando no haya ningún !important y el número de dependencias sea el mismo. Si una clase tiene más dependencias que la otra, es la que prevalece. <b>!important</b> prevalece por delante de todo, solo utilizar si es estrictamente necesario, en mi experiencia pocas veces podemos justificar su uso. Abusar de  !important   puede amargar nuestra existencia en un futuro&hellip;</p>
+
+<p>Ahora voy a ponerte unos ejemplos, haz pruebas y comenta en el post de que color será el background en cada uno de los códigos:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/*Ejercicio 1*/</span>
+.<span style="color:#a6e22e">mickey-head</span> {
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">red</span>;
+}
+.<span style="color:#a6e22e">mickey-head</span> {
+   <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+}
+
+<span style="color:#75715e">/*Ejercicio 2*/</span>
+.<span style="color:#a6e22e">mickey-head</span> {
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+}
+.<span style="color:#a6e22e">mickey-head</span> {
+   <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">red</span>;
+}
+
+<span style="color:#75715e">/*Ejercicio 3*/</span>
+.<span style="color:#a6e22e">mickey-head</span>.<span style="color:#a6e22e">black</span>{
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+}
+.<span style="color:#a6e22e">mickey-head</span> {
+   <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">red</span>;
+}
+
+<span style="color:#75715e">/*Ejercicio 4*/</span>
+.<span style="color:#a6e22e">mickey-head</span>{
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">white</span> <span style="color:#75715e">!important</span>;
+}
+.<span style="color:#a6e22e">mickey-head</span>.<span style="color:#a6e22e">black</span> {
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+}
+.<span style="color:#a6e22e">mickey-head</span> {
+   <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">red</span>;
+}</code></pre></div>
+</blockquote>
+
+<h2 id="paso-2-cara">Paso 2: Cara.</h2>
+
+<p>Ya tenemos la forma básica de Mickey, ahora vamos a por la cara. Intenta modificar el HTML y CSS necesario para crear algo parecido a esto:</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mickey_minnie/mickeyface.jpg"
+    alt="mickey face"
+    width="360">
+</amp-img>
+
+</div>
+
+<p>No parece muy difícil, ¿No?. Una pequeña ayuda, he añadido 3 divs.</p>
+
+<h3 id="mickey-html-1">mickey.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-head&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-face&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-face right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-snout&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<p>Vamos a darle forma y color.</p>
+
+<h3 id="mickey-css-2">mickey.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">mickey-face</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">17</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">85</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#ffe1c7</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">mickey-face</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">41</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">mickey-snout</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">107</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">52</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#ffe1c7</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+}</code></pre></div>
+
+<p>Recuerda que no hay una única solución, hazlo a tu manera y si tienes alguna duda escríbeme e intentaré ayudarte.</p>
+
+<blockquote>
+<h4 id="twoClasses">Comportamiento de dos clases en un mismo elemento</h4>
+
+<p>En la cara derecha he añadido la clase <b> right</b>. Este divs recibirá las características de la clase principal más las especificas para la parte derecha, como puede ser el cambio de posición. Es importante que la clase <b> right </b> en el CSS dependa de la clase principal:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">mickey-hand</span>.<span style="color:#a6e22e">right</span> {
+   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">mickey-ear</span>.<span style="color:#a6e22e">right</span> {
+   <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">inherit</span>;
+   <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div>
+
+<p>Si no anidamos la clase right no depende de nadie y afecta a todos los divs que contengan la clase  right  .</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">right</span> {
+   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div>
+</blockquote>
+
+<h2 id="paso-3-ojos-y-nariz">Paso 3: Ojos y nariz.</h2>
+
+<p>Nos falta los ojos y nariz para que se parezca al Tsum de Mickey.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mickey_minnie/mickeyeyes.jpg"
+    alt="Mickey con ojos y nariz"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="mickey-html-2">mickey.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">...
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-face&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-eye&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-face right&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-eye&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-snout&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mickey-nose&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+...</code></pre></div>
+
+<blockquote>
+<h4 id="notas-1">Notas</h4>
+
+<p>Podemos hacer lo mismo sin utilizar más divs, con los atributos de CSS <b>:before :after</b>, pero eso lo veremos en los siguientes niveles del curso.</p>
+</blockquote>
+
+<h3 id="mickey-css-3">mickey.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">mickey-eye</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">44</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#010101</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">mickey-eye</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">41</span><span style="color:#66d9ef">%</span>;
+}
+
+.<span style="color:#a6e22e">mickey-nose</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">33</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#010101</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+}</code></pre></div>
+
+<blockquote>
+<h4 id="inheritClass">Clases heredadas</h4>
+
+<p>Para especificar la posición del ojo derecho heredamos la clase <b> .right</b> del div padre. Necesitamos poner un espacio entre las clases para crear la jerarquía padre / hijo. El padre siempre debe estar en la izquierda.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#f92672">hereda</span> <span style="color:#f92672">del</span> <span style="color:#f92672">padre</span>
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">mickey-eye</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">41</span><span style="color:#66d9ef">%</span>;
+}
+
+<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#f92672">están</span> <span style="color:#f92672">en</span> <span style="color:#f92672">el</span> <span style="color:#f92672">mismo</span> <span style="color:#f92672">nivel</span>
+.<span style="color:#a6e22e">right</span>.<span style="color:#a6e22e">mickey-eye</span>{
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">41</span><span style="color:#66d9ef">%</span>
+}</code></pre></div>
+</blockquote>
+
+<h2 id="paso-4-de-mickey-a-minnie">Paso 4: de Mickey a Minnie</h2>
+
+<p>WoW, Ya tenemos a Mickey, vamos a por Minnie! El siguiente paso es transformar a Mickey en Minnie. Para que tengas a los dos por separado, crea dos ficheros llamados <b> minnie.html</b>   y <b> minnie.css</b>, copia el código que tienes de Mickey y cambia todas las palabras &lsquo;mickey&rsquo; por &lsquo;minnie&rsquo; (más adelante veremos como aprovechar código). ¿Tienes los ficheros creados? Vamos a añadirle pestañas y coloretes. ¿Lo intentas tú primero?</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mickey_minnie/minnieblushers.jpg"
+    alt="Minnie con pestañas y coloretes"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="minnie-html">minnie.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-head&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-face&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-eye&#34;</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-lash&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-lash two&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-lash three&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-face right&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-eye right&#34;</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-lash&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-lash two&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-lash three&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-snout&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-nose&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-blush&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-blush right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="minnie-css">minnie.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">minnie-blush</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">36</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#ff9ea2</span>;
+}
+.<span style="color:#a6e22e">minnie-blush</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">73</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">minnie-lash</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">-1</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-3</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">7</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#010101</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-45</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">minnie-lash</span>.<span style="color:#a6e22e">two</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-5</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">minnie-lash</span>.<span style="color:#a6e22e">three</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">minnie-lash</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-5</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">minnie-lash</span>.<span style="color:#a6e22e">two</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-5</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">minnie-lash</span>.<span style="color:#a6e22e">three</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span>;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="rotate">Rotación de elementos sobre su eje</h4>
+
+<p>En pasos anteriores usamos la propiedad <b> transform </b>  para trasladar y centrar el div, ahora lo usaremos para rotar sobre su eje.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">/</span><span style="color:#f92672">/</span> <span style="color:#f92672">Trasladar</span><span style="color:#f92672">,</span> <span style="color:#f92672">mover</span><span style="color:#f92672">,</span> <span style="color:#f92672">centrar</span><span style="color:#f92672">.</span>
+<span style="color:#f92672">transform</span><span style="color:#f92672">:</span> <span style="color:#f92672">translate</span><span style="color:#f92672">(</span><span style="color:#f92672">-50</span><span style="color:#f92672">%</span><span style="color:#f92672">,</span> <span style="color:#f92672">20</span><span style="color:#f92672">%</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span> <span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#f92672">(</span><span style="color:#f92672">X</span><span style="color:#f92672">,</span><span style="color:#f92672">Y</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">transform</span><span style="color:#f92672">:</span> <span style="color:#f92672">translateX</span><span style="color:#f92672">(</span><span style="color:#f92672">-50</span><span style="color:#f92672">%</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">transform</span><span style="color:#f92672">:</span> <span style="color:#f92672">translateY</span><span style="color:#f92672">(</span><span style="color:#f92672">-20</span><span style="color:#f92672">%</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+
+<span style="color:#f92672">/</span><span style="color:#f92672">/</span> <span style="color:#f92672">Rotar</span> <span style="color:#f92672">(</span><span style="color:#f92672">grados</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">transform</span><span style="color:#f92672">:</span> <span style="color:#f92672">rotate</span><span style="color:#f92672">(</span><span style="color:#f92672">45deg</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span></code></pre></div>
+</blockquote>
+
+<h2 id="paso-5-el-lazo-de-minnie">Paso 5: El lazo de Minnie.</h2>
+
+<p>Ya tenemos algo que se parece a Minnie, una Minnie muy cabreada porque no tiene su lazo&hellip; ¿Alguna vez la has visto sin su lazo? ella lo necesita así que vamos a crearlo. Venga utiliza la imaginación ¡tú puedes!</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mickey_minnie/minniebow.jpg"
+    alt="lazo de Minnie"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="minnie-html-1">minnie.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-bow&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-petal&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-mole&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-mole two&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-mole three&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-petal down&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-knot&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-petal right&#34;</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-mole&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-mole two&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-mole three&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minnie-petal down right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="minnie-css-1">minnie.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">minnie-bow</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">61</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">87</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">19</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+}
+.<span style="color:#a6e22e">minnie-petal</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">53</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">17</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">44</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#fa0000</span>;
+}
+.<span style="color:#a6e22e">minnie-petal</span>.<span style="color:#a6e22e">down</span> {
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">33</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">1</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-24</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">minnie-petal</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">37</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-44</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">minnie-petal</span>.<span style="color:#a6e22e">right</span>.<span style="color:#a6e22e">down</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">24</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">minnie-mole</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">7</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">white</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">minnie-mole</span>.<span style="color:#a6e22e">two</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">minnie-mole</span>.<span style="color:#a6e22e">three</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">23</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">26</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">minnie-mole</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">37</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">minnie-mole</span>.<span style="color:#a6e22e">two</span> {
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">31</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">23</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">minnie-mole</span>.<span style="color:#a6e22e">three</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">minnie-knot</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">37</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#b20000</span>;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="zindex">Z-orden (z-index)</h4>
+
+<p>z-index indica el z-orden de un elemento y sus descendientes. Cuando varios elementos se superponen, z-index determina que elemento está delante o detrás. Su valor por defecto es auto, pero podemos definirlos con números enteros, el número mayor normalmente se superpone. En mi caso para seguir una regla y que me sea fácil acordarme del orden, los determino de la siguiente forma:</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">z-index</span><span style="color:#f92672">:</span> <span style="color:#f92672">1</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">z-index</span><span style="color:#f92672">:</span> <span style="color:#f92672">10</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">z-index</span><span style="color:#f92672">:</span> <span style="color:#f92672">100</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">z-index</span><span style="color:#f92672">:</span> <span style="color:#f92672">1000</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">z-index</span><span style="color:#f92672">:</span> <span style="color:#f92672">10000</span><span style="color:#f92672">;</span></code></pre></div>
+Con esta regla me aseguro de no poner otros numeros y seguir de manera intuitva el z-orden de los elementos.</p>
+
+<h4 id="nota">Nota</h4>
+
+<p>Recuerda que en este nivel no estamos usando <b> :before :after</b>, pero si quieres utilizarlo adelante, posiblemente el código te quede más limpio.</p>
+
+<p>¿Te has fijado que he utilizado las clases <b> .two</b> y  <b>.three</b>? Recuerda utilizar palabras fáciles de identificar, esto no sería una buena práctica, ¿Qué se te ocurre?</p>
+</blockquote>
+
+<h2 id="paso-6-vamos-a-mejorar-a-minnie">Paso 6: Vamos a mejorar a Minnie</h2>
+
+<p>Ahora sí, ya tenemos a Daisy y Donald aunque siempre se pueden mejorar. ¿Lo intentas? aquí te dejo un par de enlaces en Codepen para que veas mis Tsums finales. Juega un rato, mejora y enséñame el resultado.</p>
+
+<p><a href="https://codepen.io/neusaguera/pen/JjjvEwK" target="_blank"> Codepen Mickey </a> - <a href="https://codepen.io/neusaguera/pen/dyyeNBW" target="_blank"> Codepen Minnie </a></p>
+
+<p>Nos leemos en el próximo nivel.</p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="amp-container">
+            <nav class="amp-nav-insection">
+                
+
+                
+                    <a class="amp-nav-insection-link prev" href="https://cssillustrations.com/amp/posts/tsum/introductiontsums/">
+                            <i class="fa fa-arrow-left"></i> Piloto. Tsums en CSS
+                    </a>
+                
+
+                
+                    <a class="amp-nav-insection-link next" href="https://cssillustrations.com/amp/posts/tsum/daisyanddonald/">
+                         Nivel 2. Daisy &amp; Donald <i class="fa fa-arrow-right"></i>
+                    </a>
+                
+            </nav>
+        </div><footer class="amp-footer">
+    <div class="amp-container">
+        <div class="amp-footer-content">
+            <div class="amp-footer-contact">
+                <h3 class="amp-footer-contact-title">Datos de contacto</h3>
+                <ul class="amp-footer-social-list">
+                    <li class="amp-footer-social-item">Neus Agüera Valls</li>
+                    <li class="amp-footer-social-item">neus@cssillustrations.com</li>
+                    <li class="amp-footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="amp-footer-social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="amp-footer-policy-list">
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></body>
+</html>

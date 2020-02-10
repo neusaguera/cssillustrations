@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Piloto. Tsums en CSS" />
+<meta name="description" property="og:description" content="Dibujar personajes, vistas y crear animaciones con HTML y CSS es uno de mis hobbies. Me gusta crear estos dibujos desde sus formas geométricas, sin …" />
+<meta property="og:url" content="https://cssillustrations.com/posts/tsum/introductiontsums/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/tsum/introduction.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/tsum/introduction.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/tsum/introduction.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2019-08-27 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2019-08-27 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon"
+      type="image/png"
+      href="/icoCI.png">
+<link rel="canonical" href="https://cssillustrations.com/posts/tsum/introductiontsums/" />
+
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+
+
+
+    
+    <link rel="stylesheet" href="https://cssillustrations.com/scss/main.css" amp-custom>
+</head>
+    <body>
+        
+
+<link rel="stylesheet" href="https://cssillustrations.com/scss/cookieconsent.min.css">
+<script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.wpcc.init({
+            "colors":{
+                "popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},
+                "button":{"background":"#555555","text":"#ffffff"}
+            },
+            "position":
+                "bottom",
+                "content":{
+                    "href":"https://www.websitepolicies.com/policies/view/S0MObbo6",
+                    "link":"Política de Cookies",
+                    "button":"Aceptar",
+                    "message":"Esta web utiliza cookies para asegurar una mejor experiencia."
+                },
+                "margin":"none",
+                "transparency":"10"
+        })
+    });
+</script><header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="bars-menu" id="bars-menu"> <i class="fas fa-bars"></i></button>
+
+            <nav class="menu close" id="menu">
+    <button class="menu-close" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="menu-content">
+        <h4 class="menu-title"><i class="fas fa-tags menu-title-icon"></i> Etiquetas</h4>
+        <ul class="menu-tags">
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (3)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (4)</a>
+                    </li>
+                
+            
+        </ul>
+
+        <ul class="menu-list"><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                </li><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                </li><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+        </div>
+    </div>
+</header><div class="content" id="content">
+    <div class="content" id="content">
+    <main class="post">
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <div class="post-header">
+                <div class="container">
+
+                    <h1 class="post-title">Piloto. Tsums en CSS</h1>
+
+                    <div class="post-dates">
+                        
+                        
+                            <div class="post-dates-title">
+                                    <i class="fas fa-pen-nib"></i>
+                                <span class="post-date-text"> 27-08-2019</span>
+
+                            </div>
+                        
+                        
+                            <div class="post-dates-title">
+                                <i class="fas fa-highlighter"></i>
+                                <span class="post-date-text"> 27-08-2019</span>
+
+                            </div>
+                        
+                    </div>
+
+                      <ul class="post-tag-list">
+                            <i class="fas fa-tags"></i><li class="post-tag-item">
+                              <a class="post-tag-link" href="https://cssillustrations.com/tags/tsum">Tsum</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <ul class="share-buttons-list">
+        <li class="share-buttons-item facebook">
+            <a class="share-buttons-link visible-md" target="_blank" href='http://www.facebook.com/share.php?u=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fintroductiontsums%2f'>
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fintroductiontsums%2f" target="_blank" class="share-buttons-link visible-xs"  data-gtm-social-provider="facebook" >
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item twitter">
+            <a class="share-buttons-link" target="_blank" href='http://twitter.com/home?status=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fintroductiontsums%2f'>
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item linkedin">
+            <a class="share-buttons-link" target="_blank" href='https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fintroductiontsums%2f&title=Piloto.%20Tsums%20en%20CSS&summary=&source='>
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item whatsapp">
+            <a class="share-buttons-link"  href="whatsapp://send?text=Piloto.%20Tsums%20en%20CSS%20https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fintroductiontsums%2f" data-gtm-social-provider="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item telegram">
+            <a class="share-buttons-link" href="tg://msg_url?text=Piloto.%20Tsums%20en%20CSS=12&url=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fintroductiontsums%2f">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item mail">
+            <a class="share-buttons-link" target="_blank" href='mailto:?&body=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fintroductiontsums%2f'>
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <div class="container">
+                    
+<img
+    src="/tsum/introduction.jpg"
+    alt="Diferentes Tsums" />
+
+
+<p>Dibujar personajes, vistas y crear animaciones con HTML y CSS es uno de mis hobbies. Me gusta crear estos dibujos desde sus formas geométricas, sin utilizar imágenes, svg o JavaScript. Con paciencia y la magia del CSS podemos hacer cosas maravillosas. Si eres un amante del CSS o quieres aprender más sobre este lenguaje ¡Quédate!</p>
+
+<p>Para este primer curso voy a utilizar los personajes del juego TsumTsum de Disney, es decir, los cabezones. Es un juego al que estoy enganchada a niveles que no te puedes creer y un día mientras estaba jugando pensé, hacer estos personajes tan monos en CSS debe molar mucho y meses después aquí estoy, explicando como lo hice.</p>
+
+<p>Si es la primera vez que vas a hacer algo de CSS y HTML deberías mirar este pequeño <a href="/posts/basic/helloworld/">post</a> donde se explican en pequeños pasos como crear tu primera web estática. Si este paso ya lo has superado, vamos a por el curso.</p>
+
+<p>Para el primer nivel voy a utilizar a Mickey y Minnie, estos dos personajes míticos nos van a ayudar a dar nuestros primeros pasos en este curso ¿Empezamos?</p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="container">
+            <nav class="nav-insection">
+                
+
+                
+
+                
+                    <a class="nav-insection-link next" href="https://cssillustrations.com/posts/tsum/mickeyandminnie/">
+                         Nivel 1. Mickey &amp; Minnie en CSS <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                
+
+            </nav>
+
+        </div>
+
+
+
+        <div class="post-info">
+  			</div>
+
+        
+
+        </div><footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h3 class="footer-contact-title">Datos de contacto</h3>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">Neus Agüera Valls</li>
+                    <li class="footer-social-item">neus@cssillustrations.com</li>
+                    <li class="footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="footer-social-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="footer-policy-list">
+                    <li class="footer-policy-item">
+                        <a class="footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="footer-policy-item">
+                        <a class="footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script src="/js/bundle.min.js" integrity=""></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147617636-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147617636-1', { 'anonymize_ip' : true} );
+</script>
+    </body>
+</html>

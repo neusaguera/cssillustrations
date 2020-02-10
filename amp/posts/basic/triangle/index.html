@@ -1,0 +1,697 @@
+<!doctype html>
+<html ⚡>
+    <head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://cssillustrations.com/amp/posts/basic/triangle/" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Formas triangulares" />
+<meta name="description" property="og:description" content="Triángulo y variantes En este post aprenderemos a crear triángulos y algunas variantes como estrellas y flechas.
+  Triángulo Para crear un triángulo …" />
+<meta property="og:url" content="https://cssillustrations.com/amp/posts/basic/triangle/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/geometric/triangle.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/geometric/triangle.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/geometric/triangle.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2019-11-15 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2019-11-15 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon" type="image/png" href="/icoCI.png">
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+
+
+<style amp-custom> /* Standard Colors */
+/* Theme Colors */
+/*Transparent Colors */
+/*** avatar colors */
+/*** angry-cat colors ***/
+/* screens */
+/* fonts */
+/* z-index*/
+* {
+  color: #44647A;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: none; }
+
+button {
+  border: 0;
+  background: none; }
+
+body {
+  overflow-x: hidden; }
+
+figure {
+  margin: 0; }
+
+p {
+  font-family: "Roboto Slab", serif; }
+
+.amp-container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto; }
+
+.amp-content {
+  margin-top: 60px;
+  min-height: 70vh; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.show {
+  display: none; }
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation; }
+
+.visible-md {
+  display: none; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 32px;
+  line-height: 36px; }
+
+h2 {
+  font-size: 20px;
+  line-height: 28px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400; }
+
+.amp-header {
+  height: 50px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(235, 242, 255, 0.95);
+  z-index: 10000; }
+
+.amp-logo {
+  margin: 0 auto;
+  padding-left: 12px;
+  flex: 1 75%; }
+
+.amp-logo-text {
+  line-height: 50px;
+  font-size: 18px;
+  color: #D52941;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -1px; }
+
+.amp-header-content {
+  display: flex; }
+  .amp-header-content .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+  .amp-header-content .amp-bars-menu {
+    padding-right: 12px;
+    border: 0;
+    cursor: pointer; }
+
+.amp-menu-content {
+  padding: 24px; }
+
+.amp-menu-title {
+  font-size: 22px;
+  color: #D52941; }
+  .amp-menu-title .amp-menu-title-icon {
+    color: #D52941; }
+
+.amp-menu-tags {
+  padding-left: 24px;
+  list-style: none;
+  margin-bottom: 36px; }
+
+.amp-menu-tags-item {
+  margin-bottom: 6px; }
+
+.amp-menu-tags-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+.amp-menu {
+  width: 100%;
+  background: #fff; }
+  .amp-menu .amp-menu-item {
+    list-style: none;
+    margin-bottom: 12px; }
+  .amp-menu .amp-menu-link {
+    font-size: 20px;
+    line-height: 32px;
+    color: #D52941;
+    font-family: "Oswald", sans-serif; }
+  .amp-menu .amp-menu-close {
+    height: 50px;
+    padding: 0 24px; }
+  .amp-menu .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+
+.amp-footer {
+  background: #44647A;
+  color: #fff; }
+  .amp-footer .amp-logo {
+    padding: 0; }
+  .amp-footer .amp-logo-text {
+    font-size: 24px;
+    color: #EBF2FF; }
+
+.amp-footer-content {
+  padding: 24px; }
+  .amp-footer-content .amp-footer-social-item, .amp-footer-content .amp-footer-policy-link {
+    color: #fff;
+    font-family: "Oswald", sans-serif; }
+
+.amp-footer-contact-title {
+  margin-bottom: 12px;
+  color: #EBF2FF; }
+
+.amp-footer-social-list {
+  list-style: none;
+  margin-bottom: 24px; }
+
+.amp-footer-social-item.amp-inline {
+  display: inline-flex;
+  padding-right: 12px;
+  font-size: 20px;
+  line-height: 24px; }
+
+.amp-footer-social-item i {
+  font-size: 22px;
+  line-height: 26px;
+  color: #EBF2FF; }
+
+.amp-footer-policy-item {
+  display: inline-flex;
+  padding-right: 18px; }
+
+.amp-post {
+  width: 100%;
+  margin: -10px auto 0; }
+  .amp-post article {
+    margin-bottom: 36px; }
+  .amp-post p, .amp-post li {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 12px; }
+  .amp-post a {
+    color: #D52941;
+    font-weight: 300;
+    font-size: 14px; }
+  .amp-post img {
+    margin: 0 auto;
+    display: block;
+    max-width: 320px; }
+  .amp-post blockquote {
+    margin: 12px 12px 42px 12px;
+    padding: 12px;
+    border-left: 2px solid #D52941; }
+    .amp-post blockquote h4, .amp-post blockquote h3, .amp-post blockquote h2, .amp-post blockquote h1 {
+      font-style: normal;
+      color: #D52941;
+      margin-bottom: 12px; }
+  .amp-post pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: auto; }
+  .amp-post pre code {
+    margin: 0;
+    padding: 0;
+    font-feature-settings: normal;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px; }
+  .amp-post ul, .amp-post ol {
+    margin-left: 20px;
+    padding: 0; }
+  .amp-post .highlight {
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 24px; }
+  .amp-post .copy-code {
+    top: 6px;
+    position: absolute;
+    right: 6px;
+    background: #eff4fe;
+    padding: 6px;
+    border-radius: 3px;
+    width: 75px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .amp-post h2 {
+    margin: 24px 0 12px 0; }
+  .amp-post .amp-post-tag-list {
+    margin: 24px 0;
+    display: inline-flex;
+    list-style: none; }
+    .amp-post .amp-post-tag-list i, .amp-post .amp-post-tag-list a {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-right: 6px; }
+  .amp-post .amp-post-tag-item {
+    background: none; }
+  .amp-post .amp-post-tag-link {
+    font-weight: 500;
+    text-decoration: underline; }
+
+.amp-post-title {
+  font-size: 30px;
+  line-height: 34px;
+  margin: 24px 0;
+  font-weight: 500;
+  color: #fff; }
+
+.amp-post-header {
+  background: #44647A;
+  min-height: 250px;
+  margin-bottom: 24px;
+  padding: 12px; }
+
+.amp-post-dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .amp-post-dates .amp-post-dates-title {
+    padding-right: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    flex: 1; }
+    .amp-post-dates .amp-post-dates-title.author {
+      flex: inherit;
+      width: 100%;
+      margin-bottom: 12px; }
+    .amp-post-dates .amp-post-dates-title i {
+      color: #fff; }
+    .amp-post-dates .amp-post-dates-title .amp-post-date-text {
+      color: #fff;
+      font-family: "Oswald", sans-serif; }
+
+.amp-post-content {
+  padding: 0 12px; }
+
+.amp-fixed-container {
+  position: relative;
+  width: 100%;
+  height: 270px; }
+  .amp-fixed-container .amp-contain img {
+    object-fit: contain; }
+
+.amp-nav-insection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 36px; }
+  .amp-nav-insection i {
+    color: #D52941; }
+  .amp-nav-insection .amp-nav-insection-link {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", sans-serif;
+    transition: all .2s ease-in-out; }
+    .amp-nav-insection .amp-nav-insection-link:hover {
+      text-decoration: none;
+      transform: scale(0.9); }
+
+.amp-share-buttons-link {
+  display: inline-flex;
+  padding-right: 12px; }
+  .amp-share-buttons-link i {
+    color: #fff;
+    font-size: 32px; }
+
+.amp-share-buttons-list {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0; }
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+</head>
+    <body><header class="amp-header">
+    <div class="amp-container">
+        <div class="amp-header-content">
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/amp">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="amp-bars-menu" on="tap:sidebar.toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+<div>
+    <amp-sidebar id="sidebar" class="amp-menu" layout="nodisplay" side="right" role="menu" tabindex="-1" style="" hidden="">
+        <button class="amp-menu-close" on="tap:sidebar.toggle">
+                <i class="fa fa-times"></i>
+        </button>
+        <div class="amp-menu-content">
+            <h4 class="amp-menu-title"><i class="fa fa-tags amp-menu-title-icon"></i> Etiquetas</h4>
+            <ul class="amp-menu-tags">
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (3)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (4)</a>
+                        </li>
+                    
+                
+            </ul>
+
+            <ul class="amp-menu-list"><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                    </li>
+            </ul>
+        </div>
+    </amp-sidebar>
+</div>
+<div hidden=""></div><div class="amp-content" id="content">
+        <main class="amp-post">
+            <div class="amp-post-info">
+                
+                </p>
+            </div>
+
+        <article>
+            <div class="amp-post-header">
+                <div class="amp-container">
+
+                    <h1 class="amp-post-title">Formas triangulares</h1>
+
+                    <div class="amp-post-dates">
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 15-11-2019</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 15-11-2019</span>
+                            </div>
+                        
+                    </div>
+
+                      <ul class="amp-post-tag-list">
+                            <i class="fa fa-tags"></i><li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/elemental">Elemental</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <div class="share-buttons-list">
+        <amp-social-share
+        type="linkedin"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="twitter"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="whatsapp"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="email"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+
+            <div class="amp-post-content">
+                <div class="amp-container">
+                    
+
+<h2 id="triángulo-y-variantes">Triángulo y  variantes</h2>
+
+<p>En este post aprenderemos a crear triángulos y algunas variantes como estrellas y flechas.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/geometric/triangle-steps.jpg"
+    alt="formas geométricas triangulares"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="triángulo">Triángulo</h3>
+
+<p>Para crear un triángulo las propiedades más importantes son los bordes, necesitamos jugar con tres de los cuatro. Por ejemplo, si queremos crear un triangulo que señala hacia arriba, le daremos al borde opuesto, en este caso border-bottom, altura y color. A los dos bordes colindantes (izquierda y derecha), les daremos el ancho que queramos con color transparente. El ancho total del triángulo será la suma de los dos. Pruébalo, es mucho más fácil de lo que parece.</p>
+
+<h4 id="arriba">Arriba</h4>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;triangle-top&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">triangle-top</span> {
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">75</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#BDE390</span>;
+}</code></pre></div>
+
+</div>
+
+<h4 id="abajo">Abajo</h4>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;triangle-bottom&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">triangle-bottom</span> {
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">75</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#BDE390</span>;
+}</code></pre></div>
+
+</div>
+
+<h4 id="derecha">Derecha</h4>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;triangle-right&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">triangle-right</span>{
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">75</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#BDE390</span>;
+}</code></pre></div>
+
+</div>
+
+<h4 id="izquierda">Izquierda</h4>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;triangle-left&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">triangle-left</span> {
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">75</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#BDE390</span>;
+}</code></pre></div>
+
+</div>
+
+<h3 id="estrella-de-seis-puntas">Estrella de seis puntas</h3>
+
+<p>Una vez hemos aprendido a dibujar un triángulo, crear una estrella es muy sencillo, solo necesitamos crear dos opuestos, por ejemplo cogeremos los verticales. En este caso, al segundo triángulo le daremos posición absoluta y le diremos que su propiedad <b>left</b> tenga el valor negativo del valor que le hemos dado al borde derecho, es decir, si el borde derecho es de 50px, la propiedad left será -50px.</p>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;star-six&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">star-six</span>{
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#BDE390</span>;
+}
+.<span style="color:#a6e22e">star-six</span>:<span style="color:#a6e22e">after</span> {
+  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">28</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">-50</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#BDE390</span>;
+}</code></pre></div>
+
+</div>
+
+<h3 id="flecha">Flecha</h3>
+
+<p>Para crear esta figura tienes que aplicar los conocimientos aprendidos hasta ahora. Crea un triángulo y un rectángulo, posiciónalos de forma que el resultado sea una flecha, prueba a crearla sin mirar. ¡seguro que lo consigues!</p>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;arrow-left&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">arrow-left</span>{
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#BDE390</span>;
+}
+.<span style="color:#a6e22e">arrow-left</span>:<span style="color:#a6e22e">after</span>{
+  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">-15</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">background</span>:  <span style="color:#ae81ff">#BDE390</span>;
+}</code></pre></div>
+
+</div>
+
+<h2 id="juega">Juega</h2>
+
+<p>Como ya te he comentado en los anteriores post, juega con estos objetos para ir familiarizándote con las propiedades de CSS. Te dejo el enlace a <a href="https://codepen.io/neusaguera/pen/QWWJWdb" target="_blank"> Codepen </a> donde puedes ver el código.</p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="amp-container">
+            <nav class="amp-nav-insection">
+                
+
+                
+                    <a class="amp-nav-insection-link prev" href="https://cssillustrations.com/amp/posts/basic/circle/">
+                            <i class="fa fa-arrow-left"></i> Formas circulares
+                    </a>
+                
+
+                
+            </nav>
+        </div><footer class="amp-footer">
+    <div class="amp-container">
+        <div class="amp-footer-content">
+            <div class="amp-footer-contact">
+                <h3 class="amp-footer-contact-title">Datos de contacto</h3>
+                <ul class="amp-footer-social-list">
+                    <li class="amp-footer-social-item">Neus Agüera Valls</li>
+                    <li class="amp-footer-social-item">neus@cssillustrations.com</li>
+                    <li class="amp-footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="amp-footer-social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="amp-footer-policy-list">
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></body>
+</html>

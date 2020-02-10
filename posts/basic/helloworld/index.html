@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="HelloWorld" />
+<meta name="description" property="og:description" content="¿Quieres aprender las primeras nociones de HTML &amp;amp; CSS? Sigue leyendo e intentaré ayudarte. Primero empezaremos con una breve descripción de ambos …" />
+<meta property="og:url" content="https://cssillustrations.com/posts/basic/helloworld/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/helloworld/introduction.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/helloworld/introduction.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/helloworld/introduction.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2019-03-08 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2019-03-08 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon"
+      type="image/png"
+      href="/icoCI.png">
+<link rel="canonical" href="https://cssillustrations.com/posts/basic/helloworld/" />
+
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+
+
+
+    
+    <link rel="stylesheet" href="https://cssillustrations.com/scss/main.css" amp-custom>
+</head>
+    <body>
+        
+
+<link rel="stylesheet" href="https://cssillustrations.com/scss/cookieconsent.min.css">
+<script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.wpcc.init({
+            "colors":{
+                "popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},
+                "button":{"background":"#555555","text":"#ffffff"}
+            },
+            "position":
+                "bottom",
+                "content":{
+                    "href":"https://www.websitepolicies.com/policies/view/S0MObbo6",
+                    "link":"Política de Cookies",
+                    "button":"Aceptar",
+                    "message":"Esta web utiliza cookies para asegurar una mejor experiencia."
+                },
+                "margin":"none",
+                "transparency":"10"
+        })
+    });
+</script><header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="bars-menu" id="bars-menu"> <i class="fas fa-bars"></i></button>
+
+            <nav class="menu close" id="menu">
+    <button class="menu-close" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="menu-content">
+        <h4 class="menu-title"><i class="fas fa-tags menu-title-icon"></i> Etiquetas</h4>
+        <ul class="menu-tags">
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (3)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (4)</a>
+                    </li>
+                
+            
+        </ul>
+
+        <ul class="menu-list"><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                </li><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                </li><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+        </div>
+    </div>
+</header><div class="content" id="content">
+    <div class="content" id="content">
+    <main class="post">
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <div class="post-header">
+                <div class="container">
+
+                    <h1 class="post-title">HelloWorld</h1>
+
+                    <div class="post-dates">
+                        
+                        
+                            <div class="post-dates-title">
+                                    <i class="fas fa-pen-nib"></i>
+                                <span class="post-date-text"> 08-03-2019</span>
+
+                            </div>
+                        
+                        
+                            <div class="post-dates-title">
+                                <i class="fas fa-highlighter"></i>
+                                <span class="post-date-text"> 08-03-2019</span>
+
+                            </div>
+                        
+                    </div>
+
+                      <ul class="post-tag-list">
+                            <i class="fas fa-tags"></i><li class="post-tag-item">
+                              <a class="post-tag-link" href="https://cssillustrations.com/tags/elemental">Elemental</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <ul class="share-buttons-list">
+        <li class="share-buttons-item facebook">
+            <a class="share-buttons-link visible-md" target="_blank" href='http://www.facebook.com/share.php?u=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fhelloworld%2f'>
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fhelloworld%2f" target="_blank" class="share-buttons-link visible-xs"  data-gtm-social-provider="facebook" >
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item twitter">
+            <a class="share-buttons-link" target="_blank" href='http://twitter.com/home?status=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fhelloworld%2f'>
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item linkedin">
+            <a class="share-buttons-link" target="_blank" href='https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fhelloworld%2f&title=HelloWorld&summary=&source='>
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item whatsapp">
+            <a class="share-buttons-link"  href="whatsapp://send?text=HelloWorld%20https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fhelloworld%2f" data-gtm-social-provider="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item telegram">
+            <a class="share-buttons-link" href="tg://msg_url?text=HelloWorld=12&url=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fhelloworld%2f">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item mail">
+            <a class="share-buttons-link" target="_blank" href='mailto:?&body=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fhelloworld%2f'>
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <div class="container">
+                    
+
+<p>¿Quieres aprender las primeras nociones de HTML &amp; CSS? Sigue leyendo e intentaré ayudarte.
+Primero empezaremos con una breve descripción de ambos conceptos.</p>
+
+<h4 id="definición-de-html-según-wikipedia">Definición de HTML según wikipedia</h4>
+
+<blockquote>
+<p><em>HTML, siglas en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web.</em></p>
+
+<p><a href="https://es.wikipedia.org/wiki/HTML" target="_blank">Leer más en wikipedia</a></p>
+</blockquote>
+
+<h4 id="definición-de-css-según-wikipedia">Definición de CSS según wikipedia</h4>
+
+<blockquote>
+<p><em>CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</em></p>
+
+<p><a href="https://es.wikipedia.org/wiki/CSS" target="_blank">Leer más en wikipedia</a>.</p>
+</blockquote>
+
+<p>Con las definiciones que nos proporciona wikipedia podríamos decir que HTML y CSS son los mejores amigos entre si. Con HTML creamos de manera estática, la estructura y el contenido de la web. Con CSS le daremos forma y color para que el contenido tenga sentido.</p>
+
+<p>Sin enrollarme más que siempre me ha parecido que las partes teóricas son muy aburridas vamos a crear nuestro primer &lsquo;Hello World&rsquo; en HTML &amp; CSS.</p>
+
+<h3 id="paso-1-qué-necesitamos-para-empezar-a-crear-webs-estáticas">Paso 1: ¿Qué necesitamos para empezar a crear webs estáticas?</h3>
+
+<p>Si vamos a lo más rudimentario podemos decir que solo necesitas un bloc de notas para crear tu primer hello world, pero te aconsejo que utilices un editor de código que te ayude a ver el código con colores y estructurado. Yo utilizo Visual studio Code, es una herramienta gratuita y fácil de utilizar, también hay otros como notepad++, sublime&hellip; Escoge el que más te guste, ábrelo y empecemos.</p>
+
+<h3 id="paso-2-estructura-mínima-html">Paso 2: Estructura mínima HTML</h3>
+
+<p>Crea un archivo nuevo y guardalo como helloworld.html. Copia el siguiente código, guarda y abre el fichero desde tu navegador y WoW ya tenemos nuestro primer Hello World!</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Título Helo World&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        Hello world!
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<blockquote>
+<h4 id="notas">Notas</h4>
+
+<ol>
+<li><strong>&lt;!Doctype html&gt;</strong> Estará siempre en la primera linea, sirve para que el navegador conozca que tipo de documento está recibiendo.</li>
+<li><strong>&lt;html&gt;&lt;/html&gt;</strong> Estos tags son el inicio y cierre de nuestro código, el resto de código debe estar entre estos dos tags.</li>
+<li><strong>&lt;head&gt;&lt;/head&gt;</strong>  Engloba los elementos que informan sobre el documento, título, estilos, meta, links, scripts&hellip;</li>
+<li><strong>&lt;title&gt;&lt;/title&gt;</strong> Aquí pondremos el título de la web y es lo que aparecerá en la pastilla del navegador.</li>
+</ol>
+
+<p>
+<img
+    src="/helloworld/helloworld.jpg"
+    alt="Navegador con hello world" />
+
+5. <strong>&lt;body&gt;&lt;/body&gt;</strong> Engloba el contenido HTML de toda la web, texto, imagenes, tablas&hellip;&lt;</p>
+</blockquote>
+
+<h3 id="paso-3-añadir-css">Paso 3: Añadir CSS</h3>
+
+<p>Tenemos tres maneras de añadir CSS:  Inline, Internal, External . Para mi la única manera en que deberías añadir el CSS es de forma externa, pero te voy a mostrar como hacerlo de las tres maneras.</p>
+
+<h4 id="css-inline">CSS Inline</h4>
+
+<p>El css inline es aquel que se añade en el atributo style del elemento HTML. Esta manera de añadir CSS no te la recomiendo por los siguientes motivos:
+1. Mezclas HTML con CSS y eso complica el seguimiento del código.
+2. No es aprovechable, esos estilos solo se aplican al elemento, así que si queremos varios elementos con el mismo estilo deberíamos añadir el atributo style en cada tag.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Título Helo World&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background: black; color: white&#34;</span>&gt;
+        Hello world!
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<blockquote>
+<p>En el tag body he añadido la palabra style y entre comillas le he cambiado el color de fondo a negro y el color de la fuente a blanco.</p>
+</blockquote>
+
+<h4 id="css-internal">CSS Internal</h4>
+
+<p>El CSS internal es aquel que añadimos en el Head dentro del tag Style. ¿Recomendable? No! Como en el caso anterior estamos mezclando el codigo HTML &amp; CSS que siempre dificulta la lectura del código. Ten en cuenta que el CSS tiende a a crecer mucho y nos quedaría un archivo infinito.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Título Helo World&lt;/<span style="color:#f92672">title</span>&gt;
+        &lt;<span style="color:#f92672">style</span>&gt;
+            <span style="color:#f92672">body</span>{
+                <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+                <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+            }
+        &lt;/<span style="color:#f92672">style</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        Hello world!
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<h4 id="css-external">CSS External</h4>
+
+<p>Es la opción más recomendable, fácil de ordenar, clara y sin mezclar ambos mundos. Consiste en tener uno o varios ficheros .css donde tendremos todo el código, el qual referenciaremos en el head.</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">//Fichero helloworld.html
+<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Título Helo World&lt;/<span style="color:#f92672">title</span>&gt;
+        &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        Hello world!
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS"><span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#f92672">Fichero</span> <span style="color:#f92672">style</span>.<span style="color:#a6e22e">css</span>
+<span style="color:#f92672">body</span>{
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">black</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+}</code></pre></div></p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="container">
+            <nav class="nav-insection">
+                
+
+                
+
+                
+                    <a class="nav-insection-link next" href="https://cssillustrations.com/posts/basic/square/">
+                         Formas cuadradas <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                
+
+            </nav>
+
+        </div>
+
+
+
+        <div class="post-info">
+  			</div>
+
+        
+
+        </div><footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h3 class="footer-contact-title">Datos de contacto</h3>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">Neus Agüera Valls</li>
+                    <li class="footer-social-item">neus@cssillustrations.com</li>
+                    <li class="footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="footer-social-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="footer-policy-list">
+                    <li class="footer-policy-item">
+                        <a class="footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="footer-policy-item">
+                        <a class="footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script src="/js/bundle.min.js" integrity=""></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147617636-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147617636-1', { 'anonymize_ip' : true} );
+</script>
+    </body>
+</html>
