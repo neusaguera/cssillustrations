@@ -90,7 +90,7 @@ Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS... 
 
 ¿Qué tal si le añadimos los prismáticos a Wall-e? Quizá los prismáticos te sean un poco complicados, juega con <b>:before</b>, <b>:after</b> y <b>box-shadow</b>, intentálo y luego revisa con el código, ya sabes que si tienes alguna duda siempre me puedes escribir.
 
-{{< image src="/walle/binocular.jpg" alt="Creando los prismáticos de Wall-e">}}
+{{< image src="/walle/binocular.jpg" alt="Creando los prismáticos">}}
 
 ### walle.html
 {{< highlight HTML>}}
