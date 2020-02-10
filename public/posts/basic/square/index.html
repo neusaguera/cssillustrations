@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Formas cuadradas" />
+<meta name="description" property="og:description" content="Las ilustraciones que encontrarás en este site todas están hechas con formas geométricas, si aún no estás familiarizada con CSS, este post te ayudará …" />
+<meta property="og:url" content="https://cssillustrations.com/posts/basic/square/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/geometric/square.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/geometric/square.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/geometric/square.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2019-11-09 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2019-11-09 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon"
+      type="image/png"
+      href="/icoCI.png">
+<link rel="canonical" href="https://cssillustrations.com/posts/basic/square/" />
+
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+
+
+
+    
+    <link rel="stylesheet" href="https://cssillustrations.com/scss/main.css" amp-custom>
+</head>
+    <body>
+        
+
+<link rel="stylesheet" href="https://cssillustrations.com/scss/cookieconsent.min.css">
+<script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.wpcc.init({
+            "colors":{
+                "popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},
+                "button":{"background":"#555555","text":"#ffffff"}
+            },
+            "position":
+                "bottom",
+                "content":{
+                    "href":"https://www.websitepolicies.com/policies/view/S0MObbo6",
+                    "link":"Política de Cookies",
+                    "button":"Aceptar",
+                    "message":"Esta web utiliza cookies para asegurar una mejor experiencia."
+                },
+                "margin":"none",
+                "transparency":"10"
+        })
+    });
+</script><header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="bars-menu" id="bars-menu"> <i class="fas fa-bars"></i></button>
+
+            <nav class="menu close" id="menu">
+    <button class="menu-close" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="menu-content">
+        <h4 class="menu-title"><i class="fas fa-tags menu-title-icon"></i> Etiquetas</h4>
+        <ul class="menu-tags">
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (4)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (5)</a>
+                    </li>
+                
+            
+        </ul>
+
+        <ul class="menu-list"><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                </li><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                </li><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+        </div>
+    </div>
+</header><div class="content" id="content">
+    <div class="content" id="content">
+    <main class="post">
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <div class="post-header">
+                <div class="container">
+
+                    <h1 class="post-title">Formas cuadradas</h1>
+
+                    <div class="post-dates">
+                        
+                        
+                            <div class="post-dates-title">
+                                    <i class="fas fa-pen-nib"></i>
+                                <span class="post-date-text"> 09-11-2019</span>
+
+                            </div>
+                        
+                        
+                            <div class="post-dates-title">
+                                <i class="fas fa-highlighter"></i>
+                                <span class="post-date-text"> 09-11-2019</span>
+
+                            </div>
+                        
+                    </div>
+
+                      <ul class="post-tag-list">
+                            <i class="fas fa-tags"></i><li class="post-tag-item">
+                              <a class="post-tag-link" href="https://cssillustrations.com/tags/elemental">Elemental</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <ul class="share-buttons-list">
+        <li class="share-buttons-item facebook">
+            <a class="share-buttons-link visible-md" target="_blank" href='http://www.facebook.com/share.php?u=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fsquare%2f'>
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fsquare%2f" target="_blank" class="share-buttons-link visible-xs"  data-gtm-social-provider="facebook" >
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item twitter">
+            <a class="share-buttons-link" target="_blank" href='http://twitter.com/home?status=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fsquare%2f'>
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item linkedin">
+            <a class="share-buttons-link" target="_blank" href='https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fsquare%2f&title=Formas%20cuadradas&summary=&source='>
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item whatsapp">
+            <a class="share-buttons-link"  href="whatsapp://send?text=Formas%20cuadradas%20https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fsquare%2f" data-gtm-social-provider="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item telegram">
+            <a class="share-buttons-link" href="tg://msg_url?text=Formas%20cuadradas=12&url=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fsquare%2f">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item mail">
+            <a class="share-buttons-link" target="_blank" href='mailto:?&body=https%3a%2f%2fcssillustrations.com%2fposts%2fbasic%2fsquare%2f'>
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <div class="container">
+                    
+
+<p>Las ilustraciones que encontrarás en este site todas están hechas con formas geométricas, si aún no estás familiarizada con CSS, este post te ayudará a crear las formas que más utilizo. Si no quieres crear los ficheros CSS y HTML puedes utilizar webs como <a href="https://codepen.io/"> Codepen </a> o <a href="https://jsfiddle.net/"> jsfiddle </a> que permiten escribir el código en el navegador y ver los mientras lo estás construyendo.</p>
+
+<h2 id="cuadrado-y-sus-variantes">Cuadrado y sus variantes</h2>
+
+<p>Vamos a empezar por la forma más básica, el cuadrado y sus variantes  (rectángulo, rombo y paralelogramo).
+
+<img
+    src="/geometric/square-steps.jpg"
+    alt="formas geometricas cuadrado, rectángulo, rombo y paralelogramo" />
+</p>
+
+<h3 id="cuadrado">Cuadrado</h3>
+
+<p>Para crear un cuadrado sólo necesitamos tener un <b>div</b> al que le daremos como nombre de clase <b>square</b>. Las propiedades mínimas que debe tener este div son <b>height</b> y <b>width</b> con valores iguales, para darle color y que lo veamos le añadiremos <b>background</b> , <b>border</b> o ambas tú decides.</p>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;square&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">square</span>{
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">275</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">275</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#62DCF2</span>;
+}</code></pre></div>
+
+</div>
+
+<h3 id="rectángulo">Rectángulo</h3>
+
+<p>Una vez tenemos el cuadrado crear un rectángulo es muy fácil cámbiale el alto o ancho ¡Ya lo tienes!</p>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rectangle&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">rectangle</span> {
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">350</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">225</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#0AB7D6</span>;
+}</code></pre></div>
+
+</div>
+
+<h3 id="rombo">Rombo</h3>
+
+<p>Volvemos a las medidas del cuadrado y aplicaremos la propiedad <b>transform</b> y su valor <b>rotate()</b> esto hará que el elemento rote sobre su eje los grados que le indiquemos, en este caso 45.</p>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rhomb&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">rhomb</span> {
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#1DCDED</span>;
+  <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
+}</code></pre></div>
+
+</div>
+
+<blockquote>
+<h4 id="transform-origin">transform-origin:</h4>
+
+<p>Esta propiedad permite cambiar la posición del elemento transformado.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">rhomb</span> {
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#1DCDED</span>;
+  <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
+  <span style="color:#66d9ef">transform-origin</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div></p>
+</blockquote>
+
+<h3 id="paralelogramo">Paralelogramo</h3>
+
+<p>Para crear un paralelogramo partimos de la base del rectángulo y jugaremos con la propiedad <b>transform</b> pero esta vez con su valor <b>skew</b> que transforma la inclinación de los ejes. Con un valor aplica a ambos ejes, si añadimos dos valores afectara a <b>x</b> e <b>y</b> en este orden.</p>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;parallelogram&#34;</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">parallelogram</span> {
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">350</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">225</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#117B9B</span>;
+  <span style="color:#66d9ef">transform</span>: <span style="color:#a6e22e">skew</span>(<span style="color:#ae81ff">-30</span><span style="color:#66d9ef">deg</span>);
+}</code></pre></div>
+
+</div>
+
+<h2 id="juega">Juega</h2>
+
+<p>Ahora que tenemos las primeras formas geométricas, juega con estos objetos para ir familiarizándote con las propiedades de CSS. Te dejo el enlace a <a href="https://codepen.io/neusaguera/pen/bGGxKpO" target="_blank"> Codepen </a> donde puedes ver el código.</p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="container">
+            <nav class="nav-insection">
+                
+
+                
+                    <a class="nav-insection-link prev" href="https://cssillustrations.com/posts/basic/helloworld/">
+                            <i class="fas fa-long-arrow-alt-left"></i> HelloWorld
+                    </a>
+                
+
+                
+                    <a class="nav-insection-link next" href="https://cssillustrations.com/posts/basic/circle/">
+                         Formas circulares <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                
+
+            </nav>
+
+        </div>
+
+
+
+        <div class="post-info">
+  			</div>
+
+        
+
+        </div><footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h3 class="footer-contact-title">Datos de contacto</h3>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">Neus Agüera Valls</li>
+                    <li class="footer-social-item">neus@cssillustrations.com</li>
+                    <li class="footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="footer-social-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="footer-policy-list">
+                    <li class="footer-policy-item">
+                        <a class="footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="footer-policy-item">
+                        <a class="footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script src="/js/bundle.min.js" integrity=""></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147617636-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147617636-1', { 'anonymize_ip' : true} );
+</script>
+    </body>
+</html>

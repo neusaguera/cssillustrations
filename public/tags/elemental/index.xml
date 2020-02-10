@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elemental on CSS ILLUSTRATIONS</title>
+    <link>https://cssillustrations.com/tags/elemental/</link>
+    <description>Recent content in Elemental on CSS ILLUSTRATIONS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cssillustrations.com/tags/elemental/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Formas triangulares</title>
+      <link>https://cssillustrations.com/posts/basic/triangle/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/basic/triangle/</guid>
+      <description>Triángulo y variantes En este post aprenderemos a crear triángulos y algunas variantes como estrellas y flechas.
+  Triángulo Para crear un triángulo las propiedades más importantes son los bordes, necesitamos jugar con tres de los cuatro. Por ejemplo, si queremos crear un triangulo que señala hacia arriba, le daremos al borde opuesto, en este caso border-bottom, altura y color. A los dos bordes colindantes (izquierda y derecha), les daremos el ancho que queramos con color transparente.</description>
+    </item>
+    
+    <item>
+      <title>Formas circulares</title>
+      <link>https://cssillustrations.com/posts/basic/circle/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/basic/circle/</guid>
+      <description>círculo y sus variantes En esta entrada aprenderemos a crear círculos y algunas de sus variantes (óvalo, huevo y gota).
+  círculo Para crear este objeto seguimos los mismos pasos que para crear un cuadrado. Una vez lo tenemos, le añadiremos la propiedad border-radius para que tenga forma circular. Esta propiedad define el radio de cada esquina (arriba izquierda, arriba derecha, abajo derecha, abajo izquierda).
+&amp;lt;div class=&amp;#34;circle&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>Formas cuadradas</title>
+      <link>https://cssillustrations.com/posts/basic/square/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/basic/square/</guid>
+      <description>Las ilustraciones que encontrarás en este site todas están hechas con formas geométricas, si aún no estás familiarizada con CSS, este post te ayudará a crear las formas que más utilizo. Si no quieres crear los ficheros CSS y HTML puedes utilizar webs como Codepen  o jsfiddle  que permiten escribir el código en el navegador y ver los mientras lo estás construyendo.
+Cuadrado y sus variantes Vamos a empezar por la forma más básica, el cuadrado y sus variantes (rectángulo, rombo y paralelogramo).</description>
+    </item>
+    
+    <item>
+      <title>HelloWorld</title>
+      <link>https://cssillustrations.com/posts/basic/helloworld/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/basic/helloworld/</guid>
+      <description>¿Quieres aprender las primeras nociones de HTML &amp;amp; CSS? Sigue leyendo e intentaré ayudarte. Primero empezaremos con una breve descripción de ambos conceptos.
+Definición de HTML según wikipedia  HTML, siglas en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web.
+Leer más en wikipedia
+ Definición de CSS según wikipedia  CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</description>
+    </item>
+    
+  </channel>
+</rss>

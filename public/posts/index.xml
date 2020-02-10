@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on CSS ILLUSTRATIONS</title>
+    <link>https://cssillustrations.com/posts/</link>
+    <description>Recent content in Posts on CSS ILLUSTRATIONS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cssillustrations.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nivel 4. Wall-e</title>
+      <link>https://cssillustrations.com/posts/tsum/walle/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/walle/</guid>
+      <description>En este nivel nos ayudará uno de los personajes que más me gusta de Disney, Wall-e. Con él aprenderemos como funcionan los fondos degradados, crearemos patrones con degradados, utilizaremos sombras para los elementos. ¡Agárrate que vienen curvas!
+ Degradados circulares Sombras en los elementos  Degradado horizontal y repeticiones  Paso 1: Las formas básicas. Como en los anteriores niveles empezaremos por crear dos ficheros walle.html y walle.css, una vez tenemos los ficheros creamos algo parecido a esto:</description>
+    </item>
+    
+    <item>
+      <title>Nivel 3. Winnie de pooh</title>
+      <link>https://cssillustrations.com/posts/tsum/winniedepooh/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/winniedepooh/</guid>
+      <description>Empezamos el tercer apartado del curso con la compañía de uno de los ositos más famosos de Disney, Winnie de pooh. ¿Qué veremos en este nivel? Este será un nivel corto pero donde quiero mostrarte dos trucos que facilitan mucho mi trabajo.
+ Modo Inspector Ordenar CSS  Paso 1: Las formas básicas. Seguro que no necesitas que te dé directrices de como crear las formas básicas de Winnie, así que te dejo el código como siempre y en la nota hablaremos del modo inspector, algo que si aún no conoces, te encantará.</description>
+    </item>
+    
+    <item>
+      <title>Nivel 2. Daisy &amp; Donald</title>
+      <link>https://cssillustrations.com/posts/tsum/daisyanddonald/</link>
+      <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/daisyanddonald/</guid>
+      <description>¿Qué te pareció el primer nivel con Mickey y Minnie? Fácil, ¿verdad?. En este segundo nivel crearemos los Tsums de Daisy y Donald. ¿Qué veremos?
+ Definir variables sin Sass o Less Colores :before &amp;amp; :after Clases con propiedades iguales Vendors  Paso 1: Las formas básicas. Esta vez empezaremos con Daisy, como en el primer nivel antes de empezar a crear nuestro HTML, nos fijaremos en el tsum de Daisy y dibujaremos su forma básica, ya sea en papel, photoshop o en tu mente, ¿Lo tienes?</description>
+    </item>
+    
+    <item>
+      <title>Nivel 1. Mickey &amp; Minnie en CSS</title>
+      <link>https://cssillustrations.com/posts/tsum/mickeyandminnie/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/mickeyandminnie/</guid>
+      <description>En este primer nivel vamos a crear los Tsums de Mickey y Minnie en seis sencillos pasos. No importa tu nivel de CSS, si estás empezando encontrarás explicaciones de las propiedades durante todo el curso, ¿Qué veremos con Mickey y Minnie?
+ Centrar elementos en posición absoluta. Comportamiento de dos clases en un mismo elemento ¿Qué clase prevalece? Clases heredadas Rotación de elementos sobre su eje Z-orden (z-index)  Aunque parezcan muchas cosas no te preocupes y vamos a ponernos con el código.</description>
+    </item>
+    
+    <item>
+      <title>Piloto. Tsums en CSS</title>
+      <link>https://cssillustrations.com/posts/tsum/introductiontsums/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/introductiontsums/</guid>
+      <description>Dibujar personajes, vistas y crear animaciones con HTML y CSS es uno de mis hobbies. Me gusta crear estos dibujos desde sus formas geométricas, sin utilizar imágenes, svg o JavaScript. Con paciencia y la magia del CSS podemos hacer cosas maravillosas. Si eres un amante del CSS o quieres aprender más sobre este lenguaje ¡Quédate!
+Para este primer curso voy a utilizar los personajes del juego TsumTsum de Disney, es decir, los cabezones.</description>
+    </item>
+    
+    <item>
+      <title>Formas triangulares</title>
+      <link>https://cssillustrations.com/posts/basic/triangle/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/basic/triangle/</guid>
+      <description>Triángulo y variantes En este post aprenderemos a crear triángulos y algunas variantes como estrellas y flechas.
+  Triángulo Para crear un triángulo las propiedades más importantes son los bordes, necesitamos jugar con tres de los cuatro. Por ejemplo, si queremos crear un triangulo que señala hacia arriba, le daremos al borde opuesto, en este caso border-bottom, altura y color. A los dos bordes colindantes (izquierda y derecha), les daremos el ancho que queramos con color transparente.</description>
+    </item>
+    
+    <item>
+      <title>Formas circulares</title>
+      <link>https://cssillustrations.com/posts/basic/circle/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/basic/circle/</guid>
+      <description>círculo y sus variantes En esta entrada aprenderemos a crear círculos y algunas de sus variantes (óvalo, huevo y gota).
+  círculo Para crear este objeto seguimos los mismos pasos que para crear un cuadrado. Una vez lo tenemos, le añadiremos la propiedad border-radius para que tenga forma circular. Esta propiedad define el radio de cada esquina (arriba izquierda, arriba derecha, abajo derecha, abajo izquierda).
+&amp;lt;div class=&amp;#34;circle&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>Formas cuadradas</title>
+      <link>https://cssillustrations.com/posts/basic/square/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/basic/square/</guid>
+      <description>Las ilustraciones que encontrarás en este site todas están hechas con formas geométricas, si aún no estás familiarizada con CSS, este post te ayudará a crear las formas que más utilizo. Si no quieres crear los ficheros CSS y HTML puedes utilizar webs como Codepen  o jsfiddle  que permiten escribir el código en el navegador y ver los mientras lo estás construyendo.
+Cuadrado y sus variantes Vamos a empezar por la forma más básica, el cuadrado y sus variantes (rectángulo, rombo y paralelogramo).</description>
+    </item>
+    
+    <item>
+      <title>HelloWorld</title>
+      <link>https://cssillustrations.com/posts/basic/helloworld/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/basic/helloworld/</guid>
+      <description>¿Quieres aprender las primeras nociones de HTML &amp;amp; CSS? Sigue leyendo e intentaré ayudarte. Primero empezaremos con una breve descripción de ambos conceptos.
+Definición de HTML según wikipedia  HTML, siglas en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web.
+Leer más en wikipedia
+ Definición de CSS según wikipedia  CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</description>
+    </item>
+    
+    <item>
+      <title>Dinosaurio apocalíptico</title>
+      <link>https://cssillustrations.com/posts/animations/apocalypse/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/animations/apocalypse/</guid>
+      <description>Este gracioso dinosaurio está viendo como un cometa se acerca, ¿Colapsará?. En este post puedes encontrar el código para crearlo. Pronto crearemos un curso de iniciación a las animaciones.
+                                 Knock, knock... uhh?    .dinosaur { visibility: collapse; }    Ficheros HTML y CSS &amp;lt;div class=&amp;#34;apocalypse&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-head&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-eye&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-eyebrown&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-iris&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-eye right&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-eyebrown&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-iris&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-nostril&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-nostril right&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-tulk&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-tulk right&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-body&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-foot&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff center&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff last&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-foot right&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff center&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff last&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hand&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff center&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff bottom&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hand right&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff center&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-hoff bottom&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-tail&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;bone&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;bone center&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;bone bottom&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;dino-knock&amp;#34;&amp;gt;Knock, &amp;lt;span&amp;gt;knock.</description>
+    </item>
+    
+  </channel>
+</rss>

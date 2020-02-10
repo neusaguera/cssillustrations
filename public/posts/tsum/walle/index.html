@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Nivel 4. Wall-e" />
+<meta name="description" property="og:description" content="En este nivel nos ayudará uno de los personajes que más me gusta de Disney, Wall-e. Con él aprenderemos como funcionan los fondos degradados, …" />
+<meta property="og:url" content="https://cssillustrations.com/posts/tsum/walle/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/walle/walle.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/walle/walle.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/walle/walle.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2019-11-28 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2019-11-28 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon"
+      type="image/png"
+      href="/icoCI.png">
+<link rel="canonical" href="https://cssillustrations.com/posts/tsum/walle/" />
+
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+
+
+
+    
+    <link rel="stylesheet" href="https://cssillustrations.com/scss/main.css" amp-custom>
+</head>
+    <body>
+        
+
+<link rel="stylesheet" href="https://cssillustrations.com/scss/cookieconsent.min.css">
+<script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.wpcc.init({
+            "colors":{
+                "popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},
+                "button":{"background":"#555555","text":"#ffffff"}
+            },
+            "position":
+                "bottom",
+                "content":{
+                    "href":"https://www.websitepolicies.com/policies/view/S0MObbo6",
+                    "link":"Política de Cookies",
+                    "button":"Aceptar",
+                    "message":"Esta web utiliza cookies para asegurar una mejor experiencia."
+                },
+                "margin":"none",
+                "transparency":"10"
+        })
+    });
+</script><header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="bars-menu" id="bars-menu"> <i class="fas fa-bars"></i></button>
+
+            <nav class="menu close" id="menu">
+    <button class="menu-close" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="menu-content">
+        <h4 class="menu-title"><i class="fas fa-tags menu-title-icon"></i> Etiquetas</h4>
+        <ul class="menu-tags">
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (4)</a>
+                    </li>
+                
+            
+                
+                     <li class="menu-tags-item">
+                      <a class="menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (5)</a>
+                    </li>
+                
+            
+        </ul>
+
+        <ul class="menu-list"><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                </li><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                </li><li class="menu-item">
+                    <a class="menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+        </div>
+    </div>
+</header><div class="content" id="content">
+    <div class="content" id="content">
+    <main class="post">
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <div class="post-header">
+                <div class="container">
+
+                    <h1 class="post-title">Nivel 4. Wall-e</h1>
+
+                    <div class="post-dates">
+                        
+                            <div class="post-dates-title author">
+                                <i class="fas fa-user"></i>
+                                <span class="post-date-text"> Neus Agüera</span>
+
+                            </div>
+                        
+                        
+                            <div class="post-dates-title">
+                                    <i class="fas fa-pen-nib"></i>
+                                <span class="post-date-text"> 28-11-2019</span>
+
+                            </div>
+                        
+                        
+                            <div class="post-dates-title">
+                                <i class="fas fa-highlighter"></i>
+                                <span class="post-date-text"> 28-11-2019</span>
+
+                            </div>
+                        
+                    </div>
+
+                      <ul class="post-tag-list">
+                            <i class="fas fa-tags"></i><li class="post-tag-item">
+                              <a class="post-tag-link" href="https://cssillustrations.com/tags/tsum">Tsum</a></a>
+                          </li><li class="post-tag-item">
+                              <a class="post-tag-link" href="https://cssillustrations.com/tags/ilustraciones">Ilustraciones</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <ul class="share-buttons-list">
+        <li class="share-buttons-item facebook">
+            <a class="share-buttons-link visible-md" target="_blank" href='http://www.facebook.com/share.php?u=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fwalle%2f'>
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fwalle%2f" target="_blank" class="share-buttons-link visible-xs"  data-gtm-social-provider="facebook" >
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item twitter">
+            <a class="share-buttons-link" target="_blank" href='http://twitter.com/home?status=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fwalle%2f'>
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item linkedin">
+            <a class="share-buttons-link" target="_blank" href='https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fwalle%2f&title=Nivel%204.%20Wall-e&summary=&source='>
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item whatsapp">
+            <a class="share-buttons-link"  href="whatsapp://send?text=Nivel%204.%20Wall-e%20https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fwalle%2f" data-gtm-social-provider="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item telegram">
+            <a class="share-buttons-link" href="tg://msg_url?text=Nivel%204.%20Wall-e=12&url=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fwalle%2f">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </li>
+        <li class="share-buttons-item mail">
+            <a class="share-buttons-link" target="_blank" href='mailto:?&body=https%3a%2f%2fcssillustrations.com%2fposts%2ftsum%2fwalle%2f'>
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <div class="container">
+                    
+
+<p>En este nivel nos ayudará uno de los personajes que más me gusta de Disney, Wall-e. Con él aprenderemos como funcionan los fondos degradados, crearemos patrones con degradados, utilizaremos sombras para los elementos. ¡Agárrate que vienen curvas!</p>
+
+<ul>
+<li><a href="#gradient">Degradados circulares</a></li>
+<li><a href="#shadow">Sombras en los elementos </a></li>
+<li><a href="#gradientRepeat">Degradado horizontal y repeticiones</a></li>
+</ul>
+
+<h2 id="paso-1-las-formas-básicas">Paso 1: Las formas básicas.</h2>
+
+<p>Como en los anteriores niveles empezaremos por crear dos ficheros walle.html y walle.css, una vez tenemos los ficheros creamos algo parecido a esto:</p>
+
+
+<img
+    src="/walle/basic.jpg"
+    alt="formas básicas de Walle" />
+
+
+<p>Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS&hellip; Y si en algún momento notas que me salto alguna buena prática ya comentada no dudes en llamarme la atención.</p>
+
+<h3 id="walle-html">walle.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;character&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-hand&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-hand right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-head&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="walle-css">walle.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span>{
+  --dark-walle: <span style="color:#ae81ff">#e3a72e</span>;
+  --main-walle: <span style="color:#ae81ff">#ffea80</span>;
+  --gray-walle: <span style="color:#ae81ff">#aaa</span>;
+}
+
+.<span style="color:#a6e22e">character</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+  <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+}
+
+.<span style="color:#a6e22e">walle-head</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">130</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">125</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>walle);
+    <span style="color:#66d9ef">background</span>: radial-gradient(<span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>walle) <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>, <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>walle));
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+}
+
+.<span style="color:#a6e22e">walle-hand</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>walle);
+    <span style="color:#66d9ef">background</span>: radial-gradient(<span style="color:#66d9ef">white</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">%</span>, <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>walle));
+}
+
+.<span style="color:#a6e22e">walle-hand</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="gradient">Degradados circulares</h4>
+
+<p>Uno de los recursos que más utilizo en las illustraciones CSS son los degradados. Tenemos dos tipos de degradados lineales y circulares, ahora nos centraremos en el circular, los colores se definen del centro hacia fuera. En Walle-e para la cabeza y las manos estamos utilizando un gradient muy sencillo al que le damos el color claro en el centro y acabamos con un color más oscuro. Puedes ver que el primer color tiene un valor, este es el color stop, es decir donde le decimos que ese color debe empezar a &ldquo;fluir&rdquo; hacia el otro.</p>
+
+<p>Has podido observar que antes de un background con degradado siempre declaro una background con un color simple, en navegadores muy antiguos los degradados no funcionan o alguno necesita el vendor, con la línea de arriba me curo en salud por si el degrado no funciona y muestro el color central simple.</p>
+</blockquote>
+
+<h2 id="paso-2-los-prismáticos-de-wall-e">Paso 2: Los prismáticos de wall-e</h2>
+
+<p>¿Qué tal si le añadimos los prismáticos a Wall-e? Quizá los prismáticos te sean un poco complicados, juega con <b>:before</b>, <b>:after</b> y <b>box-shadow</b>, intentálo y luego revisa con el código, ya sabes que si tienes alguna duda siempre me puedes escribir.</p>
+
+
+<img
+    src="/walle/binocular.jpg"
+    alt="Creando los prismáticos" />
+
+
+<h3 id="walle-html-1">walle.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-head&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-binocular&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-binocular-bolt&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-eye&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-join-binocular&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-binocular right&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-binocular-bolt&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-eye&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="walle-css-1">walle.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span>{
+  --dark-walle: <span style="color:#ae81ff">#e3a72e</span>;
+  --main-walle: <span style="color:#ae81ff">#ffea80</span>;
+  --gray-walle: <span style="color:#ae81ff">#aaa</span>;
+  --gray-binocular: <span style="color:#ae81ff">#b3b1b1</span>;
+  --black: <span style="color:#ae81ff">#000</span>;
+  --white: <span style="color:#ae81ff">#fff</span>;
+}
+
+.<span style="color:#a6e22e">walle-binocular</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">-4</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-6</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">47</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>binocular);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">70</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">70</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">white</span>;
+    <span style="color:#66d9ef">box-shadow</span>: <span style="color:#66d9ef">inset</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">black</span>),  <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">px</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">black</span>);
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+}
+.<span style="color:#a6e22e">walle-binocular</span>.<span style="color:#a6e22e">right</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">inherit</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">6</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">70</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">70</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">box-shadow</span>: <span style="color:#66d9ef">inset</span> <span style="color:#ae81ff">-0.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">black</span>),  <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">px</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">black</span>);
+}
+.<span style="color:#a6e22e">walle-binocular</span>:<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-34</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">4</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>binocular);
+    <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>binocular);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">box-shadow</span>: <span style="color:#66d9ef">inset</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">black</span>);
+}
+.<span style="color:#a6e22e">walle-binocular</span>.<span style="color:#a6e22e">right</span>:<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-4</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">border-left</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">border-right</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>binocular);
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">box-shadow</span>: <span style="color:#66d9ef">inset</span> <span style="color:#ae81ff">-0.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">px</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">black</span>);
+}
+.<span style="color:#a6e22e">walle-binocular-bolt</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>binocular);
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">walle-binocular-bolt</span> {
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">walle-binocular-bolt</span>:<span style="color:#a6e22e">before</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">walle-binocular-bolt</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">-46</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>binocular);
+}
+.<span style="color:#a6e22e">walle-binocular-bolt</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">34</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">walle-binocular-bolt</span>:<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">46</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">walle-binocular-bolt</span>:<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">34</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">46</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">walle-eye</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">11</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">black</span>);
+}
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">walle-eye</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">13</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">walle-eye</span>::<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">white</span>);
+}
+.<span style="color:#a6e22e">walle-join-binocular</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">52</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">44</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>binocular);
+    <span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">black</span>);
+}</code></pre></div>
+
+<blockquote>
+<h4 id="shadow">Sombras en los elementos</h4>
+
+<p>Como he comentado antes para crear los binoculares me he ayudado de la propiedad box-shadow. Esta propiedad puede adjuntar una o más sombras  en un mismo elemento como hemos podido ver en la clase <b> .walle-binocular </b>, para adjuntar más de una deberemos separarlas con comas. El valor por defecto de esta propiedad es <b>none</b>, es decir, los elementos no tienen sombras por defecto. Su sintaxis más simple es la siguiente: <b>box-shadow: h-offset v-offset color</b></p>
+
+<p>box-shadow: 2px 2px black;</p>
+
+<p>h-offset: cuánto va a sobrepasar horizontalmente, v-offset: cuanto va a sobrepasar verticalmente. Si queremos que la sombra este difuminada, le añadiremos el blur: <b>box-shadow: h-offset v-offset blur color </b></p>
+
+<p>box-shadow: 2px 2px 0.5px black;</p>
+
+<p>Otro valor opcional que tiene esta propiedad es decirle si queremos que la sombra este dentro del objeto, para ello le añadiremos inset</p>
+
+<p>box-shadow: inset 2px 2px 0.5px black;</p>
+
+<p>¿Quieres que el mismo elemento tenga una sombra externa y una interna, pues las separaremos con una coma:</p>
+
+<p>box-shadow: 2px 2px 0.5px black, inset 2px 2px red;</p>
+</blockquote>
+
+<h2 id="paso-3-las-ruedas-de-wall-e">Paso 3: Las ruedas de Wall-e</h2>
+
+<p>Para crear el efecto de las ruedas de oruga que tiene wall-e he utilizado el degradado y mucha paciencia para poner todos los cortes de color.</p>
+
+
+<img
+    src="/walle/wheels.jpg"
+    alt="Creando las ruedas oruga de wall-e" />
+
+
+<h3 id="walle-html-2">walle.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-hand&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-wheel&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-hand right&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;walle-wheel&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="walle-css-2">walle.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">walle-wheel</span> {
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">43</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-22</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">-14</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-27</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">-1</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span><span style="color:#f92672">-</span>binocular);
+    <span style="color:#66d9ef">background</span>: repeating-linear-gradient(<span style="color:#66d9ef">to</span> <span style="color:#66d9ef">bottom</span>, 
+    <span style="color:#ae81ff">#444</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>,  <span style="color:#ae81ff">#666</span> <span style="color:#ae81ff">6</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">#222</span> <span style="color:#ae81ff">12.5</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">#000</span> <span style="color:#ae81ff">12.75</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">#222</span> <span style="color:#ae81ff">19</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">#111</span> <span style="color:#ae81ff">24.75</span><span style="color:#66d9ef">%</span> );
+}
+
+.<span style="color:#a6e22e">right</span> .<span style="color:#a6e22e">walle-wheel</span> {
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">27</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">inherit</span>;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="gradientRepeat">Degradado horizontal y repeticiones</h4>
+
+<p>En el primer apartado de este nivel hemos tratado los degradados circulares, ahora con la ayuda de la propiedad repeating y el degrado horizontal podemos crear una figura como las ruedas oruga de wall-e.</p>
+
+<p>to bottom: le estamos diciendo la dirección que tendrá el degradado en este caso de arriba a bajo.</p>
+
+<p>Para este ejemplo he dividido el primer 25% de la figura y le he dado 6 tonos de colores (5 grises y negro) para crear el efecto de ranura. Con la propiedad repetir (repeating-linear-gradient), este patrón se repetira 4 veces hasta rellenar la figura.</p>
+</blockquote>
+
+<h2 id="paso-4-mejora-tu-wall-e">Paso 4: Mejora tu Wall-e</h2>
+
+<p>Ahora sí, ya tenemos a Wall-e y como siempre digo seguro que tú lo puedes mejorar. ¿Lo intentas? Este es el enlace a Codepen para que veas mi Wall-e final. Juega un rato, mejora y enséñame el resultado.</p>
+
+<p><a href="https://codepen.io/neusaguera/pen/MWYgWXO" target="_blank"> Codepen Wall-e </a></p>
+
+<p>Nos leemos en el próximo nivel.</p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="container">
+            <nav class="nav-insection">
+                
+
+                
+                    <a class="nav-insection-link prev" href="https://cssillustrations.com/posts/tsum/winniedepooh/">
+                            <i class="fas fa-long-arrow-alt-left"></i> Nivel 3. Winnie de pooh
+                    </a>
+                
+
+                
+
+            </nav>
+
+        </div>
+
+
+
+        <div class="post-info">
+  			</div>
+
+        
+
+        </div><footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h3 class="footer-contact-title">Datos de contacto</h3>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">Neus Agüera Valls</li>
+                    <li class="footer-social-item">neus@cssillustrations.com</li>
+                    <li class="footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="footer-social-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="footer-policy-list">
+                    <li class="footer-policy-item">
+                        <a class="footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="footer-policy-item">
+                        <a class="footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script src="/js/bundle.min.js" integrity=""></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147617636-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147617636-1', { 'anonymize_ip' : true} );
+</script>
+    </body>
+</html>
