@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nivel 4. Wall-e.
+title: Nivel 4. Wall-e
 img: walle/walle.jpg
 tags: ["Tsum", "Ilustraciones"]
 date: "2019-11-28"
