@@ -87,7 +87,7 @@ Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS... 
 
 ## Paso 2: Los prismáticos de wall-e
 
-¿Qué tal si le añadimos los prismáticos a Wall-e? Quizá los prismáticos te sean un poco complicados, juega con <b>:before</b>, <b>:after</b> y <b>box-shadow</b>, intentálo y luego revisa con el código, ya sabes que si tienes alguna duda siempre me puedes escribir.
+¿Qué tal si le añadimos los prismáticos a Wall-e? Quizá los prismáticos te sean un poco complicados, juega con <mark>:before</mark>, <mark>:after</mark> y <mark>box-shadow</mark>, intentálo y luego revisa con el código, ya sabes que si tienes alguna duda siempre me puedes escribir.
 
 {{< image src="/walle/binocular.jpg" alt="Creando los prismáticos">}}
 
@@ -127,14 +127,16 @@ Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS... 
     border: 4px solid var(--gray-binocular);
     border-radius: 70% 10% 100% 70%;
     background: white;
-    box-shadow: inset 0.5px 1.5px 0px 0px var(--black),  0.5px 1.5px 0px 0.5px var(--black);
+    box-shadow: inset 0.5px 1.5px 0px 0px var(--black),  
+     0.5px 1.5px 0px 0.5px var(--black);
     z-index: 10;
 }
 .walle-binocular.right {
     left: inherit;
     transform: rotate(6deg);
     border-radius: 10% 70% 70% 100%;
-    box-shadow: inset -0.5px 1px 0px 0px var(--black),  0.5px 1.5px 0px 0.5px var(--black);
+    box-shadow: inset -0.5px 1px 0px 0px var(--black),  
+     0.5px 1.5px 0px 0.5px var(--black);
 }
 .walle-binocular:before {
     content: '';
@@ -227,21 +229,25 @@ Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS... 
 {{< /highlight >}}
 
 >#### Sombras en los elementos {#shadow}
-> Como he comentado antes para crear los binoculares me he ayudado de la propiedad box-shadow. Esta propiedad puede adjuntar una o más sombras  en un mismo elemento como hemos podido ver en la clase <b> .walle-binocular </b>, para adjuntar más de una deberemos separarlas con comas. El valor por defecto de esta propiedad es <b>none</b>, es decir, los elementos no tienen sombras por defecto. Su sintaxis más simple es la siguiente: <b>box-shadow: h-offset v-offset color</b>
-> 
-> box-shadow: 2px 2px black;
+>Como he comentado antes para crear los binoculares me he ayudado de la propiedad <mark>box-shadow</mark>. En esta propiedad podemos añadir una o más sombras, como has podido ver en la clase <mark> .walle-binocular </mark> deberemos separarlas con comas. El valor por defecto de esta propiedad es <mark>none</mark>, es decir, los elementos no tienen sombras por defecto. Su sintaxis más simple es la siguiente: 
 >
->h-offset: cuánto va a sobrepasar horizontalmente, v-offset: cuanto va a sobrepasar verticalmente. Si queremos que la sombra este difuminada, le añadiremos el blur: <b>box-shadow: h-offset v-offset blur color </b>
+>><mark>box-shadow: h-offset v-offset color</mark>
 >
-> box-shadow: 2px 2px 0.5px black;
+>> <mark>h-offset</mark>: distancia que sobresale horizontalmente 
 >
->Otro valor opcional que tiene esta propiedad es decirle si queremos que la sombra este dentro del objeto, para ello le añadiremos inset
+>> <mark>v-offset</mark>: distancia que sobresale verticalmente
 >
->box-shadow: inset 2px 2px 0.5px black;
+>> <mark>color</mark>: color de la sombra 
 >
->¿Quieres que el mismo elemento tenga una sombra externa y una interna, pues las separaremos con una coma:
+>Otros valores de esta propiedad son difuminar, posición de la sombra (dentro o fuera), añadir más de una sombra: >
 >
->box-shadow: 2px 2px 0.5px black, inset 2px 2px red;
+>><mark>box-shadow: inset h-offset v-offset blur color, h-offset v-offset blur color</mark>
+>
+>> <mark>blur</mark>: cantidad de difuminado
+>
+>> <mark>inset</mark>: por defecto la sombra está fuera del elemento, si queremos que tenga sombra interior debemos añadir este valor.
+>
+>> Más de una sombra: separaremos entre comas las sombras
 
 ## Paso 3: Las ruedas de Wall-e
 
@@ -270,8 +276,15 @@ Para crear el efecto de las ruedas de oruga que tiene wall-e he utilizado el deg
     transform: rotate(-27deg);
     z-index: -1;
     background: var(--gray-binocular);
-    background: repeating-linear-gradient(to bottom, 
-    #444 0%,  #666 6%, #222 12.5%, #000 12.75%, #222 19%, #111 24.75% );
+    background: repeating-linear-gradient(
+        to bottom, 
+        #444 0%,  
+        #666 6%, 
+        #222 12.5%, 
+        #000 12.75%,
+        #222 19%, 
+        #111 24.75% 
+    );
 }
 
 .right .walle-wheel {
@@ -283,7 +296,7 @@ Para crear el efecto de las ruedas de oruga que tiene wall-e he utilizado el deg
 >#### Degradado horizontal y repeticiones {#gradientRepeat}
 >En el primer apartado de este nivel hemos tratado los degradados circulares, ahora con la ayuda de la propiedad repeating y el degrado horizontal podemos crear una figura como las ruedas oruga de wall-e.
 >
-><b>to bottom</b>: le estamos diciendo la dirección que tendrá el degradado en este caso de arriba a bajo.
+><mark>to bottom</mark>: le estamos diciendo la dirección que tendrá el degradado en este caso de arriba a bajo.
 >
 >Para este ejemplo he dividido el primer 25% de la figura y le he dado 6 tonos de colores (5 grises y negro) para crear el efecto de ranura. Con la propiedad repetir (repeating-linear-gradient), este patrón se repetira 4 veces hasta rellenar la figura.
 
