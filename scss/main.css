@@ -71,6 +71,9 @@ h3 {
   line-height: 26px;
   font-weight: 400; }
 
+mark {
+  font-weight: 500; }
+
 @media only screen and (min-width: 1024px) {
   .container {
     max-width: 800px; }
@@ -5021,6 +5024,9 @@ readers do not read off random characters that represent icons */
       margin-bottom: 12px; }
     .post blockquote img {
       margin: 24px 0; }
+    .post blockquote blockquote {
+      border-left: none;
+      margin-bottom: 0; }
   .post pre {
     white-space: pre-wrap;
     word-wrap: break-word;

@@ -6,10 +6,20 @@
     <description>Recent content in Posts on CSS ILLUSTRATIONS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cssillustrations.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nivel 4. Wall-e</title>
+      <link>https://cssillustrations.com/posts/tsum/walle/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/walle/</guid>
+      <description>En este nivel nos ayudará uno de los personajes que más me gusta de Disney, Wall-e. Con él aprenderemos como funcionan los fondos degradados, crearemos patrones con degradados, utilizaremos sombras para los elementos. ¡Agárrate que vienen curvas!
+ Degradados circulares Sombras en los elementos  Degradado horizontal y repeticiones  Paso 1: Las formas básicas. Como en los anteriores niveles empezaremos por crear dos ficheros walle.html y walle.css, una vez tenemos los ficheros creamos algo parecido a esto:</description>
+    </item>
     
     <item>
       <title>Nivel 3. Winnie de pooh</title>
