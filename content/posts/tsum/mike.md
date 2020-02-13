@@ -7,7 +7,6 @@ date: "2020-02-12"
 author: "Neus Agüera"
 weight: 194
 categories: ["Tsum"]
-draft: true
 ---
 
 Para el número 6 de este curso traigo a Mike de Monstruos S.A, con él seguiremos practicando los background, esta vez aprenderemos a crear un patrón. Para seguir con las buenas prácticas veremos que funciones tienes la organización W3C.
