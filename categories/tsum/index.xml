@@ -6,10 +6,20 @@
     <description>Recent content in Tsum on CSS ILLUSTRATIONS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cssillustrations.com/categories/tsum/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nivel 6. Mike</title>
+      <link>https://cssillustrations.com/posts/tsum/mike/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/tsum/mike/</guid>
+      <description>Para el número 6 de este curso traigo a Mike de Monstruos S.A, con él seguiremos practicando los background, esta vez aprenderemos a crear un patrón. Para seguir con las buenas prácticas veremos que funciones tienes la organización W3C.
+ W3C Patrones con degradados   Paso 1: Las formas básicas. Como en los anteriores niveles empezaremos por crear dos ficheros mike.html y mike.css, una vez tenemos los ficheros creamos algo parecido a esto:</description>
+    </item>
     
     <item>
       <title>Nivel 4. Wall-e</title>

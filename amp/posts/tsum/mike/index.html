@@ -1,0 +1,861 @@
+<!doctype html>
+<html ⚡>
+    <head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://cssillustrations.com/amp/posts/tsum/mike/" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+<meta name="author" content="Neus Agüera Valls">
+<meta name="keywords" content="HTML,CSS,illustations,ilustraciones,desarrollo,tutorials,tutoriales,programming,programación,training,learning,lessons,cursos,references,referencias,examples,ejemplos,exercises,ejercicios,source code,código,código limpio,colors,colores,demos,tips,jokes,css jokes,css illustrations,css,less,sass" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Nivel 6. Mike" />
+<meta name="description" property="og:description" content="Para el número 6 de este curso traigo a Mike de Monstruos S.A, con él seguiremos practicando los background, esta vez aprenderemos a crear un patrón. …" />
+<meta property="og:url" content="https://cssillustrations.com/amp/posts/tsum/mike/" />
+<meta property="og:site_name" content="CSS Illustrations" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/mike/mike.jpg" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/mike/mike.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="632" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Neuxi11" />
+<meta name="twitter:creator" content="@Neuxi11" />
+<meta name="twitter:image" content="https://cssillustrations.com/mike/mike.jpg" />
+
+<meta name="article:tag" content="animaciones">
+
+<meta name="article:tag" content="elemental">
+
+<meta name="article:tag" content="ilustraciones">
+
+<meta name="article:tag" content="tsum">
+
+<meta property="article:section" content="Aprende HTML y CSS" />
+<meta property="article:published_time" content="2020-02-12 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2020-02-12 00:00:00 &#43;0000 UTC" />
+<meta name="theme-color" content="#D52941">
+<meta name="robots" content="noodp" />
+<link rel="icon" type="image/png" href="/icoCI.png">
+<title> CSS ILLUSTRATIONS </title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+
+
+<style amp-custom> /* Standard Colors */
+/* Theme Colors */
+/*Transparent Colors */
+/*** avatar colors */
+/*** angry-cat colors ***/
+/* screens */
+/* fonts */
+/* z-index*/
+* {
+  color: #44647A;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: none; }
+
+button {
+  border: 0;
+  background: none; }
+
+body {
+  overflow-x: hidden; }
+
+figure {
+  margin: 0; }
+
+p {
+  font-family: "Roboto Slab", serif; }
+
+.amp-container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto; }
+
+.amp-content {
+  margin-top: 60px;
+  min-height: 70vh; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.show {
+  display: none; }
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation; }
+
+.visible-md {
+  display: none; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 32px;
+  line-height: 36px; }
+
+h2 {
+  font-size: 20px;
+  line-height: 28px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400; }
+
+.amp-header {
+  height: 50px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(235, 242, 255, 0.95);
+  z-index: 10000; }
+
+.amp-logo {
+  margin: 0 auto;
+  padding-left: 12px;
+  flex: 1 75%; }
+
+.amp-logo-text {
+  line-height: 50px;
+  font-size: 18px;
+  color: #D52941;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -1px; }
+
+.amp-header-content {
+  display: flex; }
+  .amp-header-content .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+  .amp-header-content .amp-bars-menu {
+    padding-right: 12px;
+    border: 0;
+    cursor: pointer; }
+
+.amp-menu-content {
+  padding: 24px; }
+
+.amp-menu-title {
+  font-size: 22px;
+  color: #D52941; }
+  .amp-menu-title .amp-menu-title-icon {
+    color: #D52941; }
+
+.amp-menu-tags {
+  padding-left: 24px;
+  list-style: none;
+  margin-bottom: 36px; }
+
+.amp-menu-tags-item {
+  margin-bottom: 6px; }
+
+.amp-menu-tags-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+.amp-menu {
+  width: 100%;
+  background: #fff; }
+  .amp-menu .amp-menu-item {
+    list-style: none;
+    margin-bottom: 12px; }
+  .amp-menu .amp-menu-link {
+    font-size: 20px;
+    line-height: 32px;
+    color: #D52941;
+    font-family: "Oswald", sans-serif; }
+  .amp-menu .amp-menu-close {
+    height: 50px;
+    padding: 0 24px; }
+  .amp-menu .fa {
+    line-height: 50px;
+    font-size: 18px;
+    color: #D52941; }
+
+.amp-footer {
+  background: #44647A;
+  color: #fff; }
+  .amp-footer .amp-logo {
+    padding: 0; }
+  .amp-footer .amp-logo-text {
+    font-size: 24px;
+    color: #EBF2FF; }
+
+.amp-footer-content {
+  padding: 24px; }
+  .amp-footer-content .amp-footer-social-item, .amp-footer-content .amp-footer-policy-link {
+    color: #fff;
+    font-family: "Oswald", sans-serif; }
+
+.amp-footer-contact-title {
+  margin-bottom: 12px;
+  color: #EBF2FF; }
+
+.amp-footer-social-list {
+  list-style: none;
+  margin-bottom: 24px; }
+
+.amp-footer-social-item.amp-inline {
+  display: inline-flex;
+  padding-right: 12px;
+  font-size: 20px;
+  line-height: 24px; }
+
+.amp-footer-social-item i {
+  font-size: 22px;
+  line-height: 26px;
+  color: #EBF2FF; }
+
+.amp-footer-policy-item {
+  display: inline-flex;
+  padding-right: 18px; }
+
+.amp-post {
+  width: 100%;
+  margin: -10px auto 0; }
+  .amp-post article {
+    margin-bottom: 36px; }
+  .amp-post p, .amp-post li {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 12px; }
+  .amp-post a {
+    color: #D52941;
+    font-weight: 300;
+    font-size: 14px; }
+  .amp-post img {
+    margin: 0 auto;
+    display: block;
+    max-width: 320px; }
+  .amp-post blockquote {
+    margin: 12px 12px 42px 12px;
+    padding: 12px;
+    border-left: 2px solid #D52941; }
+    .amp-post blockquote h4, .amp-post blockquote h3, .amp-post blockquote h2, .amp-post blockquote h1 {
+      font-style: normal;
+      color: #D52941;
+      margin-bottom: 12px; }
+  .amp-post pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: auto; }
+  .amp-post pre code {
+    margin: 0;
+    padding: 0;
+    font-feature-settings: normal;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px; }
+  .amp-post ul, .amp-post ol {
+    margin-left: 20px;
+    padding: 0; }
+  .amp-post .highlight {
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 24px; }
+  .amp-post .copy-code {
+    top: 6px;
+    position: absolute;
+    right: 6px;
+    background: #eff4fe;
+    padding: 6px;
+    border-radius: 3px;
+    width: 75px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .amp-post h2 {
+    margin: 24px 0 12px 0; }
+  .amp-post .amp-post-tag-list {
+    margin: 24px 0;
+    display: inline-flex;
+    list-style: none; }
+    .amp-post .amp-post-tag-list i, .amp-post .amp-post-tag-list a {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-right: 6px; }
+  .amp-post .amp-post-tag-item {
+    background: none; }
+  .amp-post .amp-post-tag-link {
+    font-weight: 500;
+    text-decoration: underline; }
+
+.amp-post-title {
+  font-size: 30px;
+  line-height: 34px;
+  margin: 24px 0;
+  font-weight: 500;
+  color: #fff; }
+
+.amp-post-header {
+  background: #44647A;
+  min-height: 250px;
+  margin-bottom: 24px;
+  padding: 12px; }
+
+.amp-post-dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .amp-post-dates .amp-post-dates-title {
+    padding-right: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    flex: 1; }
+    .amp-post-dates .amp-post-dates-title.author {
+      flex: inherit;
+      width: 100%;
+      margin-bottom: 12px; }
+    .amp-post-dates .amp-post-dates-title i {
+      color: #fff; }
+    .amp-post-dates .amp-post-dates-title .amp-post-date-text {
+      color: #fff;
+      font-family: "Oswald", sans-serif; }
+
+.amp-post-content {
+  padding: 0 12px; }
+
+.amp-fixed-container {
+  position: relative;
+  width: 100%;
+  height: 270px; }
+  .amp-fixed-container .amp-contain img {
+    object-fit: contain; }
+
+.amp-nav-insection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 36px; }
+  .amp-nav-insection i {
+    color: #D52941; }
+  .amp-nav-insection .amp-nav-insection-link {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", sans-serif;
+    transition: all .2s ease-in-out; }
+    .amp-nav-insection .amp-nav-insection-link:hover {
+      text-decoration: none;
+      transform: scale(0.9); }
+
+.amp-share-buttons-link {
+  display: inline-flex;
+  padding-right: 12px; }
+  .amp-share-buttons-link i {
+    color: #fff;
+    font-size: 32px; }
+
+.amp-share-buttons-list {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0; }
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+</head>
+    <body><header class="amp-header">
+    <div class="amp-container">
+        <div class="amp-header-content">
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/amp">
+                    CSS ILLUSTRATIONS
+                </a>
+            </div>
+            <button class="amp-bars-menu" on="tap:sidebar.toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+<div>
+    <amp-sidebar id="sidebar" class="amp-menu" layout="nodisplay" side="right" role="menu" tabindex="-1" style="" hidden="">
+        <button class="amp-menu-close" on="tap:sidebar.toggle">
+                <i class="fa fa-times"></i>
+        </button>
+        <div class="amp-menu-content">
+            <h4 class="amp-menu-title"><i class="fa fa-tags amp-menu-title-icon"></i> Etiquetas</h4>
+            <ul class="amp-menu-tags">
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/animaciones/">animaciones (1)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/elemental/">elemental (4)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/ilustraciones/">ilustraciones (5)</a>
+                        </li>
+                    
+                
+                    
+                        <li class="amp-menu-tags-item">
+                        <a class="amp-menu-tags-link" href="https://cssillustrations.com/tags/tsum/">tsum (6)</a>
+                        </li>
+                    
+                
+            </ul>
+
+            <ul class="amp-menu-list"><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/tags/tsum/">Curso Tsum</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/posts/">Publicaciones</a>
+                    </li><li class="amp-menu-item">
+                        <a class="amp-menu-link" href="https://cssillustrations.com/about/">Sobre mi</a>
+                    </li>
+            </ul>
+        </div>
+    </amp-sidebar>
+</div>
+<div hidden=""></div><div class="amp-content" id="content">
+        <main class="amp-post">
+            <div class="amp-post-info">
+                
+                </p>
+            </div>
+
+        <article>
+            <div class="amp-post-header">
+                <div class="amp-container">
+
+                    <h1 class="amp-post-title">Nivel 6. Mike</h1>
+
+                    <div class="amp-post-dates">
+                        
+                            <div class="amp-post-dates-title author">
+                                <span class="amp-post-date-text"> Neus Agüera</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 12-02-2020</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 12-02-2020</span>
+                            </div>
+                        
+                    </div>
+
+                      <ul class="amp-post-tag-list">
+                            <i class="fa fa-tags"></i><li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/tsum">Tsum</a></a>
+                          </li><li class="amp-post-tag-item">
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/ilustraciones">Ilustraciones</a></a>
+                          </li>
+                        </ul>
+                    
+
+<div class="share-buttons">
+    <div class="share-buttons-list">
+        <amp-social-share
+        type="linkedin"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="twitter"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="whatsapp"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+        <amp-social-share
+        type="email"
+        class="amp-share-buttons-link">
+        </amp-social-share>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+
+            <div class="amp-post-content">
+                <div class="amp-container">
+                    
+
+<p>Para el número 6 de este curso traigo a Mike de Monstruos S.A, con él seguiremos practicando los background, esta vez aprenderemos a crear un patrón. Para seguir con las buenas prácticas veremos que funciones tienes la organización W3C.</p>
+
+<ul>
+<li><a href="#w3c">W3C</a></li>
+<li><a href="#pattern">Patrones con degradados </a></li>
+</ul>
+
+<h2 id="paso-1-las-formas-básicas">Paso 1: Las formas básicas.</h2>
+
+<p>Como en los anteriores niveles empezaremos por crear dos ficheros <mark>mike.html</mark> y <mark>mike.css</mark>, una vez tenemos los ficheros creamos algo parecido a esto:</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mike/basic.jpg"
+    alt="formas básicas de Mike"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="mike-html">mike.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;character&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-ear&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-ear right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-hand&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-hand right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-head&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="mike-css">mike.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span> {
+  --main-mike: <span style="color:#ae81ff">#c6fd81</span>;
+}
+
+.<span style="color:#a6e22e">character</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+  <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+}
+
+.<span style="color:#a6e22e">mike-head</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">130</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">125</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>mike);
+  <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+}
+.<span style="color:#a6e22e">mike-hand</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>mike);
+}
+
+.<span style="color:#a6e22e">mike-hand</span>.<span style="color:#a6e22e">right</span> {
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">mike-ear</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>mike);
+  <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-12</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">mike-ear</span>.<span style="color:#a6e22e">right</span> {
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">58</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">12</span><span style="color:#66d9ef">deg</span>);
+}</code></pre></div>
+
+<h2 id="paso-2-el-ojo-de-mike">Paso 2: El ojo de Mike</h2>
+
+<p>Mike es un Tsum bastante sencillo de crear, ahora que ya tenemos las formas básicas vamos a crear el ojo de Mike y le aplicaremos los degradados circulares que aprendimos en el nivel anterior <a href="https://cssillustrations.com/posts/tsum/walle/#gradient"> degradados circulares</a>.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mike/eye.jpg"
+    alt="Creando el ojo de mike"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="mike-html-1">mike.html</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;character&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-ear&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-ear right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-hand&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-hand right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-head&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-eye&#34;</span>&gt;
+      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mike-iris&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<h3 id="mike-css-1">mike.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span> {
+  --dark-mike: <span style="color:#ae81ff">#7dbd3c</span>;
+  --main-mike: <span style="color:#ae81ff">#c6fd81</span>;
+  --gray-mike: <span style="color:#ae81ff">#aaa</span>;
+  --black: <span style="color:#ae81ff">#000</span>;
+  --white: <span style="color:#ae81ff">#fff</span>;
+  --iris-mike: <span style="color:#ae81ff">#00c2b2</span>;
+  --dark-gray: <span style="color:#ae81ff">#010101</span>;
+}
+.<span style="color:#a6e22e">character</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+  <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+}
+
+.<span style="color:#a6e22e">mike-head</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">130</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">125</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>mike);
+  <span style="color:#66d9ef">background</span>: radial-gradient(<span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>, <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);
+  <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">10</span>;
+}
+.<span style="color:#a6e22e">mike-hand</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">background</span>: radial-gradient(<span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>, <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);
+}
+.<span style="color:#a6e22e">mike-hand</span>.<span style="color:#a6e22e">right</span> {
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">mike-ear</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>mike);
+  <span style="color:#66d9ef">background</span>: radial-gradient(<span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>, <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);
+  <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-12</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">mike-ear</span>.<span style="color:#a6e22e">right</span> {
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">58</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">12</span><span style="color:#66d9ef">deg</span>);
+}
+.<span style="color:#a6e22e">mike-eye</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">transform</span>: translate(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">white</span>);
+  <span style="color:#66d9ef">background</span>: radial-gradient(<span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">white</span>) <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>, <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);
+}
+.<span style="color:#a6e22e">mike-iris</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">transform</span>: translate(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>iris<span style="color:#f92672">-</span>mike);
+  <span style="color:#66d9ef">background</span>: radial-gradient(<span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>iris<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>, <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);
+}
+
+.<span style="color:#a6e22e">mike-iris</span>:<span style="color:#a6e22e">before</span> {
+  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;&#34;</span>;
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">transform</span>: translate(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span>);
+  <span style="color:#66d9ef">background</span>: radial-gradient(<span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">gray</span>) <span style="color:#ae81ff">60</span><span style="color:#66d9ef">%</span>, <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>mike) <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);
+}
+.<span style="color:#a6e22e">mike-iris</span>:<span style="color:#a6e22e">after</span> {
+  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;&#34;</span>;
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">62</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">background</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span><span style="color:#66d9ef">white</span>);
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">transform</span>: translate(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+}</code></pre></div>
+
+<blockquote>
+<h4 id="w3c">W3C</h4>
+
+<p><a href="https://www.w3.org/" target="_blank"> W3C (World Wide Web Consortium) </a> es el consorcio que se encarga de dirigir el desarrollo de protocolos para la evolución web. En la web podrás ver los últimos desarrollos y en qué se está trabajando para mejorar, también encontrarás todas las explicaciones que necesites sobre web y un apartado que seguro que usarás mucho que son los validadores HTML, CSS, mobile&hellip; Puedes analizar tus proyectos para ver si están dentro de los estándares. Vamos hacer una pequeña prueba con el código de Mike.</p>
+
+<p>Para revisar nuestro <mark>HTML</mark> vamos a dirigirnos a la sección <a href="https://validator.w3.org/" target="_blank">validator</a>, como ves hay tres pestañas, en este momento nos interesa <a href="https://validator.w3.org/#validate_by_input" target="_blank"> validate by input </a>, aquí copiaremos el HTML de Mike. Si solo copiamos el trozo de HTML veremos que nos dan varios errores, añade los tags necesarios hasta que sea válido.</p>
+
+<p>Para revisar <mark>CSS</mark> iremos al siguiente enlace <a href="http://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">CSS Validator</a>, el validador no está actualizado con las &ldquo;nuevas&rdquo; propiedades de CSS3, probablemente si introduces código como variables, saltarán varios errores de <mark> parse error </mark>. Si tienes dudas sobre algún error, puedes acudir a <a href="caniuse.com" target="_blank">CAN I USE</a> como ya hemos comentado en niveles anteriores.</p>
+</blockquote>
+
+<h2 id="paso-3-fondo-con-patrones">Paso 3: Fondo con patrones</h2>
+
+<p>A Mike en solo dos pasos lo hemos tenido listo así que ahora lo acompañaremos con un bonito fondo creado con las propiedades de degrado. Utilizando la imaginación puedes crear miles de patrones para la propiedad background, ahora te mostraré como crear el sencillo patrón que ves en la imagen, después sientete libre de probar mil cosas.</p>
+
+<div class="amp-fixed-container">
+
+<amp-img
+    class="amp-contain"
+    layout="fill"
+    src="/mike/mike.jpg"
+    alt="Fondo con patron para Mike"
+    width="360">
+</amp-img>
+
+</div>
+
+<h3 id="mike-css-2">mike.css</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a6e22e">root</span>{
+  --main-background: <span style="color:#ae81ff">#d2ebd3</span>;
+  --dark-background: <span style="color:#ae81ff">#93a493</span>;
+}
+
+<span style="color:#f92672">body</span> {
+  <span style="color:#66d9ef">background</span>:
+    linear-gradient(
+      <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>background) <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>,
+      <span style="color:#66d9ef">transparent</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>
+    ),
+    linear-gradient( <span style="color:#ae81ff">90</span><span style="color:#66d9ef">deg</span>,
+      <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>dark<span style="color:#f92672">-</span>background) <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>,
+      <span style="color:#66d9ef">transparent</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>
+    ),
+    linear-gradient(  <span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>,
+      <span style="color:#a6e22e">var</span>(<span style="color:#f92672">-</span><span style="color:#f92672">-</span>main<span style="color:#f92672">-</span>background) <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>,
+      <span style="color:#66d9ef">transparent</span> <span style="color:#ae81ff">51</span><span style="color:#66d9ef">%</span>
+    );
+ 
+  <span style="color:#66d9ef">background-size</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+}</code></pre></div>
+
+<blockquote>
+<h4 id="pattern">Patrones con degradados</h4>
+
+<p>¿Te acuerdas que comentamos en el nivel anterior que podíamos añadir más de un degradado dentro de la propiedad <mark> background </mark>? Vamos a ver cómo trabajamos con difrentes degradados.</p>
+
+<ol>
+<li>El primer <mark> linear-gradient </mark> crea la linea horizontal del patrón, contiene una linea horizontal de 1px y el resto será transparente, como no le hemos dado dirección está linea será pintada en el primer píxel contando desde arriba.</li>
+<li>El siguiente pinta la linea vertical, como puedes ver, lo único que cambia es la rotación de 90º del degradado. En este caso al darle una rotación de 90º nos pinta el primer píxel de la izquierda. Ya tenemos la cuadrícula pintada.</li>
+<li>En el tercero queremos rellenar medio cuadrado en diagonal así que le añadimos una rotación de 45º y el color secundario al 50%.</li>
+<li>La propiedad <mark> background-size </mark> marca el tamaño del patrón, actualmente es de 20px de alto por 20px de ancho,puedes cambiar y veras como se va transformando.</li>
+</ol>
+
+<p>Te dejo un enlace de codepen donde puedes ver otros <a href="https://codepen.io/collection/AEbwmv">patrones</a>.</p>
+</blockquote>
+
+<h2 id="paso-4-mejora-tu-mike">Paso 4: Mejora tu Mike</h2>
+
+<p>Ahora sí, ya tenemos a Mike acompañado de un bonito fondo con patrones, como siempre digo seguro que tú lo puedes mejorar. ¿Lo intentas? Este es el enlace a Codepen para que veas mi Mike final. Juega un rato, mejora y enséñame el resultado.</p>
+
+<p><a href="https://codepen.io/neusaguera/pen/ExjjJgr" target="_blank"> Codepen Mike </a></p>
+
+<p>Nos leemos en el próximo nivel.</p>
+
+                </div>
+            </div>
+
+        </article>
+
+        <div class="amp-container">
+            <nav class="amp-nav-insection">
+                
+
+                
+                    <a class="amp-nav-insection-link prev" href="https://cssillustrations.com/amp/posts/tsum/walle/">
+                            <i class="fa fa-arrow-left"></i> Nivel 4. Wall-e
+                    </a>
+                
+
+                
+            </nav>
+        </div><footer class="amp-footer">
+    <div class="amp-container">
+        <div class="amp-footer-content">
+            <div class="amp-footer-contact">
+                <h3 class="amp-footer-contact-title">Datos de contacto</h3>
+                <ul class="amp-footer-social-list">
+                    <li class="amp-footer-social-item">Neus Agüera Valls</li>
+                    <li class="amp-footer-social-item">neus@cssillustrations.com</li>
+                    <li class="amp-footer-social-item inline">
+                        <a href="https://www.linkedin.com/in/nagueravalls/" target="_blank" class="amp-footer-social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="amp-logo">
+                <a class="amp-logo-text" href="/">
+                    CSS ILLUSTRATIONS
+                </a>
+                <ul class="amp-footer-policy-list">
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/crgE5Ze0">Política de Privacidad</a>
+                    </li>
+                    <li class="amp-footer-policy-item">
+                        <a class="amp-footer-policy-link" target="_blank" href="https://www.websitepolicies.com/policies/view/S0MObbo6">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></body>
+</html>
