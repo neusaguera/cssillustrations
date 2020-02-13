@@ -21,7 +21,7 @@ Como en los anteriores niveles empezaremos por crear dos ficheros walle.html y w
 
 {{< image src="/walle/basic.jpg" alt="formas básicas de Walle">}}
 
-Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS... Y si en algún momento notas que me salto alguna buena prática ya comentada no dudes en llamarme la atención.
+Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS... Y si en algún momento notas que me salto alguna buena práctica ya comentada no dudes en llamarme la atención.
 
 ### walle.html
 {{< highlight HTML >}}
@@ -80,14 +80,14 @@ Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS... 
 {{< /highlight >}}
 
 >#### Degradados circulares {#gradient}
->Uno de los recursos que más utilizo en las illustraciones CSS son los degradados. Tenemos dos tipos de degradados lineales y circulares, ahora nos centraremos en el circular, los colores se definen del centro hacia fuera. En Walle-e para la cabeza y las manos estamos utilizando un gradient muy sencillo al que le damos el color claro en el centro y acabamos con un color más oscuro. Puedes ver que el primer color tiene un valor, este es el color stop, es decir donde le decimos que ese color debe empezar a "fluir" hacia el otro.
+>Uno de los recursos que más utilizo en las ilustraciones CSS son los degradados. Tenemos dos tipos de degradados lineales y circulares, ahora nos centraremos en el circular, los colores se definen del centro hacia fuera. En Walle-e para la cabeza y las manos estamos utilizando un gradient muy sencillo al que le damos el color claro en el centro y acabamos con un color más oscuro. Puedes ver que el primer color tiene un valor, este es el color stop, es decir donde le decimos que ese color debe empezar a "fluir" hacia el otro.
 >
-> Has podido observar que antes de un background con degradado siempre declaro una background con un color simple, en navegadores muy antiguos los degradados no funcionan o alguno necesita el vendor, con la línea de arriba me curo en salud por si el degrado no funciona y muestro el color central simple.
+> Has podido observar que antes de un background con degradado siempre declaro una background con un color simple, en navegadores muy antiguos los degradados no funcionan o alguno necesita el <mark>vendor</mark>, con la línea de arriba me curo en salud por si el degrado no funciona y muestro el color central simple.
 >
 
 ## Paso 2: Los prismáticos de wall-e
 
-¿Qué tal si le añadimos los prismáticos a Wall-e? Quizá los prismáticos te sean un poco complicados, juega con <mark>:before</mark>, <mark>:after</mark> y <mark>box-shadow</mark>, intentálo y luego revisa con el código, ya sabes que si tienes alguna duda siempre me puedes escribir.
+¿Qué tal si le añadimos los prismáticos a Wall-e? Quizá los prismáticos te sean un poco complicados, juega con <mark>:before</mark>, <mark>:after</mark> y <mark>box-shadow</mark>, inténtalo y luego revisa con el código, ya sabes que si tienes alguna duda siempre me puedes escribir.
 
 {{< image src="/walle/binocular.jpg" alt="Creando los prismáticos">}}
 
@@ -239,7 +239,7 @@ Recuerda que ahora ya aplicamos variables, nombres legibles, ordenación CSS... 
 >
 >> <mark>color</mark>: color de la sombra 
 >
->Otros valores de esta propiedad son difuminar, posición de la sombra (dentro o fuera), añadir más de una sombra: >
+>Otros valores de esta propiedad son difuminar, posición de la sombra (dentro o fuera), añadir más de una sombra:
 >
 >><mark>box-shadow: inset h-offset v-offset blur color, h-offset v-offset blur color</mark>
 >
@@ -298,7 +298,7 @@ Para crear el efecto de las ruedas de oruga que tiene wall-e he utilizado el deg
 >
 ><mark>to bottom</mark>: le estamos diciendo la dirección que tendrá el degradado en este caso de arriba a bajo.
 >
->Para este ejemplo he dividido el primer 25% de la figura y le he dado 6 tonos de colores (5 grises y negro) para crear el efecto de ranura. Con la propiedad repetir (repeating-linear-gradient), este patrón se repetira 4 veces hasta rellenar la figura.
+>Para este ejemplo he dividido el primer 25% de la figura y le he dado 6 tonos de colores (5 grises y negro) para crear el efecto de ranura. Con la propiedad repetir (repeating-linear-gradient), este patrón se repetirá 4 veces hasta rellenar la figura.
 
 
 ## Paso 4: Mejora tu Wall-e
