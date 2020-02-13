@@ -2,7 +2,7 @@
 layout: post
 title: Medusa
 tags: ["Animaciones"]
-date: "2019-11-20"
+date: "2020-02-13"
 author: "Neus Agüera"
 weight: 398
 categories: ["Animations"]

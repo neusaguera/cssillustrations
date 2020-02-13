@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nivel 6. Mike
+title: Nivel 5. Mike
 img: mike/mike.jpg
 tags: ["Tsum", "Ilustraciones"]
 date: "2020-02-12"
@@ -9,7 +9,7 @@ weight: 194
 categories: ["Tsum"]
 ---
 
-Para el número 6 de este curso traigo a Mike de Monstruos S.A, con él seguiremos practicando los background, esta vez aprenderemos a crear un patrón. Para seguir con las buenas prácticas veremos que funciones tienes la organización W3C.
+Para el número 5 de este curso traigo a Mike de Monstruos S.A, con él seguiremos practicando los background, esta vez aprenderemos a crear un patrón. Para seguir con las buenas prácticas veremos que funciones tienes la organización W3C.
 
 - <a href="#w3c">W3C</a>
 - <a href="#pattern">Patrones con degradados </a>
