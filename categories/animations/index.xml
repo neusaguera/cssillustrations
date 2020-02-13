@@ -6,10 +6,20 @@
     <description>Recent content in Animations on CSS ILLUSTRATIONS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cssillustrations.com/categories/animations/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Medusa</title>
+      <link>https://cssillustrations.com/posts/animations/jelly/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cssillustrations.com/posts/animations/jelly/</guid>
+      <description>¡Cuidado en este mar hay medusas! ¿Quieres saber como hemos creado esta medusa? Debajo tienes el código y el enlace a codepen.
+         Ficheros HTML y CSS &amp;lt;div class=&amp;#34;sea&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;jellyfish&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;jellyfish-body&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;jellyfish-down&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;jellyfish-tentacle&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;jellyfish-tentacle&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;jellyfish-tentacle&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;jellyfish-tentacle&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; .sea { position: relative; height: 300px; overflow: hidden; max-width: 375px; margin: 0 auto 32px auto; background-color: #00c1ff; background: linear-gradient(#00c1ff 0%, #6875f2 100%); } .</description>
+    </item>
     
     <item>
       <title>Dinosaurio apocalíptico</title>

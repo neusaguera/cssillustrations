@@ -2,7 +2,7 @@
 <html ⚡>
     <head>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://cssillustrations.com/amp/posts/tsum/introductiontsums/" />
+<link rel="canonical" href="https://cssillustrations.com/amp/posts/animations/jelly/" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
 
@@ -11,18 +11,19 @@
 
 <meta property="og:locale" content="es_ES" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Piloto. Tsums en CSS" />
-<meta name="description" property="og:description" content="Dibujar personajes, vistas y crear animaciones con HTML y CSS es uno de mis hobbies. Me gusta crear estos dibujos desde sus formas geométricas, sin …" />
-<meta property="og:url" content="https://cssillustrations.com/amp/posts/tsum/introductiontsums/" />
+<meta property="og:title" content="Medusa" />
+<meta name="description" property="og:description" content="¡Cuidado en este mar hay medusas! ¿Quieres saber como hemos creado esta medusa? Debajo tienes el código y el enlace a codepen.
+         Ficheros HTML …" />
+<meta property="og:url" content="https://cssillustrations.com/amp/posts/animations/jelly/" />
 <meta property="og:site_name" content="CSS Illustrations" />
-<meta name="image" property="og:image" content="https://cssillustrations.com/tsum/introduction.jpg" />
-<meta property="og:image:secure_url" content="https://cssillustrations.com/tsum/introduction.jpg" />
+<meta name="image" property="og:image" content="https://cssillustrations.com/animations/jelly.gif" />
+<meta property="og:image:secure_url" content="https://cssillustrations.com/animations/jelly.gif" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="632" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@Neuxi11" />
 <meta name="twitter:creator" content="@Neuxi11" />
-<meta name="twitter:image" content="https://cssillustrations.com/tsum/introduction.jpg" />
+<meta name="twitter:image" content="https://cssillustrations.com/animations/jelly.gif" />
 
 <meta name="article:tag" content="animaciones">
 
@@ -33,8 +34,8 @@
 <meta name="article:tag" content="tsum">
 
 <meta property="article:section" content="Aprende HTML y CSS" />
-<meta property="article:published_time" content="2019-08-27 00:00:00 &#43;0000 UTC" />
-<meta property="article:modified_time" content="2019-08-27 00:00:00 &#43;0000 UTC" />
+<meta property="article:published_time" content="2020-02-13 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2020-02-13 00:00:00 &#43;0000 UTC" />
 <meta name="theme-color" content="#D52941">
 <meta name="robots" content="noodp" />
 <link rel="icon" type="image/png" href="/icoCI.png">
@@ -455,25 +456,29 @@ h3 {
             <div class="amp-post-header">
                 <div class="amp-container">
 
-                    <h1 class="amp-post-title">Piloto. Tsums en CSS</h1>
+                    <h1 class="amp-post-title">Medusa</h1>
 
                     <div class="amp-post-dates">
                         
-                        
-                            <div class="amp-post-dates-title">
-                                <span class="amp-post-date-text"> 27-08-2019</span>
+                            <div class="amp-post-dates-title author">
+                                <span class="amp-post-date-text"> Neus Agüera</span>
                             </div>
                         
                         
                             <div class="amp-post-dates-title">
-                                <span class="amp-post-date-text"> 27-08-2019</span>
+                                <span class="amp-post-date-text"> 13-02-2020</span>
+                            </div>
+                        
+                        
+                            <div class="amp-post-dates-title">
+                                <span class="amp-post-date-text"> 13-02-2020</span>
                             </div>
                         
                     </div>
 
                       <ul class="amp-post-tag-list">
                             <i class="fa fa-tags"></i><li class="amp-post-tag-item">
-                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/tsum">Tsum</a></a>
+                              <a class="amp-post-tag-link" href="https://cssillustrations.com/tags/animaciones">Animaciones</a></a>
                           </li>
                         </ul>
                     
@@ -505,25 +510,134 @@ h3 {
 
             <div class="amp-post-content">
                 <div class="amp-container">
-                    <div class="amp-fixed-container">
+                    
 
-<amp-img
-    class="amp-contain"
-    layout="fill"
-    src="/tsum/introduction.jpg"
-    alt="Diferentes Tsums"
-    width="360">
-</amp-img>
+<p>¡Cuidado en este mar hay medusas! ¿Quieres saber como hemos creado esta medusa? Debajo tienes el código y el enlace a codepen.</p>
+
+<div class="post-animation">
+    <div class="sea">
+    <div class="jellyfish">
+      <div class="jellyfish-body"> </div>
+      <div class="jellyfish-down">
+        <div class="jellyfish-tentacle"></div>
+        <div class="jellyfish-tentacle"></div>
+        <div class="jellyfish-tentacle"></div>
+        <div class="jellyfish-tentacle"></div>
+      </div>
+    </div>
+</div>
+</div>
+
+<h3 id="ficheros-html-y-css">Ficheros HTML y CSS</h3>
+
+<div class="twocodes">
+    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sea&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jellyfish&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jellyfish-body&#34;</span>&gt; &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jellyfish-down&#34;</span>&gt;
+      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jellyfish-tentacle&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jellyfish-tentacle&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jellyfish-tentacle&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jellyfish-tentacle&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">.<span style="color:#a6e22e">sea</span> {
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+  <span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">375</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#00c1ff</span>;
+  <span style="color:#66d9ef">background</span>: linear-gradient(<span style="color:#ae81ff">#00c1ff</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span>, <span style="color:#ae81ff">#6875f2</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);
+  
+}
+.<span style="color:#a6e22e">jellyfish</span> {
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">150</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">animation</span>: jellyfish-mov <span style="color:#ae81ff">15</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">linear</span> <span style="color:#66d9ef">infinite</span>, mov-float <span style="color:#ae81ff">3</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">linear</span> <span style="color:#66d9ef">infinite</span>;
+}
+
+.<span style="color:#a6e22e">jellyfish-body</span> {
+  <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">151</span>, <span style="color:#ae81ff">202</span>, <span style="color:#ae81ff">0.7</span>);
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> rgba(<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">151</span>, <span style="color:#ae81ff">202</span>, <span style="color:#ae81ff">0.8</span>);
+  <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> rgba(<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">151</span>, <span style="color:#ae81ff">202</span>, <span style="color:#ae81ff">0.8</span>);
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">jellyfish-down</span> {
+  <span style="color:#66d9ef">margin-left</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">jellyfish-tentacle</span> {
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+  <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">-12</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-left</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> rgba(<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">151</span>, <span style="color:#ae81ff">202</span>, <span style="color:#ae81ff">0.8</span>);
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">animation</span>: jellyfish-tentacle <span style="color:#ae81ff">2</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">linear</span> <span style="color:#66d9ef">infinite</span>;
+}
+
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">mov-float</span> {
+  <span style="color:#f92672">0</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">0</span>;
+  }
+  <span style="color:#f92672">50</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">%</span>;
+  }
+  <span style="color:#f92672">100</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">0</span>;
+  }
+}
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">jellyfish-mov</span> {
+  <span style="color:#f92672">0</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-340</span><span style="color:#66d9ef">%</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-340</span><span style="color:#66d9ef">%</span>);
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">-340</span><span style="color:#66d9ef">%</span>);
+  }
+  <span style="color:#f92672">100</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">440</span><span style="color:#66d9ef">%</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">440</span><span style="color:#66d9ef">%</span>);
+    <span style="color:#66d9ef">transform</span>: translateX(<span style="color:#ae81ff">440</span><span style="color:#66d9ef">%</span>);
+  }
+}
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">jellyfish-tentacle</span> {
+  <span style="color:#f92672">0</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span>);
+  }
+  <span style="color:#f92672">25</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">15</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">15</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">15</span><span style="color:#66d9ef">deg</span>);
+  }
+  <span style="color:#f92672">50</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+  }
+  <span style="color:#f92672">75</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-15</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-15</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-15</span><span style="color:#66d9ef">deg</span>);
+  }
+  <span style="color:#f92672">100</span><span style="color:#f92672">%</span> {
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">-ms-</span><span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+  }
+}</code></pre></div>
 
 </div>
 
-<p>Dibujar personajes, vistas y crear animaciones con HTML y CSS es uno de mis hobbies. Me gusta crear estos dibujos desde sus formas geométricas, sin utilizar imágenes, svg o JavaScript. Con paciencia y la magia del CSS podemos hacer cosas maravillosas. Si eres un amante del CSS o quieres aprender más sobre este lenguaje ¡Quédate!</p>
+<h3 id="enlace-a-codepen">Enlace a codepen</h3>
 
-<p>Para este primer curso voy a utilizar los personajes del juego TsumTsum de Disney, es decir, los cabezones. Es un juego al que estoy enganchada a niveles que no te puedes creer y un día mientras estaba jugando pensé, hacer estos personajes tan monos en CSS debe molar mucho y meses después aquí estoy, explicando como lo hice.</p>
-
-<p>Si es la primera vez que vas a hacer algo de CSS y HTML deberías mirar este pequeño <a href="/amp/posts/basic/helloworld/">post</a> donde se explican en pequeños pasos como crear tu primera web estática. Si este paso ya lo has superado, vamos a por el curso.</p>
-
-<p>Para el primer nivel voy a utilizar a Mickey y Minnie, estos dos personajes míticos nos van a ayudar a dar nuestros primeros pasos en este curso ¿Empezamos?</p>
+<p>Aquí tienes el enlace a <a href="https://codepen.io/neusaguera/pen/zYGvQEx" target="_blank"> Codepen </a>  donde podrás ver el resultado.</p>
 
                 </div>
             </div>
@@ -535,11 +649,11 @@ h3 {
                 
 
                 
-
-                
-                    <a class="amp-nav-insection-link next" href="https://cssillustrations.com/amp/posts/tsum/mickeyandminnie/">
-                         Nivel 1. Mickey &amp; Minnie en CSS <i class="fa fa-arrow-right"></i>
+                    <a class="amp-nav-insection-link prev" href="https://cssillustrations.com/amp/posts/animations/apocalypse/">
+                            <i class="fa fa-arrow-left"></i> Dinosaurio apocalíptico
                     </a>
+                
+
                 
             </nav>
         </div><footer class="amp-footer">
