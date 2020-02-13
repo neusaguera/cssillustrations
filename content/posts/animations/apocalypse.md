@@ -6,10 +6,11 @@ date: "2019-11-19"
 author: "Neus Agüera"
 weight: 399
 categories: ["Animations"]
+img: animations/dino.gif
 ---
 Este gracioso dinosaurio está viendo como un cometa se acerca, ¿Colapsará?. En este post puedes encontrar el código para crearlo. Pronto crearemos un curso de iniciación a las animaciones.
 
-{{< partial file="apocalypse" >}}
+{{< partial file="animation/apocalypse" >}}
 
 ### Ficheros HTML y CSS
 {{< twocodes >}}
